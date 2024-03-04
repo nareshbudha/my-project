@@ -23,7 +23,10 @@ const Frequtly = () => {
             </p>
           </h1>
         </div>
-        <div className=" flex flex-col text-2xl text-[#000000] gap-8 mr-24  font-medium		">
+        <div
+          className=" flex flex-col text-2xl text-[#000000] gap-8 mr-24
+          font-medium		"
+        >
           <div className="flex flex-row justify-around">
             <p className="border-b-2 w-full border-[#000000] flex justify-between  pb-2">
               Do you offer global SMS coverage ? <GoTriangleDown className="" />

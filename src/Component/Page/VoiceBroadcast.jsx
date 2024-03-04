@@ -1,9 +1,12 @@
 import React from "react";
 import bc from "../Image/bc.png";
 import pp from "../Image/pp.png";
-import { HiOutlineComputerDesktop } from "react-icons/hi2";
+import {
+  HiOutlineComputerDesktop,
+  HiOutlinePhoneArrowUpRight,
+} from "react-icons/hi2";
 import { LuArrowUpRightSquare } from "react-icons/lu";
-import { FaPhone, FaUserFriends } from "react-icons/fa";
+import { FaUserFriends } from "react-icons/fa";
 import { BsCircle } from "react-icons/bs";
 import { RxCross2 } from "react-icons/rx";
 import { TbMinus } from "react-icons/tb";
@@ -24,8 +27,8 @@ import Frequtly from "./Frequtly";
 const VoiceBroadcast = () => {
   return (
     <div className="font-Roboto">
-      <div className="   flex sm:flex-col lg:flex-row w-full  justify-between gap-5 py-40">
-        <div className="text-[#5F2466] w-[45%] ml-5 flex flex-col items-start gap-5  ">
+      <div className="   flex sm:flex-col lg:flex-row w-full  justify-between gap-1 py-40">
+        <div className="text-[#5F2466] w-[45%] ml-5 flex flex-col items-start gap-2  ">
           <h2 className="  text-[40px] leading-[50px] font-bold	ml-16 ">
             Automate Your Voice Broadcast with Ease
           </h2>
@@ -40,8 +43,8 @@ const VoiceBroadcast = () => {
         </div>
         <img className=" w-2/6 h-2/5 mr-56" src={bc} alt="Logo" />
       </div>
-      <div className="flex flex-row justify-end    gap-5 ">
-        <div className="flex flex-col rounded-md	ml-32 bg-[#F7F7F7] w-[30%]  ">
+      <div className="flex flex-row justify-end    gap-1 ">
+        <div className="flex flex-col rounded-md	ml-32 bg-[#F7F7F7] w-[35%]  ">
           <LuArrowUpRightSquare className="text-[#5F2466] w-[50px] h-[50px] " />
 
           <h3 className="text-[#5F2466] text-2xl	   ">VoIP Call</h3>
@@ -51,7 +54,7 @@ const VoiceBroadcast = () => {
           </p>
         </div>
         <div className="flex flex-col  w-[30%] bg-[#F7F7F7] ">
-          <FaPhone className="text-[#5F2466] w-[50px] h-[50px]  " />
+          <HiOutlinePhoneArrowUpRight className="text-[#5F2466] w-[50px] h-[50px]  " />
 
           <h3 className="text-[#5F2466] text-2xl	   ">Phone Call </h3>
           <p className="text-[#000000] flex justify-center p-2  ">
