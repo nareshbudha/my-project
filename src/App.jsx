@@ -11,6 +11,8 @@ import VoiceBroadcast from "./Component/Page/VoiceBroadcast";
 import WhatAppBusiness from "./Component/Page/WhatAppBusiness";
 import Videocall from "./Component/Page/Videocall";
 import Pricing from "./Component/Page/Pricing";
+import About from "./Component/Page/About";
+import ContactUs from "./Component/Page/ContactUs";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
           <Route path="/WhatAppBusiness" element={<WhatAppBusiness />} />
           <Route path="/Videocall" element={<Videocall />} />
           <Route path="/Price" element={<Pricing />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
         <Footer />
       </BrowserRouter>

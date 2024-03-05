@@ -18,17 +18,17 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a href="#" className="text-[#5F2466] font-Poppins font-bold">
+            <a href="price" className="text-[#5F2466] font-Poppins font-bold">
               Pricing
             </a>
           </li>
           <li>
-            <a href="#" className="text-[#5F2466] font-Poppins font-bold">
+            <a href="about" className="text-[#5F2466] font-Poppins font-bold">
               About
             </a>
           </li>
           <li className="flex flex-row gap-10 ">
-            <a href="#" className="text-[#5F2466] font-Poppins font-bold">
+            <a href="contact" className="text-[#5F2466] font-Poppins font-bold">
               ContactUs
             </a>
           </li>
