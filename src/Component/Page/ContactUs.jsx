@@ -207,7 +207,12 @@ const ContactUs = () => {
               />
             </div>
 
-            <button className="bg-[#5F2466]  text-[#FFFFFF]   rounded-xl w-fit  mt-1 mr-[800px]  py-[15px] px-[25px] m">
+            <button
+              className="bg-[#5F2466] text-[#FFFFFF] rounded-xl w-fit mt-1 mr-[800px] py-[15px] px-[25px] m"
+              onClick={() => {
+                event.target.style.backgroundColor = "#FC6517";
+              }}
+            >
               Submit
             </button>
           </div>

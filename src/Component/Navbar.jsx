@@ -11,7 +11,16 @@ function Navbar() {
 
         <ul className="flex flex-row mr-20  items-center text-left gap-8">
           <li>
-            <a href="#" className="text-[#5F2466] font-Poppins font-bold">
+            <a
+              href="#"
+              className="text-[#5F2466] font-Poppins font-bold"
+              onClick={(event) => {
+                event.target.style.backgroundColor =
+                  event.target.style.backgroundColor === "rgb(252, 101, 23)"
+                    ? "#5F2466"
+                    : "#FC6517";
+              }}
+            >
               Products
             </a>
           </li>
@@ -21,12 +30,27 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a href="price" className="text-[#5F2466] font-Poppins font-bold">
+            <a
+              href="price"
+              className="text-[#5F2466] font-Poppins font-bold"
+              onClick={(event) => {
+                event.target.style.backgroundColor =
+                  event.target.style.backgroundColor === "rgb(252, 101, 23)"
+                    ? "#5F2466"
+                    : "#FC6517";
+              }}
+            >
               Pricing
             </a>
           </li>
           <li>
-            <a href="about" className="text-[#5F2466] font-Poppins font-bold">
+            <a
+              href="about"
+              className="text-[#5F2466] font-Poppins font-bold"
+              onClick={(event) => {
+                event.target.classList.toggle("text-[#F05327]");
+              }}
+            >
               About
             </a>
           </li>

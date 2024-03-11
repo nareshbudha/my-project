@@ -45,10 +45,26 @@ const Home = () => {
               </p>
 
               <div className="  text-[#FFFFFF] w-fit  flex flex-row gap-[10px] font-bold   justify-center items-center">
-                <button className="bg-[#702D77]  rounded-xl py-[10px] px-[25px] ">
+                <button
+                  className="bg-[#702D77]  rounded-xl py-[10px] px-[25px] "
+                  onClick={(event) => {
+                    event.target.style.backgroundColor =
+                      event.target.style.backgroundColor === "rgb(252, 101, 23)"
+                        ? "#5F2466"
+                        : "#FC6517";
+                  }}
+                >
                   Request trail
                 </button>
-                <button className="bg-[#702D77]  rounded-xl py-[10px] px-[25px]">
+                <button
+                  className="bg-[#702D77]  rounded-xl py-[10px] px-[25px]"
+                  onClick={(event) => {
+                    event.target.style.backgroundColor =
+                      event.target.style.backgroundColor === "rgb(252, 101, 23)"
+                        ? "#5F2466"
+                        : "#FC6517";
+                  }}
+                >
                   Request pricing
                 </button>
               </div>
@@ -190,7 +206,15 @@ const Home = () => {
               platform. Send personalized messages, promotions, and updates to
               engage customers and fuel business growth
             </p>
-            <button className="bg-[#5F2466] text-[#FFFFFF] rounded-xl py-3 px-2 mr-[350px]">
+            <button
+              className="bg-[#5F2466] text-[#FFFFFF] rounded-xl py-3 px-2 mr-[350px]"
+              onClick={(event) => {
+                event.target.style.backgroundColor =
+                  event.target.style.backgroundColor === "rgb(252, 101, 23)"
+                    ? "#5F2466"
+                    : "#FC6517";
+              }}
+            >
               Learn More
             </button>
           </div>
@@ -208,7 +232,15 @@ const Home = () => {
               deliver messages to a large audience, saving you time and effort.
               Reach your customers effectively and efficiently.
             </p>
-            <button className="bg-[#5F2466] text-[#FFFFFF] rounded-xl py-3 px-2 mr-[500px] mt-4">
+            <button
+              className="bg-[#5F2466] text-[#FFFFFF] rounded-xl py-3 px-2 mr-[500px] mt-4"
+              onClick={(event) => {
+                event.target.style.backgroundColor =
+                  event.target.style.backgroundColor === "rgb(252, 101, 23)"
+                    ? "#5F2466"
+                    : "#FC6517";
+              }}
+            >
               Learn More
             </button>
           </div>
@@ -377,7 +409,15 @@ const Home = () => {
                 />
                 <FaUserFriends className="absolute top-4 left-1" />
               </div>
-              <button className="bg-[#5F2466]  text-[#FFFFFF]   rounded-xl w-fit  mt-1 mr-[800px]  py-[15px] px-[25px] m">
+              <button
+                className="bg-[#5F2466]  text-[#FFFFFF]   rounded-xl w-fit  mt-1 mr-[800px]  py-[15px] px-[25px] m"
+                onClick={(event) => {
+                  event.target.style.backgroundColor =
+                    event.target.style.backgroundColor === "rgb(252, 101, 23)"
+                      ? "#5F2466"
+                      : "#FC6517";
+                }}
+              >
                 Submit
               </button>
             </div>

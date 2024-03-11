@@ -86,7 +86,15 @@ const SignUp = () => {
               />
             </div>
 
-            <button className="bg-[#5F2466]  text-[#FFFFFF]   w-[654px] h-[56px] rounded-xl   mt-1 mr-[800px]  py-[15px] px-[25px] ">
+            <button
+              className="bg-[#5F2466]  text-[#FFFFFF]   w-[654px] h-[56px] rounded-xl   mt-1 mr-[800px]  py-[15px] px-[25px] "
+              onClick={(event) => {
+                event.target.style.backgroundColor =
+                  event.target.style.backgroundColor === "rgb(252, 101, 23)"
+                    ? "#5F2466"
+                    : "#FC6517";
+              }}
+            >
               Register
             </button>
           </div>

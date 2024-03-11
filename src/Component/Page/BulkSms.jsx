@@ -43,7 +43,15 @@ const BulkSms = () => {
             Send personalized messages, promotions, and updates to engage
             customers and fuel business growth
           </p>
-          <button className="bg-[#5F2466] text-[#FFFFFF] rounded-xl py-2 px-4 mr-[400px]">
+          <button
+            className="bg-[#5F2466] text-[#FFFFFF] rounded-xl py-2 px-4 mr-[400px]"
+            onClick={(event) => {
+              event.target.style.backgroundColor =
+                event.target.style.backgroundColor === "rgb(252, 101, 23)"
+                  ? "#5F2466"
+                  : "#FC6517";
+            }}
+          >
             Get in touch
           </button>
         </div>
@@ -208,13 +216,37 @@ const BulkSms = () => {
           <img className="ml-12" src={nn} alt="Logo" />
         </div>
         <div className="flex flex-row px-10 mt-5 justify-center items-center mr-24 gap-6 ">
-          <button className="rounded-[5px] bg-[#5F2466] text-[#FFFFFF]  py-3 px-12">
+          <button
+            className="rounded-[5px] bg-[#5F2466] text-[#FFFFFF]  py-3 px-12"
+            onClick={(event) => {
+              event.target.style.backgroundColor =
+                event.target.style.backgroundColor === "rgb(252, 101, 23)"
+                  ? "#5F2466"
+                  : "#FC6517";
+            }}
+          >
             Customer care
           </button>
-          <button className="rounded-[5px] bg-[#5F246663] text-[#000000]   py-3 px-12">
+          <button
+            className="rounded-[5px] bg-[#5F246663] text-[#000000]   py-3 px-12"
+            onClick={(event) => {
+              event.target.style.backgroundColor =
+                event.target.style.backgroundColor === "rgb(252, 101, 23)"
+                  ? "#5F2466"
+                  : "#FC6517";
+            }}
+          >
             Marketing campaigns
           </button>
-          <button className="rounded-[5px] bg-[#5F246663] text-[#000000]    py-3 px-12">
+          <button
+            className="rounded-[5px] bg-[#5F246663] text-[#000000]    py-3 px-12"
+            onClick={(event) => {
+              event.target.style.backgroundColor =
+                event.target.style.backgroundColor === "rgb(252, 101, 23)"
+                  ? "#5F2466"
+                  : "#FC6517";
+            }}
+          >
             Optimizer for efficiency
           </button>
         </div>
@@ -225,7 +257,15 @@ const BulkSms = () => {
             Extend beyond text messages; personalize your calls with the
             utilization of Voice APIs.
           </h1>
-          <btn className="text-[#FFFFFF] text-2xl mt-2 ">
+          <btn
+            className="text-[#FFFFFF] text-2xl mt-2 "
+            onClick={(event) => {
+              event.target.style.backgroundColor =
+                event.target.style.backgroundColor === "rgb(252, 101, 23)"
+                  ? "#5F2466"
+                  : "#FC6517";
+            }}
+          >
             Explore our Voice API solution
           </btn>
         </div>
