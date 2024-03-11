@@ -13,6 +13,12 @@ import Videocall from "./Component/Page/Videocall";
 import Pricing from "./Component/Page/Pricing";
 import About from "./Component/Page/About";
 import ContactUs from "./Component/Page/ContactUs";
+import SpellBulkSMSCart from "./Component/Page/SpellBulkSMSCart";
+import Cart from "./Component/Page/Cart";
+import Cartwhat from "./Component/Page/Cartwhat";
+import ThnakCarts from "./Component/Page/ThnakCarts";
+import SignUp from "./Component/Page/SignUp";
+import Login from "./Component/Page/Login";
 
 function App() {
   return (
@@ -28,7 +34,14 @@ function App() {
           <Route path="/Price" element={<Pricing />} />
           <Route path="/About" element={<About />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/spellbulk" element={<SpellBulkSMSCart />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/carts" element={<Cartwhat />} />
+          <Route path="/thank" element={<ThnakCarts />} />
+          <Route path="/sign" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
+
         <Footer />
       </BrowserRouter>
     </div>

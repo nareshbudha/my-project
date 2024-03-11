@@ -24,7 +24,7 @@ const Frequtly = () => {
           </h1>
         </div>
         <div
-          className=" flex flex-col text-2xl text-[#000000] gap-8 mr-24
+          className=" flex flex-col text-2xl text-[#000000] gap-8 mr-24 leading-[38.83px]
           font-medium		"
         >
           <div className="flex flex-row justify-around">
