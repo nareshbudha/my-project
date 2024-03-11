@@ -31,9 +31,19 @@ const About = () => {
               seamlessly.
             </p>
           </p>
-          <button className="bg-[#5F2466] mt-8 text-[#FFFFFF] w-[129px] h-[56px] py-[10px] px-[25px] rounded-[10px]">
-            Contact Us
-          </button>
+          <a href="contact">
+            <button
+              className="bg-[#5F2466] mt-8 text-[#FFFFFF] w-[129px] h-[56px] py-[10px] px-[25px] rounded-[10px]"
+              onClick={(event) => {
+                event.target.style.backgroundColor =
+                  event.target.style.backgroundColor === "rgb(252, 101, 23)"
+                    ? "#5F2466"
+                    : "#FC6517";
+              }}
+            >
+              Contact Us
+            </button>
+          </a>
         </div>
       </div>
       <div className="flex flex-col justify-center items-center mt-20">

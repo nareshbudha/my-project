@@ -209,8 +209,11 @@ const ContactUs = () => {
 
             <button
               className="bg-[#5F2466] text-[#FFFFFF] rounded-xl w-fit mt-1 mr-[800px] py-[15px] px-[25px] m"
-              onClick={() => {
-                event.target.style.backgroundColor = "#FC6517";
+              onClick={(event) => {
+                event.target.style.backgroundColor =
+                  event.target.style.backgroundColor === "rgb(252, 101, 23)"
+                    ? "#5F2466"
+                    : "#FC6517";
               }}
             >
               Submit
