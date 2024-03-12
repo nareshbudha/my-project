@@ -32,15 +32,15 @@ const Home = () => {
   return (
     <div>
       <div className="container  relative pb-3px ">
-        <div className="grid xl:grid-cols xl:grid-rows-2 gap-8">
-          <div className="relative xl:col-span-2 xl:row-start-1 xl:row-end-[-1]">
+        <div className="flex xl:flex-cols xl:flex-rows gap-8">
+          <div className="relative md:col-span-2  xl:col-span-2 xl:row-start-1 xl:row-end-[-1]">
             <img
-              className="w-full pt-0 border-spacing-1"
+              className=" sm:w-4/5 md:w-11/12 2xl:w-full mt-28"
               src={iamges}
               alt="Logo"
             />
             <div className=" text-[#702D77] font-spline-sans absolute flex sm:flex-col md:flex-col lg:flex-col  justify-between pl-14 max-w-[700px] sm:ml-16 ml-8 top-[50%] -translate-y-[50%] sm:space-y-4">
-              <p className="text-[65px] leading-[65px] font-medium ">
+              <p className="sm:text-2xl sm:font-light  md:text-4xl md:font-normal   xl:text-6xl  xl:font-medium ">
                 Seamless CPaaS for Unparalleled
               </p>
 
@@ -207,7 +207,7 @@ const Home = () => {
               engage customers and fuel business growth
             </p>
             <button
-              className="bg-[#5F2466] text-[#FFFFFF] rounded-xl py-3 px-2 mr-[350px]"
+              className="bg-[#5F2466] text-[#FFFFFF]  mobile:flex-col tablet:flex-col laptop:flex-row w-ful rounded-xl py-3 px-2 mr-[350px]"
               onClick={(event) => {
                 event.target.style.backgroundColor =
                   event.target.style.backgroundColor === "rgb(252, 101, 23)"
@@ -374,41 +374,45 @@ const Home = () => {
               Try our cloud contact center software today.
             </p>
 
-            <div className="text-[#000000] font-Poppins font-base  grid grid-cols-2 gap-4 mr-8  ">
-              <div className="relative">
-                <input
-                  className="bg-[#E6E6E6] border-none flex rounded-md outline-none px-9 py-3 w-full"
-                  type="text"
-                  placeholder="Full Name*"
-                />
-                <FaUserAlt className="absolute  top-4 left-1 " />
+            <div className="text-[#000000]  mobile:flex-col tablet:flex-col laptop:flex-row w-ful font-Poppins font-base   gap-4 mr-8  ">
+              <div className="flex flex-row gap-12">
+                <div className="relative gap-5">
+                  <input
+                    className="bg-[#E6E6E6] border-none flex rounded-[5px] w-[335px] h-[53px] outline-none px-9 py-3 "
+                    type="text"
+                    placeholder="Full Name*"
+                  />
+                  <FaUserAlt className="absolute  top-4 left-1 " />
+                </div>
+
+                <div className="relative">
+                  <input
+                    className="bg-[#E6E6E6] flex  border-none outline-none px-9 py-3 rounded-[5px] w-[335px] h-[53px] "
+                    type="text"
+                    placeholder="Phone number"
+                  />
+                  <FaPhone className="absolute top-4 left-1" />
+                </div>
+              </div>
+              <div className="flex flex-row gap-12">
+                <div className="relative">
+                  <input
+                    className="bg-[#E6E6E6] flex  border-none outline-none px-9 py-3 rounded-[5px] w-[335px] h-[53px] mt-3"
+                    type="text"
+                    placeholder="Business email address*"
+                  />
+                  <MdOutlineMarkEmailUnread className="absolute  left-1" />
+                </div>
+                <div className="relative">
+                  <input
+                    className="bg-[#E6E6E6] flex  border-none outline-none px-9 py-3 mt-3 rounded-[5px] w-[335px] h-[53px]"
+                    type="text"
+                    placeholder="Number of users"
+                  />
+                  <FaUserFriends className=" absolute mb-10 left-1" />
+                </div>
               </div>
 
-              <div className="relative">
-                <input
-                  className="bg-[#E6E6E6] flex rounded-md border-none outline-none px-9 py-3 w-full"
-                  type="text"
-                  placeholder="Phone number"
-                />
-                <FaPhone className="absolute top-4 left-1" />
-              </div>
-
-              <div className="relative">
-                <input
-                  className="bg-[#E6E6E6] flex rounded-md border-none outline-none px-9 py-3 w-full"
-                  type="text"
-                  placeholder="Business email address*"
-                />
-                <MdOutlineMarkEmailUnread className="absolute top-4 left-1" />
-              </div>
-              <div className="relative">
-                <input
-                  className="bg-[#E6E6E6] flex rounded-md border-none outline-none px-9 py-3  w-full"
-                  type="text"
-                  placeholder="Number of users"
-                />
-                <FaUserFriends className="absolute top-4 left-1" />
-              </div>
               <button
                 className="bg-[#5F2466]  text-[#FFFFFF]   rounded-xl w-fit  mt-1 mr-[800px]  py-[15px] px-[25px] m"
                 onClick={(event) => {
