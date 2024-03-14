@@ -6,7 +6,7 @@ import gg from "../Image/gg.png";
 const Photo = () => {
   return (
     <div>
-      <div className="flex flex-row justify-center items-center py-[100px] px-[50px] ">
+      <div className="flex md:flex-col sm:flex-col xl:flex-row justify-center items-center py-[100px] px-[50px] ">
         <div className="flex flex-col justify-items-center items-center">
           <h2 className="text-[#5F2466] text-4xl  font-bold leading-[50px]">
             You’re at the start of something special.

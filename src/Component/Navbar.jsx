@@ -41,7 +41,7 @@ function Navbar() {
           id="mega-menu-full"
           className={`items-center justify-between font-medium ${
             isDropdownOpen ? "block" : "hidden"
-          } w-full md:flex md:w-auto md:order-1`}
+          } w-full hidden md:flex md:w-auto md:order-1`}
         >
           <ul className="flex flex-row mr-20 sm:gap-4 items-center text-left gap-8 ">
             <li>
