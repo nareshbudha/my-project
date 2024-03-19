@@ -23,6 +23,8 @@ import { FaMailBulk } from "react-icons/fa";
 import { HiOutlineMicrophone } from "react-icons/hi2";
 
 import Buttom from "./Buttom";
+import Frequtly from "./Frequtly";
+import Photo from "./Photo";
 
 const Home = () => {
   return (
@@ -32,17 +34,17 @@ const Home = () => {
           <div className="relative w-full gap-10 mt-3">
             <img className=" w-full" src={iamges} alt="Logo" />
             <div className=" text-[#702D77] font-spline-sans absolute flex flex-col  justify-between pl-14 sm:ml-16 ml-8 top-[50%] -translate-y-[50%] sm:space-y-4">
-              <p className="text-sm sm:text-2xl sm:font-light  md:text-4xl md:font-normal   xl:text-6xl  xl:font-medium ">
+              <p className="text-[30px] sm:text-2xl sm:font-light  md:text-4xl md:font-normal   xl:text-8xl  xl:font-medium 2xl:font-bold">
                 Seamless CPaaS for Unparalleled
               </p>
 
               <div className="  text-[#FFFFFF] text-xs sm:text-sm md:text-base xl:text-lg   flex flex-row   gap-2 xl:gap-3    justify-center items-center">
-                <a className="bg-[#702D77] hover:bg-[#FC6517] rounded-xl py-1 px-1  sm:py-2 sm:px-3 md:py-3 md:px-4 2xl:rounded-lg xl:py-3 2xl:px-6 ">
+                <a className="bg-[#702D77] hover:bg-[#FC6517] rounded-xl py-2 px-1   text-xs sm:text-base sm:py-2 sm:px-3 md:py-3 md:px-2  ">
                   Request trail
                 </a>
                 <a
                   href="price"
-                  className="bg-[#702D77] hover:bg-[#FC6517] rounded-xl py-1 px-1  sm:py-2 sm:px-3 md:py-3 md:px-4 xl:rounded-lg xl:py-3 2xl:px-6 "
+                  className="bg-[#702D77] hover:bg-[#FC6517] rounded-xl py-2 px-2 text-xs mr-52   sm:text-base sm:py-2 sm:px-3 md:py-3 md:px-4 md:mr-64 xl:rounded-lg xl:py-3 xl:mr-[1098px] 2xl:px-6 "
                 >
                   Request Pricing
                 </a>
@@ -196,39 +198,39 @@ const Home = () => {
             Join the 290,000+ brands that use SpellCPaaS to connect with their
             customers
           </p>
-          <div className=" gap-3 flex flex-col sm:flex-col  md:flex-row lg:flex-col xl:flex-row items-center   sm:gap-4 md:gap-12">
+          <div className="flex flex-col md:flex-row items-center justify-between w-4/5 ">
             <img
-              className=" w-[60px] h-[60px] sm:w-[110px] sm:h-[110px] md:max-w-[132px] md:max-h-[132px]"
+              className="w-full h-auto max-w-[60px] max-h-[60px] md:max-w-[110px] md:max-h-[110px] lg:max-w-[132px] lg:max-h-[132px]"
               src={pizza}
               alt="Logo"
             />
             <img
-              className=" w-[60px] h-[60px] sm:w-[110px] sm:h-[110px] md:max-w-[132px] md:max-h-[132px]"
+              className="w-full h-auto max-w-[60px] max-h-[60px] md:max-w-[110px] md:max-h-[110px] lg:max-w-[132px] lg:max-h-[132px]"
               src={mc}
               alt="Logo"
             />
             <img
-              className=" w-[60px] h-[60px] sm:w-[110px] sm:h-[110px] md:max-w-[132px] md:max-h-[132px]"
+              className="w-full h-auto max-w-[60px] max-h-[60px] md:max-w-[110px] md:max-h-[110px] lg:max-w-[132px] lg:max-h-[132px]"
               src={dsoy}
               alt="Logo"
             />
             <img
-              className=" w-[60px] h-[60px] sm:w-[110px] sm:h-[110px] md:max-w-[132px] md:max-h-[132px]"
+              className="w-full h-auto max-w-[60px] max-h-[60px] md:max-w-[110px] md:max-h-[110px] lg:max-w-[132px] lg:max-h-[132px]"
               src={li}
               alt="Logo"
             />
             <img
-              className=" w-[60px] h-[60px] sm:w-[110px] sm:h-[110px] md:max-w-[132px] md:max-h-[132px]"
+              className="w-full h-auto max-w-[60px] max-h-[60px] md:max-w-[110px] md:max-h-[110px] lg:max-w-[132px] lg:max-h-[132px]"
               src={pic}
               alt="Logo"
             />
             <img
-              className=" w-[60px] h-[60px] sm:w-[110px] sm:h-[110px] md:max-w-[132px] md:max-h-[132px]"
+              className="w-full h-auto max-w-[60px] max-h-[60px] md:max-w-[110px] md:max-h-[110px] lg:max-w-[132px] lg:max-h-[132px]"
               src={dell}
               alt="Logo"
             />
             <img
-              className=" w-[60px] h-[60px] sm:w-[110px] sm:h-[110px] md:max-w-[132px] md:max-h-[132px]"
+              className="w-full h-auto max-w-[60px] max-h-[60px] md:max-w-[110px] md:max-h-[110px] lg:max-w-[132px] lg:max-h-[132px]"
               src={pan}
               alt="Logo"
             />
@@ -237,7 +239,7 @@ const Home = () => {
 
         <div className="flex flex-col lg:flex-row w-full mt-28">
           <div className="flex flex-col gap-5 justify-center  items-center ">
-            <h2 className="text-[#5F2466] text-xl ml-48 font-normal sm:text-xl sm:font-medium sm:pl-10 md:text-3xl md:font-semibold md:pl-8  lg:text-4xl lg:font-bold lg:pl-14 ">
+            <h2 className="text-[#5F2466] text-xl ml-36 font-normal sm:text-xl sm:font-medium sm:pl-10 md:text-3xl md:font-semibold md:pl-8  lg:text-4xl lg:font-bold lg:pl-14 ">
               Streamline Your Communication with Bulk SMS Services
             </h2>
             <p className="text-[#000000] text-xs pl-36 font-thin sm:pl-56 md:text-[12px] md:pl-40 lg:text-base lg:ml-24 ">
@@ -246,7 +248,7 @@ const Home = () => {
               engage customers and fuel business growth
             </p>
             <button
-              className="bg-[#5F2466] text-[#FFFFFF]  -mr-32 rounded-lg py-2 px-1 sm:ml-8 xm:py-3 xm:px-2 md:-ml-20  md:rounded-xl lg:-ml-6 xl:mr-28 xl:py-4 xl:px-3"
+              className="bg-[#5F2466] text-[#FFFFFF]  mr-28 rounded-lg py-2 px-1 sm:ml-8 xm:py-3 xm:px-2 md:-ml-20  md:rounded-xl lg:-ml-6 xl:mr-[374px] xl:py-4 xl:px-3"
               onClick={(event) => {
                 event.target.style.backgroundColor =
                   event.target.style.backgroundColor === "rgb(252, 101, 23)"
@@ -273,13 +275,13 @@ const Home = () => {
             <h2 className=" text-xl font-normal sm:text-xl sm:font-medium sm:pl-10 md:text-3xl md:font-semibold md:pl-8  lg:text-4xl lg:font-bold lg:pr-5 xl:pr-1    ">
               Automate Your Voice Broadcast with Ease
             </h2>
-            <p className=" text-[#000000] text-xs  font-thin sm:pl-56 md:text-[12px] md:pl-40 lg:text-base lg:pr-40 lg:-ml-32 xl:pl-40">
+            <p className=" text-[#000000] text-xs  font-thin sm:pl-56 md:text-[12px] md:pl-40 lg:text-base lg:pr-44  xl:pl-24">
               Our Voice Broadcast feature allows you to automate calls and
               deliver messages to a large audience, saving you time and effort.
               Reach your customers effectively and efficiently.
             </p>
             <button
-              className="bg-[#5F2466] text-[#FFFFFF] mr-28 -ml-20 rounded-lg py-2 px-1 sm:ml-8 sm:py-3 sm:px-5 md:-ml-10   md:rounded-xl  lg:mr-36 lg:py-3 lg:px-2  xl:-ml-80    "
+              className="bg-[#5F2466] text-[#FFFFFF] mr-44 -ml-20 rounded-lg py-2 px-1 sm:ml-8 sm:py-3 sm:px-5 md:-ml-10   md:rounded-xl  lg:mr-36 lg:py-3 lg:px-2  xl:mr-[512px]   "
               onClick={(event) => {
                 event.target.style.backgroundColor =
                   event.target.style.backgroundColor === "rgb(252, 101, 23)"
@@ -293,11 +295,11 @@ const Home = () => {
         </div>
         <div className="flex flex-col lg:flex-row w-full mt-28">
           <div className="flex flex-col gap-5 justify-center  items-center">
-            <h2 className=" text-[#5F2466] text-xl ml-48 font-normal sm:text-xl sm:font-medium sm:pl-10 md:text-3xl md:font-semibold md:pl-8  lg:text-4xl lg:font-bold lg:pl-14">
+            <h2 className=" text-[#5F2466] text-xl ml-32 font-normal sm:text-xl sm:font-medium sm:pl-10 md:text-3xl md:font-semibold md:pl-8  lg:text-4xl lg:font-bold lg:pl-2 lg:ml-44">
               Efficiently manage customer communications with our powerful
               Call-Center solution.
             </h2>
-            <p className="text-[#000000] text-xs pl-36 font-thin sm:pl-56 md:text-[12px] md:pl-40 lg:text-base lg:ml-24 ">
+            <p className="text-[#000000] text-xs pl-32 font-thin sm:pl-56 md:text-[12px] md:pl-40 lg:text-base lg:ml-8 ">
               Our Call-Center solution empowers businesses to handle customer
               interactions seamlessly, improving customer satisfaction and
               boosting productivity.
@@ -310,31 +312,31 @@ const Home = () => {
             alt="Logo"
           />
         </div>
-        {/* <section className=" flex  sm:flex-col lg:flex-row w-full justify-center items-center gap-10  mb-9 mt-10">
+        <section className="flex flex-col-reverse lg:flex-row w-full mt-28">
           <img
-            className="w-[370.96px] h-[375.48px] pl-28"
+            className="w-40 h-40 ml-24 mt-5  sm:ml-44 sm:mt-3 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 lg:ml-40 lg:pb-16 lg:mr-6"
             src={ll}
             alt="Logo"
           />
           <div className="flex flex-col justify-center items-center gap-5">
-            <h2 className="text-[#5F2466] text-4xl  w-2/4 font-bold ">
+            <h2 className="text-[#5F2466] text-xl ml-32 font-normal sm:text-xl sm:font-medium sm:pl-10 md:text-3xl md:font-semibold md:pl-8  lg:text-4xl lg:font-bold lg:pl-2 lg:ml-48 ">
               Experience Personal Customer Engagement with Interactive Video
               Calls
             </h2>
-            <p className="text-[#000000] 	text-xs	leading-6 flex  justify-center items-center">
+            <p className="text-[#000000] text-xs mr-32 ml-[125px]  font-thin sm:pl-56 md:text-[12px] md:pl-40 lg:text-base lg:pr-40 lg:-ml-32 xl:ml-12">
               Our video call feature allows you to connect with customers on a
               more personal level, fostering stronger relationships and
               increasing customer satisfaction.
             </p>
             <Buttom />
           </div>
-        </section> */}
-        {/* <section className="  flex  sm:flex-col lg:flex-row w-full justify-center items-center gap-5 mb-10 mt-10 ">
-          <div className="w-[590px] h-[282px]flex flex-col justify-center items-center gap-6 ">
-            <h2 className="text-[#5F2466] text-4xl mr-20 font-bold ">
+        </section>
+        <section className="flex flex-col lg:flex-row w-full mt-28 ">
+          <div className="flex flex-col justify-center items-center gap-5 ">
+            <h2 className="text-[#5F2466] text-xl ml-32 font-normal sm:text-xl sm:font-medium sm:pl-10 md:text-3xl md:font-semibold md:pl-8  lg:text-4xl lg:font-bold lg:pl-2 lg:ml-48 ">
               Enhance Customer Support with Versatile Messaging Solutions
             </h2>
-            <p className="text-[#000000] leading-6	text-base">
+            <p className="text-[#000000] text-xs mr-32 ml-[125px]  font-thin sm:pl-56 md:text-[12px] md:pl-40 lg:text-base lg:pr-40 lg:-ml-32 xl:ml-12">
               Messaging is a powerful tool for customer support and service.
               With our versatile messaging solutions, you can streamline
               communication, resolve issues faster, and provide a seamless
@@ -342,177 +344,49 @@ const Home = () => {
             </p>
             <Buttom />
           </div>
-          <img src={dd} alt="Logo" />
-        </section> */}
-        {/* <div className="text-[#5F2466] flex  sm:flex-col lg:flex-row w-full items-center  justify-center gap-44 mb-10 mt-10">
-          <img className="ml-32" src={ee} alt="Logo" />
-          <div className="flex flex-col justify-center items-center pl-28 w-2/4 ">
-            <h2 className="text-[#5F2466] text-4xl  font-bold mr-36">
+          <img
+            className="w-40 h-40 ml-28 mt-5  sm:ml-44 sm:mt-3 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 lg:ml-40 lg:pb-16 lg:mr-6"
+            src={dd}
+            alt="Logo"
+          />
+        </section>
+        <div className="flex flex-col-reverse lg:flex-row w-full mt-28">
+          <img
+            className="w-40 h-40 ml-24 mt-5  sm:ml-44 sm:mt-3 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 lg:ml-40 lg:pb-16 lg:mr-6"
+            src={ee}
+            alt="Logo"
+          />
+          <div className="flex flex-col justify-center items-center gap-5 ">
+            <h2 className="text-[#5F2466] text-xl ml-32 font-normal sm:text-xl sm:font-medium sm:pl-10 md:text-3xl md:font-semibold md:pl-8  lg:text-4xl lg:font-bold lg:pl-2 lg:ml-48">
               Enhance Customer Communication with Whatsapp Business Integration
             </h2>
-            <p className="text-[#000000] leading-6 mr-20	text-base">
+            <p className="text-[#000000] text-xs mr-32 ml-[125px]  font-thin sm:pl-56 md:text-[12px] md:pl-40 lg:text-base lg:pr-40 lg:-ml-32 xl:ml-12">
               With our CPaaS platform, you can leverage the power of Whatsapp
               Business to connect with your customers more effectively.
             </p>
             <Buttom />
           </div>
-        </div> */}
-        {/* <div className="text-[#5F2466]  flex flex-row items-center  justify-center gap-5 mb-10 mt-10">
-          <div className=" w-2/5flex flex-col justify-center items-center ml-28 gap-6 ">
-            <h2 className="text-[#5F2466] text-4xl  font-bold ">
+        </div>
+        <div className="flex flex-col lg:flex-row w-full mt-28">
+          <div className="flex flex-col justify-center items-center gap-5 ">
+            <h2 className="text-[#5F2466] text-xl ml-32 font-normal sm:text-xl sm:font-medium sm:pl-10 md:text-3xl md:font-semibold md:pl-8  lg:text-4xl lg:font-bold lg:pl-2 lg:ml-48 ">
               Enhance Customer Communication with Whatsapp Business Integration
             </h2>
-            <p className="text-[#000000] leading-6	text-base w-2/5 mt-7">
+            <p className="text-[#000000] text-xs mr-32 ml-[125px]  font-thin sm:pl-56 md:text-[12px] md:pl-40 lg:text-base lg:pr-40 lg:-ml-32 xl:ml-12">
               With our CPaaS platform, you can leverage the power of Whatsapp
               Business to connect with your customers more effectively.
             </p>
             <Buttom />
           </div>
-          <img className="mr-28" src={ff} alt="Logo" />
-        </div> */}
-        {/* 
-        <div className="bg-[#F7F7F7]  flex flex-row items-center  justify-center py-10 gap-5 mb-10 mt-10">
-          <div className="flex flex-col  gap-12">
-            <h2 className="text-[#5F2466] text-4xl font-bold	leading-[50px]">
-              Frequently Asked Question
-            </h2>
+          <img
+            className="w-40 h-40 ml-28 mt-5  sm:ml-44 sm:mt-3 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 lg:ml-40 lg:pb-16 lg:mr-6"
+            src={ff}
+            alt="Logo"
+          />
+        </div>
 
-            <p className="text-[#000000]">
-              Here are some of the most commonly asked questions about
-              <span className="text-[#5F2466]">SPELLCPaaS</span>
-            </p>
-            <p className="text-[#000000]">
-              Still don’t find what you’re looking for? 
-              <span className="text-[#5F2466]">Chat with our experts!</span>
-            </p>
-          </div>
-          <div className=" flex flex-col text-4xl text-[#000000] gap-4  	">
-            <p className="border-b border-gray-500">
-              How do I get started with SPELLCPaaS ?
-            </p>
-
-            <p className="border-b border-gray-500">
-              {" "}
-              Does SPELLCPaaS sell or lease VoIP phones ?
-            </p>
-
-            <p className="border-b border-gray-500">
-              What are my payment options ?
-            </p>
-
-            <p className="border-b border-gray-500">
-              Is your platform secure ?
-            </p>
-            <p className="border-b border-gray-500">What is a CPaaS plan ?</p>
-
-            <p className="border-b border-gray-500">
-              What’s included with every plan ?
-            </p>
-          </div>
-        </div> */}
-        {/* <div className="flex flex-row justify-center items-center py-[100px] px-[50px] ">
-          <div className="flex flex-col justify-items-center items-center">
-            <h2 className="text-[#5F2466] text-4xl  font-bold leading-[50px]">
-              You’re at the start of something special.
-            </h2>
-            <p className="text-[#000000]  text-base mb-6 mt-6">
-              Try our cloud contact center software today.
-            </p>
-
-            <div className="text-[#000000]  mobile:flex-col tablet:flex-col laptop:flex-row w-ful font-Poppins font-base   gap-4 mr-8  ">
-              <div className="flex flex-row gap-12">
-                <div className="relative gap-5">
-                  <input
-                    className="bg-[#E6E6E6] border-none flex rounded-[5px] w-[335px] h-[53px] placeholder-[#000000] placeholder-opacity-75 outline-none px-9 py-3 "
-                    type="text"
-                    placeholder="Full Name*"
-                  />
-                  <FaUserAlt className="absolute  top-4 left-1 " />
-                </div>
-
-                <div className="relative">
-                  <input
-                    className="bg-[#E6E6E6] flex pl-11 border-none outline-none px-9 py-3 rounded-[5px] w-[335px] h-[53px] placeholder-[#000000] placeholder-opacity-75 "
-                    type="text"
-                    placeholder="Phone number"
-                  />
-                  <svg
-                    className="flex -mt-8 ml-2"
-                    width="24"
-                    height="15"
-                    viewBox="0 0 24 15"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M8.67188 8.74609C9.17969 9.00391 9.63672 9.32031 10.043 9.69531C10.4492 10.0703 10.8008 10.4922 11.0977 10.9609C11.3945 11.4297 11.6172 11.9297 11.7656 12.4609C11.9141 12.9922 11.9922 13.5469 12 14.125H10.5C10.5 13.5078 10.3828 12.9258 10.1484 12.3789C9.91406 11.832 9.58984 11.3555 9.17578 10.9492C8.76172 10.543 8.28516 10.2227 7.74609 9.98828C7.20703 9.75391 6.625 9.63281 6 9.625C5.38281 9.625 4.80078 9.74219 4.25391 9.97656C3.70703 10.2109 3.23047 10.5352 2.82422 10.9492C2.41797 11.3633 2.09766 11.8398 1.86328 12.3789C1.62891 12.918 1.50781 13.5 1.5 14.125H0C0 13.5547 0.078125 13.0039 0.234375 12.4727C0.390625 11.9414 0.613281 11.4414 0.902344 10.9727C1.19141 10.5039 1.53906 10.082 1.94531 9.70703C2.35156 9.33203 2.8125 9.01172 3.32812 8.74609C2.75781 8.32422 2.3125 7.79297 1.99219 7.15234C1.67188 6.51172 1.50781 5.83594 1.5 5.125C1.5 4.50781 1.61719 3.92578 1.85156 3.37891C2.08594 2.83203 2.41016 2.35547 2.82422 1.94922C3.23828 1.54297 3.71484 1.22266 4.25391 0.988281C4.79297 0.753906 5.375 0.632812 6 0.625C6.61719 0.625 7.19922 0.742188 7.74609 0.976562C8.29297 1.21094 8.76953 1.53516 9.17578 1.94922C9.58203 2.36328 9.90234 2.83984 10.1367 3.37891C10.3711 3.91797 10.4922 4.5 10.5 5.125C10.5 5.83594 10.3398 6.51172 10.0195 7.15234C9.69922 7.79297 9.25 8.32422 8.67188 8.74609ZM3 5.125C3 5.53906 3.07812 5.92578 3.23438 6.28516C3.39062 6.64453 3.60547 6.96094 3.87891 7.23438C4.15234 7.50781 4.46875 7.72266 4.82812 7.87891C5.1875 8.03516 5.57812 8.11719 6 8.125C6.40625 8.125 6.79297 8.04688 7.16016 7.89062C7.52734 7.73438 7.84375 7.51953 8.10938 7.24609C8.375 6.97266 8.58984 6.65625 8.75391 6.29688C8.91797 5.9375 9 5.54688 9 5.125C9 4.71875 8.92188 4.33203 8.76562 3.96484C8.60938 3.59766 8.39453 3.28125 8.12109 3.01562C7.84766 2.75 7.52734 2.53516 7.16016 2.37109C6.79297 2.20703 6.40625 2.125 6 2.125C5.58594 2.125 5.19922 2.20312 4.83984 2.35938C4.48047 2.51562 4.16406 2.73047 3.89062 3.00391C3.61719 3.27734 3.40234 3.59766 3.24609 3.96484C3.08984 4.33203 3.00781 4.71875 3 5.125ZM24 0.625V2.125H13.5V0.625H24ZM13.5 6.625H24V8.125H13.5V6.625ZM13.5 12.625H24V14.125H13.5V12.625Z"
-                      fill="black"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div className="flex flex-row gap-12">
-                <div className="relative">
-                  <input
-                    className="bg-[#E6E6E6] flex border-none text-[#000000] pl-11 text-base outline-none px-9 py-3 rounded-[5px] w-[335px] h-[53px] mt-3 placeholder-[#000000] placeholder-opacity-75 "
-                    type="text"
-                    placeholder="Business email address*"
-                  />
-
-                  <svg
-                    className="-mt-8 ml-2 flex items-start"
-                    width="22"
-                    height="16"
-                    viewBox="0 0 22 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M20 0.625H2C1.60218 0.625 1.22064 0.783035 0.93934 1.06434C0.658035 1.34564 0.5 1.72718 0.5 2.125V14.125C0.5 14.5228 0.658035 14.9044 0.93934 15.1857C1.22064 15.467 1.60218 15.625 2 15.625H20C20.3978 15.625 20.7794 15.467 21.0607 15.1857C21.342 14.9044 21.5 14.5228 21.5 14.125V2.125C21.5 1.72718 21.342 1.34564 21.0607 1.06434C20.7794 0.783035 20.3978 0.625 20 0.625ZM18.35 2.125L11 7.21L3.65 2.125H18.35ZM2 14.125V2.8075L10.5725 8.74C10.698 8.8271 10.8472 8.87377 11 8.87377C11.1528 8.87377 11.302 8.8271 11.4275 8.74L20 2.8075V14.125H2Z"
-                      fill="black"
-                    />
-                  </svg>
-                </div>
-                <div className="relative flex items-center">
-                  <input
-                    className="bg-[#E6E6E6] placeholder-[#000000] placeholder-opacity-75 flex border-none outline-none px-9 py-3 mt-3 rounded-[5px] w-[335px] h-[53px]"
-                    type="text"
-                    placeholder="Number of users"
-                  />
-                  <svg
-                    className=" flex -ml-[328px] mt-4 "
-                    width="20"
-                    height="21"
-                    viewBox="0 0 20 21"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1 19.125V17.125C1 16.0641 1.42143 15.0467 2.17157 14.2966C2.92172 13.5464 3.93913 13.125 5 13.125H9C10.0609 13.125 11.0783 13.5464 11.8284 14.2966C12.5786 15.0467 13 16.0641 13 17.125V19.125M14 1.255C14.8604 1.4753 15.623 1.9757 16.1676 2.67731C16.7122 3.37892 17.0078 4.24183 17.0078 5.13C17.0078 6.01817 16.7122 6.88108 16.1676 7.58269C15.623 8.2843 14.8604 8.7847 14 9.005M19 19.125V17.125C18.9949 16.2422 18.6979 15.3858 18.1553 14.6894C17.6126 13.993 16.8548 13.4957 16 13.275M3 5.125C3 6.18587 3.42143 7.20328 4.17157 7.95343C4.92172 8.70357 5.93913 9.125 7 9.125C8.06087 9.125 9.07828 8.70357 9.82843 7.95343C10.5786 7.20328 11 6.18587 11 5.125C11 4.06413 10.5786 3.04672 9.82843 2.29657C9.07828 1.54643 8.06087 1.125 7 1.125C5.93913 1.125 4.92172 1.54643 4.17157 2.29657C3.42143 3.04672 3 4.06413 3 5.125Z"
-                      stroke="black"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-              </div>
-
-              <button
-                className="bg-[#5F2466]  text-[#FFFFFF] font-bold leading-5 text-[16px]  rounded-[10px] w-fit  mt-3 mr-[800px]  py-3 px-6 gap-3"
-                onClick={(event) => {
-                  event.target.style.backgroundColor =
-                    event.target.style.backgroundColor === "rgb(252, 101, 23)"
-                      ? "#5F2466"
-                      : "#FC6517";
-                }}
-              >
-                Submit
-              </button>
-            </div>
-          </div>
-          <img className="flex rounded-xl" src={gg} alt="Logo" />
-        </div>  */}
+        <Frequtly />
+        <Photo />
       </div>
     </div>
   );

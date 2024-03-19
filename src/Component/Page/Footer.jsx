@@ -13,22 +13,22 @@ import logoImage from "../Image/logo.png";
 const Footer = () => {
   return (
     <div>
-      <div className="bg-[#F7F7F7] mb-2 flex flex-row">
+      <div className="bg-[#F7F7F7] mb-2 flex flex-col sm:flex-row">
         <div className=" flex flex-col w-2/6  py-20 px-10">
           <img className="w-[160px] h-[55px]" src={logoImage} alt="Logo" />
-          <p className="text-base text-[#000000] flex  items-center ">
+          <p className="text-xs mt-2 selection:sm:text-base text-[#000000] flex  items-center ">
             We SPELL INNOVATION say we’re young because we’re peopled by young,
             energetic, curious and committed minds who are excited to solve one
             stop automated solution for you.
           </p>
-          <div className="flex flex-row gap-10 ">
+          <div className="flex flex-row gap-2 ">
             <FaSquareInstagram className="text-[#5F2466] text-3xl mt-4" />
             <FaFacebook className="text-[#5F2466] text-3xl mt-4" />
             <FaLinkedin className="text-[#5F2466] text-3xl mt-4" />
             <FaXTwitter className="text-[#5F2466] text-3xl mt-4" />
           </div>
         </div>
-        <div className="flex flex-row-3 gap-10 w-4/6 py-20 justify-center">
+        <div className="flex flex-row gap-4 w-4/6 py-1 sm:py-20 justify-center">
           <div className="flex flex-col  gap-2">
             <h2 className="text-2xl text-[#5F2466]"> Quick Links</h2>
             <p className="text-[#000000] text-base font-Poppins">About</p>

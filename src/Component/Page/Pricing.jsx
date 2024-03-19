@@ -20,7 +20,7 @@ const Pricing = () => {
         </div>
         <img className="w-2/4 px-12 py-12 mr-24" src={pss} alt="Logo" />
       </div>
-      <div className="flex flex-row justify-center items-center gap-8 ">
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-8 ">
         <div className="flex flex-col items-center">
           <div className="w-[343px] h-[500px] bg-[#5F2466]">
             <h1 className="bg-[#1E56A8] rounded-md	flex text-[40px] font-bold leading-[50px] px-3 py-3 mx-2 mt-2 text-[#FFFFFF] items-center justify-center">

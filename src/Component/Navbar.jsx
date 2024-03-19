@@ -12,7 +12,7 @@ function Navbar() {
     <nav className="bg-[#F7F7F7]">
       <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
         <a href="/" className="logo-link">
-          <img className="w-20 h-20 ms-1.5" src={computer} alt="Logo" />
+          <img className="w-16 h-16 ms-1.5" src={computer} alt="Logo" />
         </a>
         <button
           onClick={toggleDropdown}
