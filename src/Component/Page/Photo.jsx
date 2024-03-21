@@ -45,7 +45,7 @@ const Photo = () => {
             </div>
           </div>
           <div className="flex flex-col laptop:flex-row laptop:mt-4 gap-3 w-full ">
-            <div className=" relative w-full  ">
+            <div className=" relative w-full    ">
               <input
                 className="bg-[#E6E6E6] border-none flex rounded  placeholder-[#000000] placeholder-opacity-75 outline-none px-7 py-3 w-full"
                 type="text"
