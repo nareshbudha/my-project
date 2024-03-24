@@ -1,4 +1,3 @@
-import React from "react";
 import poo from "../Image/poo.png";
 import pop from "../Image/pop.png";
 import qqq from "../Image/qqq.png";

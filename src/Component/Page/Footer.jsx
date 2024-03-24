@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FaFacebook,
   FaSquareInstagram,
@@ -13,10 +12,10 @@ import logoImage from "../Image/logo.png";
 const Footer = () => {
   return (
     <div>
-      <div className="bg-[#F7F7F7] mb-2 flex flex-col sm:flex-row">
-        <div className=" flex flex-col w-2/6  py-20 px-10">
-          <img className="w-[160px] h-[55px]" src={logoImage} alt="Logo" />
-          <p className="text-xs mt-2 selection:sm:text-base text-[#000000] flex  items-center ">
+      <div className="bg-[#F7F7F7]  flex flex-col sm:flex-row">
+        <div className=" flex flex-col  w-2/6  py-20 px-10">
+          <img className="w-40 h-14 " src={logoImage} alt="Logo" />
+          <p className="text-[#000000] flex mobile:w-96 items-center  text-xs mt-2 selection:sm:text-base  ">
             We SPELL INNOVATION say we’re young because we’re peopled by young,
             energetic, curious and committed minds who are excited to solve one
             stop automated solution for you.
@@ -28,7 +27,7 @@ const Footer = () => {
             <FaXTwitter className="text-[#5F2466] text-3xl mt-4" />
           </div>
         </div>
-        <div className="flex flex-row gap-4 w-4/6 py-1 sm:py-20 justify-center">
+        <div className="flex flex-col mobile:ml-10 tablet:flex-row gap-4 w-4/6 py-1 sm:py-20 justify-center">
           <div className="flex flex-col  gap-2">
             <h2 className="text-2xl text-[#5F2466]"> Quick Links</h2>
             <p className="text-[#000000] text-base font-Poppins">About</p>
@@ -81,8 +80,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className=" bg-[#F7F7F7] flex justify-items-center items-center py-5 px-15">
-        ©2024 Spell Innovation. All rights reserved
+      <p className="border-b-2 w-full mx-10 border-[#000000] "></p>
+      <p className=" bg-[#F7F7F7] flex justify-items-center mobile:ml-10 items-center py-5 px-15">
+        ©2024 Spell Innovation. All rights reserved
       </p>
     </div>
   );

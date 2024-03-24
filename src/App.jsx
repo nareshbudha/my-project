@@ -4,7 +4,7 @@ import { Routes } from "react-router-dom";
 import { BrowserRouter, Route } from "react-router-dom";
 
 import BulkSms from "./Component/Page/BulkSms";
-import Frequtly from "./Component/Page/Frequtly";
+
 import Navbar from "./Component/Navbar";
 import Footer from "./Component/Page/Footer";
 import VoiceBroadcast from "./Component/Page/VoiceBroadcast";

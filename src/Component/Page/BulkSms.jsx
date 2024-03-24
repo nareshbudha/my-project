@@ -1,4 +1,3 @@
-import React from "react";
 import { LuArrowUpRightSquare } from "react-icons/lu";
 
 import { BiSolidBarChartAlt2 } from "react-icons/bi";
@@ -12,9 +11,8 @@ import { TbMinus } from "react-icons/tb";
 import { CiUser } from "react-icons/ci";
 import { AiFillMessage } from "react-icons/ai";
 
-import Footer from "./Footer";
 import bb from "../Image/bb.png";
-import gg from "../Image/gg.png";
+
 import mm from "../Image/mm.png";
 import jaa from "../Image/jaa.png";
 import js from "../Image/js.png";
@@ -22,10 +20,7 @@ import ce from "../Image/ce.png";
 import su from "../Image/su.png";
 import ph from "../Image/ph.png";
 import nn from "../Image/nn.png";
-import cs from "../Image/cs.png";
-import doa from "../Image/do.png";
-import mi from "../Image/mi.png";
-import Navbar from "../Navbar";
+
 import oo from "../Image/oo.png";
 import Photo from "./Photo";
 import Frequtly from "./Frequtly";
@@ -99,7 +94,7 @@ const BulkSms = () => {
             Globally compliant
           </h3>
           <p className="text-[#000000] flex justify-center mobile:text-xs text-base font-normal ">
-            Safeguard your customers' data privacy by ensuring compliance with
+            Safeguard your customers data privacy by ensuring compliance with
             global regulations such as GDPR, HIPAA, 10DLC, and CCPA.
           </p>
         </div>
@@ -108,7 +103,7 @@ const BulkSms = () => {
         <h2 className="text-[#5F2466] mobile:mr-12 mobile:text-2xl mobile:font-normal tablet:text-3xl  tablet:font-semibold laptop:text-4xl laptop:font-bold laptop:mr-48 flex justify-end	">
           Why you need SMS APIs
         </h2>
-        <p className="text-[#000000] mobile:text-xs mobile:ml-16 tablet:text-sm tablet:ml-8 tablet:mr-0 p-6 ">
+        <p className="text-[#000000] mobile:text-xs mobile:ml-16 tablet:text-sm tablet:ml-8 tablet:mr-0 laptop:ml-20 laptop:mr-10 laptop:px-10">
           SMS APIs offer seamless connectivity with contact lists, allowing not
           only bulk messaging but also the creation of IVR menus, execution of
           promotions, and smooth customer interactions. Additionally, they
@@ -128,13 +123,12 @@ const BulkSms = () => {
           </div>
           <div className="bg-[#5F2466] rounded-b-lg py-1 px-14 mobile:w-72 tablet:w-80 laptop:w-96  ">
             <p className="text-[#FFFFFF] w-[60%] mobile:text-xs mobile:py-2 mobile:pr-1 py-5 pr-1 ">
-              import requests api_key = 'your_api_key' api_secret =
-              'your_api_secret' nexmo_phone_number = 'your_nexmo_phone_number'
-              recipient_phone_number = 'recipient_phone_number' nexmo_api_url =
-              'https://rest.nexmo.com/sms/json' message_content = 'Hello, this
-              is a test message!' &#123;"api_key": api_key, "api_secret":
-              api_secret, "from": nexmo_phone_number, "to":
-              recipient_phone_number&#125;
+              iimport requests api_key = your_api_key api_secret =
+              your_api_secret nexmo_phone_number = your_nexmo_phone_number
+              recipient_phone_number = recipient_phone_number nexmo_api_url =
+              https://rest.nexmo.com/sms/json message_content = Hello, this is a
+              test message! &#123;api_key: api_key, api_secret: api_secret,
+              from: nexmo_phone_number, to: recipient_phone_number&#125;
             </p>
           </div>
         </div>
@@ -145,59 +139,79 @@ const BulkSms = () => {
           alt="Logo"
         />
       </div>
-      <div className="flex flex-col bg-[#F7F7F7] justify-center items-center py-4 gap-4">
-        <p className="text-[#000000]  text-2xl font-light">
+      <div className="flex flex-col bg-[#F7F7F7] justify-around items-center py-4 gap-4">
+        <p className="text-[#000000] my-1 w-[40%] text-center  text-xs font-extralight  md:text-2xl md:font-light">
           We support 10+ programming languages including
         </p>
-        <div className="flex flex-row gap-[70px]">
-          <img src={jaa} alt="Logo" />
-          <img src={ph} alt="Logo" />
-          <img src={su} alt="Logo" />
-          <img src={ce} alt="Logo" />
-          <img src={js} alt="Logo" />
+        <div className="flex flex-col md:flex-row items-center justify-between w-4/5">
+          <img
+            className="w-full h-auto max-w-[60px] max-h-[60px] md:max-w-[110px] md:max-h-[110px] lg:max-w-[132px] lg:max-h-[132px]"
+            src={jaa}
+            alt="Logo"
+          />
+          <img
+            className="w-full h-auto max-w-[60px] max-h-[60px] md:max-w-[110px] md:max-h-[110px] lg:max-w-[132px] lg:max-h-[132px]"
+            src={ph}
+            alt="Logo"
+          />
+          <img
+            className="w-full h-auto max-w-[60px] max-h-[60px] md:max-w-[110px] md:max-h-[110px] lg:max-w-[132px] lg:max-h-[132px]"
+            src={su}
+            alt="Logo"
+          />
+          <img
+            className="w-full h-auto max-w-[60px] max-h-[60px] md:max-w-[110px] md:max-h-[110px] lg:max-w-[132px] lg:max-h-[132px]"
+            src={ce}
+            alt="Logo"
+          />
+          <img
+            className="w-full h-auto max-w-[60px] max-h-[60px] md:max-w-[110px] md:max-h-[110px] lg:max-w-[132px] lg:max-h-[132px]"
+            src={js}
+            alt="Logo"
+          />
         </div>
       </div>
-      <div className=" bg-[#5F2466] text-[#FFFFFF] flex flex-col mt-10  gap-10 py-12 px-64 w-full  ">
-        <h2 className=" text-3xl flex justify-between pl-28">
+      <div className=" bg-[#5F2466] text-[#FFFFFF] flex flex-col mt-10  gap-10 py-12 tablet:px-64 w-full  ">
+        <h2 className=" text-xl  flex justify-between tablet:text-3xl tablet:font-bold tablet:pl-28">
           There’s so much to do with SMS API
         </h2>
         <div className="flex flex-row justify-center rounded-xl gap-16 ">
           <div className="flex flex-col bg-[#782C8080]  ">
-            <h3 className="text-2xl  flex 	 gap-4 ">
+            <h3 className="flex text-lg gap-2 tablet:text-2xl tablet:gap-4 ">
               <CiUser />
               Great for customers
             </h3>
-            <ul className="list-disc mt-6 flex flex-col gap-3">
-              <li className="ml-5 text-base text-[#ffffff] font-normal">
+            <ul className="flex flex-col list-disc mt-3 ml-5  tablet:mt-5 gap-1">
+              <li className="text-[#ffffff] text-sm font-light  tablet:text-base  tablet:font-normal ">
                 Acknowledge customer conversations with thank you messages and
                 other templates
               </li>
-              <li className="ml-5 text-base text-[#ffffff] font-normal">
+              <li className="text-[#ffffff] text-sm font-light  tablet:text-base  tablet:font-normal ">
                 Miss calls, not leads—follow up on unattended clients with
                 schedule callback SMS feature{" "}
               </li>
-              <li className="ml-5 text-base text-[#ffffff] font-normal">
+              <li className=" text-[#ffffff] text-sm font-light  tablet:text-base  tablet:font-normal">
                 Stay up-to-date and hold contextual interactions with SMS
                 conversation history
               </li>
             </ul>
           </div>
           <div className="flex flex-col bg-[#782C8080] ">
-            <h3 className="text-3xl  flex pb-1 gap-3">
+            <h3 className="flex text-lg gap-2 tablet:text-2xl tablet:gap-4">
               <AiFillMessage />
               Quick and convenient
             </h3>
-            <ul className="  flex flex-col gap-3 list-disc mt-6">
-              <li className="ml-5 text-base text-[#ffffff] font-normal	">
+            <ul className="  flex flex-col gap-1 list-disc mt-3 ml-5 tablet:mt-5">
+              <li className="text-[#ffffff] text-sm font-light  tablet:text-base  tablet:font-normal">
                 SMS templates save the hassle of typing each text individually;
                 steer clear of human errors
               </li>
-              <li className="ml-5 text-base text-[#ffffff] font-normal	">
+              <li className="text-[#ffffff] text-sm font-light  tablet:text-base  tablet:font-normal">
                 Configure SMS API and schedule customised messages to clients
                 any time of the day
               </li>
-              <li className="ml-5 text-base text-[#ffffff] font-normal	">
-                Enable quick replies for common customer queries with Acefone's
+              <li className="text-[#ffffff] text-sm font-light  tablet:text-base  tablet:font-normal">
+                Enable quick replies for common customer queries with Acefones
                 auto-response SMSes
               </li>
             </ul>
@@ -205,76 +219,74 @@ const BulkSms = () => {
         </div>
       </div>
       <div className="flex flex-col">
-        <h2 className=" text-[#5F2466] text-[40px]  font-bold mt-20 flex justify-center ">
+        <h2 className=" text-[#5F2466] mt-20 flex text-base font-semibold  tablet:text-5xl  tablet:font-bold  tablet:justify-center ">
           Why SMS solutions are perfect for you
         </h2>
-        <div className="flex flex-row    ">
-          <div className="flex flex-col pl-32">
-            <h1 className=" font-poppins text-base text-[#5F2466] ml-48 font-bold mt-20  ">
+        <div className="flex flex-col tablet:flex-row    ">
+          <div className="flex flex-col tablet:pl-32">
+            <h1 className=" text-[#5F2466]  text-base tablet:font-bold  mt-5  tablet:ml-48  tablet:mt-20  ">
               Enable personal customer care
             </h1>
             <div className=" flex flex-col  items-center">
-              <p className="pl-20 pt-6 w-[70%] font-light	 ">
+              <p className=" text-sm py-3 tablet:pl-20 tablet:pt-6 tablet:w-[70%] font-light	 ">
                 Give your service teams the ability to receive and respond to
                 SMS messages from a shared Inbox.
               </p>
-              <ul className="list-disc mt-6">
-                <li className="pr-32 font-light	">
-                  Automation to handle volumes{" "}
-                </li>
-                <li className="pr-32 font-light	">Self-serve resolution </li>
-                <li className="pr-32 font-light	">Escalate to agent</li>
-                <li className="pr-32 font-light	">Integrate with your tools</li>
+              <ul className="list-disc ml-5 mobile:pr-60   mt-3 laptop:ml-48 tablet:mt-6">
+                <li className=" font-light	">Automation to handle volumes </li>
+                <li className="  font-light	">Self-serve resolution </li>
+                <li className=" font-light	">Escalate to agent</li>
+                <li className=" font-light	">Integrate with your tools</li>
               </ul>
             </div>
           </div>
 
-          <img className="ml-12" src={nn} alt="Logo" />
+          <img
+            className="mobile:w-48 mobile:mt-5 tablet:ml-12"
+            src={nn}
+            alt="Logo"
+          />
         </div>
-        <div className="flex flex-row px-10 mt-5 justify-center items-center mr-24 gap-6 ">
+        <div className="flex flex-row justify-center items-center gap-2 mr-16 tablet:px-10 mt-5  tablet:mr-24 tablet:gap-6 ">
           <button
-            className="rounded-[5px] bg-[#5F2466] text-[#FFFFFF]  py-3 px-12"
-            onClick={(event) => {
+            className="bg-[#5F246663]   text-[#000000] hover:text-[#ffff] rounded-lg py-2 px-3 text-xs tablet:text-base  tablet:py-3 tablet:px-12"
+            onTouchMoveCapture={(event) => {
               event.target.style.backgroundColor =
-                event.target.style.backgroundColor === "rgb(252, 101, 23)"
+                event.target.style.backgroundColor === "rgb(95, 36, 102)"
                   ? "#5F2466"
-                  : "#FC6517";
+                  : "#5F246663";
             }}
           >
             Customer care
           </button>
-          <button
-            className="rounded-[5px] bg-[#5F246663] text-[#000000]   py-3 px-12"
-            onClick={(event) => {
-              event.target.style.backgroundColor =
-                event.target.style.backgroundColor === "rgb(252, 101, 23)"
-                  ? "#5F2466"
-                  : "#FC6517";
-            }}
+          <a
+            href="#"
+            className=" bg-[#5F2466] hover:bg-[#5F246663] text-[#000000] hover:text-[#ffff] rounded-lg py-2 px-3 text-xs tablet:text-base  tablet:py-3 tablet:px-12"
           >
             Marketing campaigns
-          </button>
-          <button
-            className="rounded-[5px] bg-[#5F246663] text-[#000000]    py-3 px-12"
+          </a>
+          <a
+            href="#"
+            className="bg-[#5F2466] text-[#000000] hover:text-[#ffff] rounded-lg py-2 px-3 text-xs tablet:text-base  tablet:py-3 tablet:px-12"
             onClick={(event) => {
               event.target.style.backgroundColor =
-                event.target.style.backgroundColor === "rgb(252, 101, 23)"
+                event.target.style.backgroundColor === "rgb(95, 36, 102)"
                   ? "#5F2466"
-                  : "#FC6517";
+                  : "#5F246663";
             }}
           >
             Optimizer for efficiency
-          </button>
+          </a>
         </div>
       </div>
-      <div className="bg-[#5F2466] w-full h-[403px] flex flex-row items-center mt-60 ">
-        <div className="flex flex-col ml-24 ">
-          <h1 className="text-[#FFFFFF] font-medium max-w-full	  text-[48px] ">
+      <div className="bg-[#5F2466] flex flex-col-reverse tablet:flex-row items-center mt-28 ml-5  tablet:w-full tablet:h-96 tablet:mt-60 ">
+        <div className="flex flex-col tablet:ml-24 ">
+          <h1 className="text-[#FFFFFF] text-lg font-light tablet:max-w-full tablet:text-2xl laptop:text-3xl desktop:text-5xl  tablet:font-medium ">
             Extend beyond text messages; personalize your calls with the
             utilization of Voice APIs.
           </h1>
           <btn
-            className="text-[#FFFFFF] text-2xl mt-2 "
+            className="text-[#FFFFFF] text-sm tablet:text-2xl tablet:font-semibold mt-2 flex items-center"
             onClick={(event) => {
               event.target.style.backgroundColor =
                 event.target.style.backgroundColor === "rgb(252, 101, 23)"
@@ -282,10 +294,70 @@ const BulkSms = () => {
                   : "#FC6517";
             }}
           >
-            Explore our Voice API solution
+            Explore our Voice API solution{" "}
+            <svg
+              className="ml-5 mt-3"
+              width="36"
+              height="32"
+              viewBox="0 0 36 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g filter="url(#filter0_d_455_577)">
+                <path
+                  d="M5.75 12H30.25M30.25 12L19.75 22M30.25 12L19.75 2"
+                  stroke="white"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  shapeRendering="crispEdges"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_d_455_577"
+                  x="0.25"
+                  y="0.5"
+                  width="35.5"
+                  height="31"
+                  filterUnits="userSpaceOnUse"
+                  colorInterpolationFilters="sRGB"
+                >
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dy="4" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow_455_577"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow_455_577"
+                    result="shape"
+                  />
+                </filter>
+              </defs>
+            </svg>
           </btn>
         </div>
-        <img className="mb-48 w-2/6 mr-36" src={oo} alt="Logo" />
+        <img
+          className=" hidden tablet:block  tablet:mb-48 tablet:w-2/6 tablet:mr-36"
+          src={oo}
+          alt="Logo"
+        />
       </div>
       <Frequtly />
       <Photo />
