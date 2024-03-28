@@ -11,12 +11,12 @@ export default {
         Roboto: ["Roboto", "sans-serif"],
       },
       screens: {
-        mobile: "450px",
-        tablet: "640px",
+        mobile: "390px",
+        tablet: "712px",
 
         laptop: "1024px",
 
-        desktop: "1280px",
+        desktop: "1440px",
       },
     },
   },

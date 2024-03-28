@@ -6,16 +6,16 @@ import gg from "../Image/gg.png";
 const Photo = () => {
   return (
     <div>
-      <div className=" flex flex-col  sm:flex-row justify-items-start px-16 laptop:px-24 py-12 items-center gap-5 ">
-        <div className="flex flex-col justify-items-center items-start w-3/5">
-          <h2 className="text-[#5F2466] text-xl font-normal mobile:text-2xl mobile:font-medium  tablet:text-3xl tablet:font-semibold laptop:text-4xl  laptop:font-bold  ">
+      <div className=" flex flex-col justify-center items-center mobile:flex-row mobile:ml-28  mobile:gap-3 mobile:py-1 tablet:pl-28   laptop:px-24 py-12  gap-5 ">
+        <div className="flex flex-col justify-center items-center ">
+          <h2 className="text-[#5F2466] mobile:text-sm mobile:font-normal  mobile:mr-36 mobile:ml-10 mobile:w-full tablet:text-2xl tablet:font-semibold tablet:-ml-36 tablet:mr-52 laptop:text-4xl  laptop:font-bold  ">
             You’re at the start of something special.
           </h2>
-          <p className="text-[#000000] flex text-xs  tablet:text-sm laptop:text-base mb-6 mt-6 ">
+          <p className="text-[#000000] flex mobile:text-xs mobile:my-3 mobile:-ml-20 tablet:text-base tablet:font-medium tablet:mr-20 tablet:-ml-72 laptop:text-base  ">
             Try our cloud contact center software today.
           </p>
-          <div className="flex flex-col laptop:flex-row  gap-3 w-full ">
-            <div className="relative w-full">
+          <div className="flex flex-col  mobile:gap-2 tablet:w-full tablet:mr-72 tablet:gap-4 tablet:py-1 laptop:flex-row  ">
+            <div className="relative  mobile:-ml-10  ">
               <input
                 className="bg-[#E6E6E6] border-none flex rounded  placeholder-[#000000] placeholder-opacity-75 outline-none px-7 py-3 w-full"
                 type="text"
@@ -23,7 +23,7 @@ const Photo = () => {
               />
               <FaUserAlt className="absolute  top-4 left-1 " />
             </div>
-            <div className="  w-full ">
+            <div className="relative  mobile:mb-3 mobile:-ml-10 tablet:r-10 ">
               <input
                 className="bg-[#E6E6E6] border-none flex rounded  placeholder-[#000000] placeholder-opacity-75 outline-none px-9 py-3 w-full"
                 type="text"
@@ -44,12 +44,12 @@ const Photo = () => {
               </svg>
             </div>
           </div>
-          <div className="flex flex-col laptop:flex-row laptop:mt-4 gap-3 w-full ">
-            <div className=" relative w-full    ">
+          <div className="flex flex-col  mobile:gap-2 mobile:py-3 tablet:w-full tablet:mr-72 tablet:gap-4 tablet:py-4 laptop:flex-row  ">
+            <div className="relative  mobile:-ml-10  ">
               <input
                 className="bg-[#E6E6E6] border-none flex rounded  placeholder-[#000000] placeholder-opacity-75 outline-none px-7 py-3 w-full"
                 type="text"
-                placeholder="Business email address**"
+                placeholder="Business email address*"
               />
               <svg
                 className="-mt-8 ml-1"
@@ -64,8 +64,9 @@ const Photo = () => {
                   fill="black"
                 />
               </svg>
+
             </div>
-            <div className="  w-full ">
+            <div className="relative  mobile:mb-3 mobile:-ml-10 mobile:py-4 tablet:r-10 ">
               <input
                 className="bg-[#E6E6E6] border-none flex rounded  placeholder-[#000000] placeholder-opacity-75 outline-none px-9 py-3 w-full"
                 type="text"
@@ -87,10 +88,13 @@ const Photo = () => {
                   stroke-linejoin="round"
                 />
               </svg>
+
+             
             </div>
           </div>
+          
           <button
-            className="bg-[#5F2466] text-[#FFFFFF] mt-5  rounded-lg py-2 px-1 sm:ml-8 xm:py-3 xm:px-2   md:rounded-xl xl:ml-1  xl:py-2 xl:px-3"
+            className="bg-[#5F2466] text-[#FFFFFF] rounded-lg mobile:-ml-10 mobile:py-3 mobile:px-2 mobile:-mt-5 tablet:rounded-xl tablet:-ml-96 tablet:mr-60 tablet:-mt-6"
             onClick={(event) => {
               event.target.style.backgroundColor =
                 event.target.style.backgroundColor === "rgb(252, 101, 23)"
@@ -102,8 +106,8 @@ const Photo = () => {
           </button>
         </div>
 
-        <div className="w-2/4 mr-12">
-          <img className="flex rounded-xl w-full h-auto " src={gg} alt="Logo" />
+        <div className="">
+          <img className= "mobile:hidden tablet:block tablet:w-full tablet:h-60 tablet:mr-40 tablet:-ml-12 tablet:mt-12 tablet:rounded-xl " src={gg} alt="Logo" />
         </div>
       </div>
     </div>
