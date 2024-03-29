@@ -30,16 +30,16 @@ const BulkSms = () => {
     <div className="font-Roboto">
       <div className="flex flex-col laptop:flex-row  w-full gap-5 px-0 py-20">
         <div className="flex flex-col gap-2 tablet:gap-5 justify-center items-center w-2/4">
-          <h2 className="text-[#5F2466] ml-20  mobile:text-xl  tablet:text-3xl laptop:text-4xl laptop:ml-32 desktop:text-5xl desktop:font-normal">
+          <h2 className="text-[#5F2466] mobile:text-lg mobile:font-medium mobile:ml-4 mobile:-mr-16 mobile:pr-4 tablet:text-2xl tablet:font-normal tablet:-ml-8 tablet:-mr-64 tablet:pl-48 laptop:pl-0 laptop:text-4xl laptop:font-medium laptop:ml-8 laptop:-mr-8  desktop:text-5xl desktop:font-normal">
             Streamline Your Communication with Bulk SMS Services
           </h2>
-          <p className="text-[#000000]  mobile:text-xs mobile:ml-20 tablet:text-base laptop:ml-32 desktop:font-light desktop:text-xl">
+          <p className="text-[#000000]  mobile:text-xs mobile:font-light mobile:pr-12 mobile:-mr-28 mobile:ml-4 tablet:text-base tablet:ml-12 tablet:pl-0 tablet:-mr-96 laptop:ml-8 laptop:-mr-32 desktop:font-light desktop:text-xl">
             Reach a vast audience instantly with Bulk SMS on our CPaaS platform.
             Send personalized messages, promotions, and updates to engage
             customers and fuel business growth
           </p>
           <button
-            className="bg-[#5F2466] text-[#FFFFFF] text-xs ml-2 py-1 px-2 rounded-lg tablet:font-bold tablet:text-base tablet:rounded-xl tablet:py-3 tablet:px-6 tablet:mr-10 laptop:-ml-12 desktop:mr-72"
+            className="bg-[#5F2466] text-[#FFFFFF] rounded-lg text-xs mobile:-ml-20 mobile:py-2 mobile:px-2 tablet:font-bold tablet:text-base tablet:rounded-xl tablet:ml-40 tablet:-mr-20 laptop:-ml-4 laptop:mr-80 desktop:-ml-40"
             onClick={(event) => {
               event.target.style.backgroundColor =
                 event.target.style.backgroundColor === "rgb(252, 101, 23)"
@@ -51,7 +51,7 @@ const BulkSms = () => {
           </button>
         </div>
         <img
-          className=" mobile:w-72 tablet:w-96 desktop:w-[594px] desktop:h-[514px]"
+          className=" mobile:w-32 mobile:-ml-2 tablet:w-80 tablet:ml-40 laptop:w-80 laptop:ml-40 desktop:w-96 desktop:h-96 desktop:ml-96"
           src={bb}
           alt="Logo"
         />

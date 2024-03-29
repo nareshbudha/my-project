@@ -4,7 +4,7 @@ import { GoTriangleDown } from "react-icons/go";
 const Frequtly = () => {
   return (
     <div>
-      <div className="bg-[#F7F7F7] flex-col flex tablet:flex-row items-center justify-around py-10 gap-5 mb-10 mt-10">
+      <div className="bg-[#F7F7F7] flex-col flex tablet:flex-row items-center justify-around py-10 gap-5 mb-10 mt-10 ">
         <div className="flex flex-col mobile:px-10 mobile:gap-3 tablet:gap-5">
           <h2 className="text-[#5F2466] mobile:text-2xl mobile:font-medium mobile:mr-10 tablet:text-2xl tablet:font-semibold ">
             Frequently Asked Question

@@ -11,13 +11,13 @@ const Photo = () => {
           <h2 className="text-[#5F2466] mobile:text-sm mobile:font-normal  mobile:mr-36 mobile:ml-10 mobile:w-full tablet:text-2xl tablet:font-semibold tablet:-ml-36 tablet:mr-52 laptop:text-4xl  laptop:font-bold  ">
             You’re at the start of something special.
           </h2>
-          <p className="text-[#000000] flex mobile:text-xs mobile:my-3 mobile:-ml-20 tablet:text-base tablet:font-medium tablet:mr-20 tablet:-ml-72 laptop:text-base  ">
+          <p className="text-[#000000] flex mobile:text-xs mobile:my-3 mobile:-ml-20 tablet:text-base tablet:font-medium tablet:mr-20 tablet:-ml-72 laptop:text-base laptop:mr-56 ">
             Try our cloud contact center software today.
           </p>
-          <div className="flex flex-col  mobile:gap-2 tablet:w-full tablet:mr-72 tablet:gap-4 tablet:py-1 laptop:flex-row  ">
+          <div className="flex flex-col  mobile:gap-2 tablet:w-full tablet:mr-72 tablet:gap-4 tablet:py-1 laptop:flex-row laptop:gap-20 laptop:mr-64 ">
             <div className="relative  mobile:-ml-10  ">
               <input
-                className="bg-[#E6E6E6] border-none flex rounded  placeholder-[#000000] placeholder-opacity-75 outline-none px-7 py-3 w-full"
+                className="bg-[#E6E6E6] border-none flex rounded  placeholder-[#000000] placeholder-opacity-75 outline-none px-7 py-3 desktop:pl-7 desktop:pr-40 w-full"
                 type="text"
                 placeholder="Full Name*"
               />
@@ -25,7 +25,7 @@ const Photo = () => {
             </div>
             <div className="relative  mobile:mb-3 mobile:-ml-10 tablet:r-10 ">
               <input
-                className="bg-[#E6E6E6] border-none flex rounded  placeholder-[#000000] placeholder-opacity-75 outline-none px-9 py-3 w-full"
+                className="bg-[#E6E6E6] border-none flex rounded  placeholder-[#000000] placeholder-opacity-75 outline-none px-9 py-3 desktop:pl-7 desktop:pr-40 w-full"
                 type="text"
                 placeholder="Phone number"
               />
@@ -44,10 +44,10 @@ const Photo = () => {
               </svg>
             </div>
           </div>
-          <div className="flex flex-col  mobile:gap-2 mobile:py-3 tablet:w-full tablet:mr-72 tablet:gap-4 tablet:py-4 laptop:flex-row  ">
-            <div className="relative  mobile:-ml-10  ">
+          <div className="flex flex-col  mobile:gap-2 mobile:py-3 tablet:w-full tablet:mr-72 tablet:gap-4 tablet:py-4 laptop:flex-row laptop:rounded-xl laptop:gap-20 laptop:mr-64">
+            <div className="relative  mobile:-ml-10  laptop:-mt-1 ">
               <input
-                className="bg-[#E6E6E6] border-none flex rounded  placeholder-[#000000] placeholder-opacity-75 outline-none px-7 py-3 w-full"
+                className="bg-[#E6E6E6] border-none flex rounded  placeholder-[#000000] placeholder-opacity-75 outline-none px-7 py-3 desktop:pl-7 desktop:pr-40 w-full"
                 type="text"
                 placeholder="Business email address*"
               />
@@ -66,9 +66,9 @@ const Photo = () => {
               </svg>
 
             </div>
-            <div className="relative  mobile:mb-3 mobile:-ml-10 mobile:py-4 tablet:r-10 ">
+            <div className="relative  mobile:mb-3 mobile:-ml-10 mobile:py-4 tablet:r-10 laptop:-mt-5 ">
               <input
-                className="bg-[#E6E6E6] border-none flex rounded  placeholder-[#000000] placeholder-opacity-75 outline-none px-9 py-3 w-full"
+                className="bg-[#E6E6E6] border-none flex rounded  placeholder-[#000000] placeholder-opacity-75 outline-none px-9 py-3 desktop:pl-7 desktop:pr-40 w-full"
                 type="text"
                 placeholder="Phone number"
               />
@@ -94,7 +94,7 @@ const Photo = () => {
           </div>
           
           <button
-            className="bg-[#5F2466] text-[#FFFFFF] rounded-lg mobile:-ml-10 mobile:py-3 mobile:px-2 mobile:-mt-5 tablet:rounded-xl tablet:-ml-96 tablet:mr-60 tablet:-mt-6"
+            className="bg-[#5F2466] text-[#FFFFFF] rounded-lg mobile:-ml-10 mobile:py-3 mobile:px-2 mobile:-mt-5 tablet:rounded-xl tablet:-ml-96 tablet:mr-60 tablet:-mt-6 laptop:mr-96 laptop:-ml-96 desktop:mr-[710px]"
             onClick={(event) => {
               event.target.style.backgroundColor =
                 event.target.style.backgroundColor === "rgb(252, 101, 23)"
