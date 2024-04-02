@@ -6,21 +6,21 @@ import Photo from "./Photo";
 
 const Pricing = () => {
   return (
-    <div className="flex gap-5 flex-col">
-      <div className="flex flex-row justify-between pt-28">
-        <div className="flex flex-col  ml-24 gap-8 mt-20">
-          <h3 className="text-[#5F2466] text-[40px] leading-[50px] font-bold	">
+    <div className="">
+      <div className="flex  mobile:flex-col tablet:flex-row tablet:justify-between ">
+        <div className="flex flex-col mobile:py-2 tablet:py-3 tablet:gap-3 desktop:ml-20 desktop:mt-28 ">
+          <h3 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold mobile:mx-7 tablet:text-3xl tablet:font-semibold tablet:pl-4 tablet:mr-36 laptop:text-4xl laptop:font-semibold  laptop:ml-5 laptop:-mr-6 desktop:text-5xl desktop:font-bold desktop:ml-8 desktop:mr-32	">
             Plans & Pricing
           </h3>
-          <p className="text-[#000000] text-[16px] leading-[25.89px] w-[82%] font-light items-center justify-center	">
+          <p className="text-[#000000] mobile:text-xs mobile:mx-8 tablet:text-lg tablet:pl-2 tablet:font-medium laptop:text-base laptop:font-light laptop:-mr-20 laptop:ml-8 desktop:mr-8 desktop:ml-12">
             Our video call feature allows you to connect with customers on a
             more personal level, fostering stronger relationships and increasing
             customer satisfaction.
           </p>
         </div>
-        <img className="w-2/4 px-12 py-12 mr-24" src={pss} alt="Logo" />
+        <img className="mobile:my-3 mobile:mx-3 mobile:w-40 mobile:h-40 tablet:w-72 tablet:h-56 tablet:ml-12 laptop:w-80 laptop:h-80 laptop:ml-40 laptop:pb-16 desktop:w-2/4 desktop:h-96" src={pss} alt="Logo" />
       </div>
-      <div className="flex flex-col sm:flex-row justify-center items-center gap-8 ">
+      <div className="flex mobile:flex-col laptop:flex-row justify-center items-center mobile:gap-2 tablet:gap-8 ">
         <div className="flex flex-col items-center">
           <div className="w-[343px] h-[500px] bg-[#5F2466]">
             <h1 className="bg-[#1E56A8] rounded-md	flex text-[40px] font-bold leading-[50px] px-3 py-3 mx-2 mt-2 text-[#FFFFFF] items-center justify-center">

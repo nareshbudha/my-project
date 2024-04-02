@@ -27,24 +27,36 @@ import Frequtly from "./Frequtly";
 const VoiceBroadcast = () => {
   return (
     <div className="font-Roboto">
-      <div className="   flex sm:flex-col lg:flex-row w-full  justify-between gap-1 py-40">
-        <div className="text-[#5F2466] w-[45%] ml-5 flex flex-col items-start gap-2  ">
-          <h2 className="  text-[40px] leading-[50px] font-bold	ml-16 ">
-            Automate Your Voice Broadcast with Ease
-          </h2>
-          <p className=" text-[#000000] text-base ml-16 ">
-            Our Voice Broadcast feature allows you to automate calls and deliver
-            messages to a large audience, saving you time and effort. Reach your
-            customers effectively and efficiently.
-          </p>
-          <button className="bg-[#5F2466] text-[#FFFFFF] font-bold  flex flex-row rounded-xl ml-16  py-4   px-6">
-            Get in touch
-          </button>
-        </div>
-        <img className=" w-2/6 h-2/5 mr-56" src={bc} alt="Logo" />
-      </div>
-      <div className="flex flex-row justify-end    gap-1 ">
-        <div className="flex flex-col rounded-md	ml-32 bg-[#F7F7F7] w-[35%]  ">
+   <div className="   flex flex-col justify-center tablet:flex-row ">
+<div className=" flex flex-col items-center justify-center mobile:gap-3  tablet:gap-4 ">
+  <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold mobile:ml-7 mobile:mr-11 tablet:w-1/4 tablet:text-3xl tablet:font-semibold tablet:-mr-32 tablet:-ml-20  laptop:text-4xl laptop:font-bold laptop:mr-20 desktop:pr-1 desktop:text-5xl desktop:font-bold desktop:ml-64 desktop:mr-40    ">
+    Automate Your Voice Broadcast with Ease
+  </h2>
+  <p className=" text-[#000000] mobile:text-xs mobile:mx-8 mobile:-my-2 tablet:text-lg tablet:ml-80 tablet:w-1/4 tablet:-mr-96 tablet:font-light laptop:text-base laptop:pr-4 laptop:pl-2 laptop:font-light desktop:pl-52 desktop:ml-14 desktop:mr-60">
+    Our Voice Broadcast feature allows you to automate calls and
+    deliver messages to a large audience, saving you time and effort.
+    Reach your customers effectively and efficiently.
+  </p>
+  <button
+    className="bg-[#5F2466] text-[#FFFFFF]  mobile:rounded-lg mobile:py-2 mobile:px-1 mobile:mr-60 mobile:my-2 tablet:py-3 tablet:px-2 tablet:text-base tablet:font-light tablet:rounded-xl tablet:-ml-36 tablet:mr-10 laptop:px-2 laptop:py-3 laptop:-ml-72 desktop:-ml-60"
+    onClick={(event) => {
+      event.target.style.backgroundColor =
+        event.target.style.backgroundColor === "rgb(252, 101, 23)"
+          ? "#5F2466"
+          : "#FC6517";
+    }}
+  >
+    Get in touch
+  </button>
+</div>
+<img
+  className="mobile:my-3 mobile:w-48 mobile:h-48 tablet:w-56 tablet:h-56 tablet:ml-12 laptop:w-80 laptop:h-80"
+  src={bc}
+  alt="Logo"
+/>
+</div>
+      <div className="flex mobile:flex-col mobile:ml-10 mobile:w-2/4 tablet:flex-row justify-end    gap-6 ">
+        <div className="flex flex-col rounded-md bg-[#F7F7F7]   ">
           <LuArrowUpRightSquare className="text-[#5F2466] w-[50px] h-[50px] " />
 
           <h3 className="text-[#5F2466] text-2xl	   ">VoIP Call</h3>
@@ -53,7 +65,7 @@ const VoiceBroadcast = () => {
             browsers, app and web applications.
           </p>
         </div>
-        <div className="flex flex-col  w-[30%] bg-[#F7F7F7] ">
+        <div className="flex flex-col rounded-md bg-[#F7F7F7] ">
           <HiOutlinePhoneArrowUpRight className="text-[#5F2466] w-[50px] h-[50px]  " />
 
           <h3 className="text-[#5F2466] text-2xl	   ">Phone Call </h3>
@@ -62,15 +74,15 @@ const VoiceBroadcast = () => {
             CPaaS phone number.
           </p>
         </div>
-        <div className="flex flex-col w-[30%] bg-[#F7F7F7] ">
+        <div className="flex flex-col bg-[#F7F7F7] rounded-md ">
           <HiOutlineComputerDesktop className="text-[#5F2466] w-[50px] h-[50px]  " />
-          <h3 className="text-[#5F2466] text-2xl	   ">Voice API platform </h3>
+          <h3 className="text-[#5F2466] text-2xl	mobile:leading-7   ">Voice API platform </h3>
           <p className="text-[#000000] flex justify-center p-2 ">
             Integrate voice calling within your applications. Make, receive, and
             control calls across the world programmatically.
           </p>
         </div>
-        <div className="flex flex-col mr-32 w-[30%] bg-[#F7F7F7]  ">
+        <div className="flex flex-col  bg-[#F7F7F7] rounded-md  ">
           <FaUserFriends className="text-[#5F2466] w-[50px] h-[50px]  " />
 
           <h3 className="text-[#5F2466] text-2xl	   ">Call Center </h3>
@@ -81,28 +93,28 @@ const VoiceBroadcast = () => {
           </p>
         </div>
       </div>
-      <div className=" flex flex-col justify-center items-center w-full mt-20 gap-3">
-        <h2 className="text-[#5F2466] text-[40px] leading-[50px] font-bold flex justify-end	">
+      <div className="flex flex-col justify-center items-center w-full mt-10">
+        <h2 className="text-[#5F2466] mobile:mr-2 mobile:text-2xl mobile:font-normal tablet:text-3xl  tablet:font-semibold laptop:text-4xl laptop:font-bold laptop:mr-48 flex justify-end">
           Why you need Voice Broadcast
         </h2>
-        <h1 className="text-[#000000] font-light	 text-base px-40 w-[80%] mt-10 ">
+        <h1 className="text-[#000000] mobile:text-xs mobile:font-light mobile:ml-8 mobile:mr-12 tablet:text-sm tablet:ml-8 tablet:mr-0 laptop:ml-20 laptop:mr-10 laptop:px-10 desktop:text-xl desktop:font-normal desktop:mr-5 desktop:-ml-12 desktop:px-52">
           Cut through inbox overload! Reach thousands instantly with
           personalized voice messages. Alerts, reminders, campaigns - Voice
         </h1>
-        <p className="text-[#000000] font-light	 text-base">
+        <p className="text-[#000000] mobile:text-xs mobile:font-light mobile:ml-8 mobile:mr-12 tablet:text-sm tablet:ml-8 tablet:mr-0 laptop:ml-20 laptop:mr-10 laptop:px-10 desktop:text-xl desktop:font-normal desktop:mr-5 desktop:-ml-12 desktop:px-52">
           Broadcast gets heard, loud and clear. No spam folders, just engagement
           boost.
         </p>
       </div>
-      <div className="flex flex-row ">
-        <div className="flex flex-col  justify-center items-center ml-52 mt-10 ">
-          <div className="bg-[#F05327] text-[#FFFFFF] py-3 pl-6 gap-2   w-2/3 flex rounded-t-lg  ">
+      <div className="flex flex-row items-center">
+        <div className="flex flex-col  mobile:ml-3 mobile:my-5 tablet:my-8 tablet:ml-48 laptop:my-12 laptop:ml-72 laptop:mt-12 laptop:mb-12 desktop:ml-96">
+          <div className="bg-[#F05327] text-[#FFFFFF] flex flex-row gap-5 rounded-t-lg py-2 px-14  mobile:w-72 tablet:w-80 laptop:w-96">
             <RxCross2 />
             <BsCircle className="pl-2" />
             <TbMinus />
           </div>
-          <div className="bg-[#5F2466] w-2/3  rounded-b-lg    ">
-            <p className="text-[#FFFFFF]  text-base font-light pl-8 mt-11 mb-24 w-[65%] ">
+          <div className="bg-[#5F2466] rounded-b-lg py-1 px-14 mobile:w-72 tablet:w-80 laptop:w-96">
+            <p className="text-[#FFFFFF] w-[60%] mobile:text-xs mobile:py-2 mobile:pr-1 py-5 pr-1  ">
               from nexmo import Client # Your Nexmo account credentials api_key
               = "YOUR_API_KEY" api_secret = "YOUR_API_SECRET" client =
               Client(api_key, api_secret) # Make a call response =
@@ -113,21 +125,41 @@ const VoiceBroadcast = () => {
           </div>
         </div>
         <img
-          className="w-[380px] h-[350px] -ml-80 mr-96 mt-24 "
+          className="mobile:hidden  tablet:block tablet:w-72  tablet:-ml-28  mt-14"
           src={pp}
           alt="Logo"
         />
       </div>
-      <div className="flex flex-col bg-[#F7F7F7] justify-center items-center mt-16 py-4 gap-4">
-        <p className="text-[#000000] text-2xl font-light">
+      <div className="flex flex-col bg-[#F7F7F7] justify-around items-center py-4 gap-4 mobile:-ml-28">
+        <p className="text-[#000000] my-1 w-[40%] text-center  text-xs font-extralight  tablet:text-2xl tablet:font-light">
           We support 10+ programming languages including
         </p>
-        <div className="flex flex-row gap-[70px]">
-          <img src={jaa} alt="Logo" />
-          <img src={ph} alt="Logo" />
-          <img src={su} alt="Logo" />
-          <img src={ce} alt="Logo" />
-          <img src={js} alt="Logo" />
+        <div className="flex mobile:flex-col mobile:gap-3 mobile:w-10 tablet:flex-row tablet:gap-12 tablet:ml-12  tablet:w-4/5 tablet:justify-center laptop:justify-between ">
+          <img
+            className="w-full h-auto max-w-[60px] max-h-[60px] md:max-w-[110px] md:max-h-[110px] lg:max-w-[132px] lg:max-h-[132px]"
+            src={jaa}
+            alt="Logo"
+          />
+          <img
+            className="w-full h-auto max-w-[60px] max-h-[60px] md:max-w-[110px] md:max-h-[110px] lg:max-w-[132px] lg:max-h-[132px]"
+            src={ph}
+            alt="Logo"
+          />
+          <img
+            className="w-full h-auto max-w-[60px] max-h-[60px] md:max-w-[110px] md:max-h-[110px] lg:max-w-[132px] lg:max-h-[132px]"
+            src={su}
+            alt="Logo"
+          />
+          <img
+            className="w-full h-auto max-w-[60px] max-h-[60px] md:max-w-[110px] md:max-h-[110px] lg:max-w-[132px] lg:max-h-[132px]"
+            src={ce}
+            alt="Logo"
+          />
+          <img
+            className="w-full h-auto max-w-[60px] max-h-[60px] md:max-w-[110px] md:max-h-[110px] lg:max-w-[132px] lg:max-h-[132px]"
+            src={js}
+            alt="Logo"
+          />
         </div>
       </div>
       <div className="bg-[#5F2466] pb-56">

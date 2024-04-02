@@ -7,7 +7,7 @@ import BulkSms from "./Component/Page/BulkSms";
 
 import Navbar from "./Component/Navbar";
 import Footer from "./Component/Page/Footer";
-import VoiceBroadcast from "./Component/Page/VoiceBroadcast";
+
 import WhatAppBusiness from "./Component/Page/WhatAppBusiness";
 import Videocall from "./Component/Page/Videocall";
 import Pricing from "./Component/Page/Pricing";
@@ -19,6 +19,7 @@ import Cartwhat from "./Component/Page/Cartwhat";
 import ThnakCarts from "./Component/Page/ThnakCarts";
 import SignUp from "./Component/Page/SignUp";
 import Login from "./Component/Page/Login";
+import VoiceBroadcast from "./Component/Page/VoiceBroadcast";
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/BulkSms" element={<BulkSms />} />
-          <Route path="/VoiceBrodcast" element={<VoiceBroadcast />} />
+          <Route path="/VoiceBroadcast" element={<VoiceBroadcast/>}/>
           <Route path="/WhatAppBusiness" element={<WhatAppBusiness />} />
           <Route path="/Videocall" element={<Videocall />} />
           <Route path="/Price" element={<Pricing />} />

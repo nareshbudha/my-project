@@ -29,7 +29,7 @@ const Footer = () => {
 
         </div>
         <div className="flex flex-col  justify-center mobile:ml-10 mobile:gap-5 mobile:-mt-10 mobile:w-4/6 tablet:w-3/4 tablet:flex-row tablet:justify-center tablet:mt-5">
-          <div className="flex flex-col  mobile:gap-1 mobile:ml-28  tablet:-ml-28 tablet:pl-8 tablet:w-48 laptop:w-80 desktop:w-80 desktop:ml-2">
+          <div className="flex flex-col  mobile:gap-1 mobile:ml-28  tablet:-ml-28 tablet:pl-8 tablet:w-48 laptop:w-80 laptop:-ml-12 desktop:w-80 desktop:ml-2">
             <h2 className="text-2xl text-[#5F2466] mobile:-ml-8 tablet:text-xl tablet:font-medium tablet:-ml-5 "> Quick Links</h2>
             <p className="text-[#000000] text-base font-light">About</p>
             <p className="text-[#000000] text-base font-light">Contact </p>
@@ -40,7 +40,7 @@ const Footer = () => {
               Privacy Policy{" "}
             </p>
           </div>
-           <div className="flex flex-col gap-2 mobile:ml-28 tablet:-ml-8 tablet:w-48 laptop:w-80 desktop:w-96 ">
+           <div className="flex flex-col gap-2 mobile:ml-28 tablet:-ml-8 tablet:w-48 laptop:-ml-28 laptop:w-80 desktop:w-96 ">
             <h2 className="text-2xl text-[#5F2466] mobile:-ml-6 tablet:text-xl tablet:font-medium tablet:mx-2 tablet:pr-8 tablet:-ml-5  "> Our Associate</h2>
             <p className="text-[#000000] text-base font-light mr-10">Spell SMS</p>
             <p className="text-[#000000] text-base font-light">Spell Voice</p>
@@ -51,7 +51,7 @@ const Footer = () => {
               Spell Hosting
             </p>
           </div> 
-          <div className="flex flex-col gap-2 mobile:ml-24  tablet:text-sm tablet:-ml-8 laptop:w-80 desktop:w-96">
+          <div className="flex flex-col gap-2 mobile:ml-24  tablet:text-sm tablet:-ml-8 laptop:w-80 laptop:-ml-28 desktop:w-96">
             <h2 className="text-2xl text-[#5F2466] mobile:-ml-1 tablet:text-xl tablet:font-medium tablet:mr-10 "> Contact Us</h2>
             <div className="relative">
               <p className=" absolutetext-[#000000] text-base font-light px-6 ">

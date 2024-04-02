@@ -30,7 +30,7 @@ const Home = () => {
           <div className="relative w-full gap-10 mt-3">
             <img className=" w-full" src={iamges} alt="Logo" />
             <div className=" text-[#702D77] font-spline-sans absolute flex flex-col  justify-between pl-14  ml-8 top-2/4 -translate-y-2/4 mobile:space-y-4">
-              <p className="mobile:text-xl mobile:font-light mobile:mr-20 tablet:text-3xl tablet:font-semibold tablet:mx-36 laptop:text-5xl  laptop:font-medium desktop:text-6xl desktop:pl-12 desktop:mr-80 desktop:ml-36">
+              <p className=" mobile:leading-5 mobile:text-xl mobile:font-light mobile:mr-20 tablet:text-3xl tablet:font-semibold tablet:mx-36 laptop:text-5xl  laptop:font-medium desktop:text-6xl desktop:pl-12 desktop:mr-80 desktop:ml-36">
                 Seamless CPaaS for Unparalleled
               </p>
 
@@ -238,7 +238,7 @@ const Home = () => {
 
         <div className="flex flex-col lg:flex-row w-full mobile:my-5  tablet:mt-20 laptop:mt-20 desktop:mt-28">
           <div className="flex flex-col mobile:gap-2 tablet:gap-5 tablet:justify-center  items-center ">
-            <h2 className="text-[#5F2466]  mobile:text-xl mobile:font-semibold mobile:mx-7 tablet:text-3xl tablet:font-semibold tablet:pl-4 tablet:mr-44 laptop:text-4xl laptop:font-semibold  laptop:ml-5 laptop:-mr-6 desktop:text-5xl desktop:font-bold desktop:ml-8 desktop:mr-32">
+            <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold mobile:mx-7 tablet:text-3xl tablet:font-semibold tablet:pl-4 tablet:mr-44 laptop:text-4xl laptop:font-semibold  laptop:ml-5 laptop:-mr-6 desktop:text-5xl desktop:font-bold desktop:ml-8 desktop:mr-32">
               Streamline Your Communication with Bulk Sms Services
             </h2>
             <p className="text-[#000000] mobile:text-xs mobile:mx-8 tablet:text-lg tablet:pl-2 tablet:font-medium laptop:text-base laptop:font-light laptop:-mr-20 laptop:ml-8 desktop:mr-80 desktop:ml-12">
@@ -269,7 +269,7 @@ const Home = () => {
             alt="Logo"
           />
           <div className=" flex flex-col items-center justify-center mobile:gap-3  tablet:gap-5">
-            <h2 className="text-[#5F2466] mobile:text-xl mobile:font-semibold mobile:ml-7 mobile:mr-11 tablet:text-3xl tablet:font-semibold tablet:mr-52 tablet:ml-12  laptop:text-4xl laptop:font-bold laptop:mr-20 desktop:pr-1 desktop:text-5xl desktop:font-bold desktop:ml-64 desktop:mr-40    ">
+            <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold mobile:ml-7 mobile:mr-11 tablet:text-3xl tablet:font-semibold tablet:mr-52 tablet:ml-12  laptop:text-4xl laptop:font-bold laptop:mr-20 desktop:pr-1 desktop:text-5xl desktop:font-bold desktop:ml-64 desktop:mr-40    ">
               Automate Your Voice Broadcast with Ease
             </h2>
             <p className=" text-[#000000] mobile:text-xs mobile:mx-8 mobile:-my-2 tablet:text-lg tablet:pl-2 tablet:font-medium laptop:text-base laptop:pr-4 laptop:pl-2 laptop:font-light desktop:pl-52 desktop:ml-14 desktop:mr-60">
@@ -292,7 +292,7 @@ const Home = () => {
         </div>
         <div className="flex flex-col lg:flex-row w-full tablet:gap-5 tablet:py-3">
           <div className="flex flex-col justify-center items-center mobile:gap-3 tablet:gap-4 laptop:gap-5 desktop:gap-6 ">
-          <h2 className=" text-[#5F2466] mobile:text-xl mobile:font-semibold mobile:ml-8 mobile:mr-12 tablet:text-3xl tablet:font-semibold tablet:pl-2 tablet:mr-52 laptop:text-4xl laptop:font-bold laptop:pl-1 laptop:-mr-14 laptop:ml-8 desktop:ml-10 desktop:mr-72    ">
+          <h2 className=" text-[#5F2466] mobile:leading-5 mobile:text-xl mobile:font-semibold mobile:ml-8 mobile:mr-12 tablet:text-3xl tablet:font-semibold tablet:pl-2 tablet:mr-52 laptop:text-4xl laptop:font-bold laptop:pl-1 laptop:-mr-14 laptop:ml-8 desktop:ml-10 desktop:mr-72    ">
               Efficiently manage customer communications with our powerful
               Call-Center solution.
             </h2>
@@ -316,7 +316,7 @@ const Home = () => {
             alt="Logo"
           />
           <div className="flex flex-col justify-center items-center mobile:gap-3 tablet:gap-5 ">
-            <h2 className="text-[#5F2466] mobile:text-xl mobile:font-semibold mobile:ml-8 mobile:mr-12 tablet:text-3xl tablet:font-semibold tablet:pl-2 tablet:mr-52 laptop:text-4xl laptop:font-bold laptop:pr-5 laptop:ml-24 laptop:-mr-4 desktop:mr-96 desktop:ml-28 ">
+            <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold mobile:ml-8 mobile:mr-12 tablet:text-3xl tablet:font-semibold tablet:pl-2 tablet:mr-52 laptop:text-4xl laptop:font-bold laptop:pr-5 laptop:ml-24 laptop:-mr-4 desktop:mr-96 desktop:ml-28 ">
               Experience Personal Customer Engagement with Interactive Video
               Calls
             </h2>
@@ -330,7 +330,7 @@ const Home = () => {
         </section>
         <section className="flex flex-col laptop:flex-row w-full mobile:my-3 tablet:my-10 ">
           <div className="flex flex-col justify-center items-center gap-5 ">
-            <h2 className="text-[#5F2466] mobile:text-xl mobile:font-semibold mobile:ml-8 mobile:mr-12 tablet:text-3xl tablet:font-semibold tablet:pl-2 tablet:mr-52 laptop:text-5xl laptop:font-bold  laptop:ml-2 laptop:-mr-72 desktop:ml-16 desktop:mr-12 ">
+            <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold mobile:ml-8 mobile:mr-12 tablet:text-3xl tablet:font-semibold tablet:pl-2 tablet:mr-52 laptop:text-5xl laptop:font-bold  laptop:ml-2 laptop:-mr-72 desktop:ml-16 desktop:mr-12 ">
               Enhance Customer Support with Versatile Messaging Solutions
             </h2>
             <p className="text-[#000000] mobile:text-xs mobile:mx-8 mobile:-my-2 tablet:text-base tablet:font-semibold tablet:pl-2 tablet:pr-2 laptop:text-base  laptop:font-light laptop:ml-4 laptop:-mr-44 desktop:mr-12 desktop:ml-16">
@@ -354,7 +354,7 @@ const Home = () => {
             alt="Logo"
           />
           <div className="flex flex-col justify-center items-center gap-5 ">
-            <h2 className="text-[#5F2466] text-base  font-normal mobile:text-xl mobile:font-medium mobile:pl-8 mobile:mt-2 tablet:text-3xl tablet:font-semibold tablet:pl-8 laptop:text-4xl laptop:font-bold laptop:pr-5 laptop:ml-8 laptop:-mr-10 desktop:mr-96 desktop:ml-16">
+            <h2 className="text-[#5F2466] text-base  font-normal mobile:leading-6 mobile:text-xl mobile:font-medium mobile:pl-8 mobile:mt-2 tablet:text-3xl tablet:font-semibold tablet:pl-8 laptop:text-4xl laptop:font-bold laptop:pr-5 laptop:ml-8 laptop:-mr-10 desktop:mr-96 desktop:ml-16">
               Enhance Customer Communication with Whatsapp Business Integration
             </h2>
             <p className="text-[#000000] mobile:text-xs mobile:mx-8 mobile:-my-2 tablet:text-base tablet:font-semibold tablet:pl-2 tablet:pr-2 laptop:text-base laptop:font-light  laptop:ml-16 laptop:-mr-20 desktop:mr-80 desktop:ml-20">
@@ -366,7 +366,7 @@ const Home = () => {
         </div>
         <div className="flex flex-col laptop:flex-row w-full mobile:my-3 mt-28">
           <div className="flex flex-col justify-center items-center gap-5 ">
-            <h2 className="text-[#5F2466] text-base  font-normal mobile:text-xl mobile:font-medium mobile:pl-8 mobile:mt-2 tablet:text-3xl tablet:font-semibold tablet:pl-8  laptop:text-4xl laptop:font-bold laptop:pr-5 laptop:-ml-2 laptop:-mr-12 desktop:ml-4 desktop:mr-80 ">
+            <h2 className="text-[#5F2466] text-base mobile:leading-6 font-normal mobile:text-xl mobile:font-medium mobile:pl-8 mobile:mt-2 tablet:text-3xl tablet:font-semibold tablet:pl-8  laptop:text-4xl laptop:font-bold laptop:pr-5 laptop:-ml-2 laptop:-mr-12 desktop:ml-4 desktop:mr-80 ">
             Seamless Conversations and Enhanced User Experiences through Chat-Bot
             </h2>
             <p className="text-[#000000] mobile:text-xs mobile:mx-8 mobile:-my-2 tablet:text-base tablet:font-semibold tablet:pl-2 tablet:pr-2 laptop:text-base laptop:font-light  laptop:ml-8 laptop:-mr-20 desktop:mr-80 desktop:ml-8">
