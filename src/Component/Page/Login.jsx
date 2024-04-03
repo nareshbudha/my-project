@@ -1,5 +1,6 @@
 import React from "react";
 import lgi from "../Image/lgi.png";
+import { Link } from "react-router-dom";
 const Login = () => {
   return (
     <div className="mobile:ml-10">
@@ -62,9 +63,9 @@ const Login = () => {
           </div>
           <p className="flex tablet:text-base tablet:font-light tablet:mt-3 tablet:ml-12 ">
             Don’t have an account ?{" "}
-            <a href="sign" className="text-[#5F2466]  font-bold tablet:text-base">
+            <Link to={"/sign"} className="text-[#5F2466]  font-bold tablet:text-base">
               Signup now
-            </a>
+            </Link>
           </p>
         </div>
       </div>

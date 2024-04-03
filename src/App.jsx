@@ -20,6 +20,7 @@ import ThnakCarts from "./Component/Page/ThnakCarts";
 import SignUp from "./Component/Page/SignUp";
 import Login from "./Component/Page/Login";
 import VoiceBroadcast from "./Component/Page/VoiceBroadcast";
+import Products from "./Component/Products";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path="/thank" element={<ThnakCarts />} />
           <Route path="/sign" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/pro" element={<Products/>}/>
         </Routes>
 
         <Footer />

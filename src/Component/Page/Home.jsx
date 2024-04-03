@@ -278,13 +278,8 @@ const Home = () => {
               Reach your customers effectively and efficiently.
             </p>
             <button
-              className="bg-[#5F2466] text-[#FFFFFF]  mobile:rounded-lg mobile:py-2 mobile:px-1 mobile:mr-60 mobile:my-2  tablet:-ml-72 tablet:py-4 tablet:px-3 tablet:text-lg tablet:font-medium tablet:rounded-xl laptop:px-2 laptop:py-3 laptop:-ml-72 desktop:-ml-60"
-              onClick={(event) => {
-                event.target.style.backgroundColor =
-                  event.target.style.backgroundColor === "rgb(252, 101, 23)"
-                    ? "#5F2466"
-                    : "#FC6517";
-              }}
+              className="bg-[#5F2466] text-[#FFFFFF] active:bg-[#FC6517] duration-10 mobile:rounded-lg mobile:py-2 mobile:px-1 mobile:mr-60 mobile:my-2  tablet:-ml-72 tablet:py-4 tablet:px-3 tablet:text-lg tablet:font-medium tablet:rounded-xl laptop:px-2 laptop:py-3 laptop:-ml-72 desktop:-ml-60"
+            
             >
               Learn More
             </button>

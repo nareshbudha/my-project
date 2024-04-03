@@ -1,14 +1,14 @@
 import React from "react";
 import sgup from "../Image/sgup.png";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   return (
-    <div className="mobile:ml-10 laptop:mr-20">
-      <div className="flex flex-row justify-stretch tablet:flex-col-reverse laptop:flex-row   ">
-        <img className=" mobile:hidden tablet:block tablet:ml-40 tablet:w-96  tablet:h-96  tablet:pt-5 laptop:w-5/12 laptop:h-5/6 laptop:pt-36 laptop:mr-2 desktop:ml-2 desktop:w-2/5 desktop:-mt-16  " src={sgup} alt="" />
+    <div className="">
+      <div className="flex flex-row justify-stretch tablet:flex-col-reverse laptop:flex-row mobile:px-5 tablet:px-8 laptop:px-12 desktop:px-14 mobile:pt-5 tablet:pt-10 laptop:pt-20 tablet:gap-8  laptop:gap-6 desktop:gap-12  ">
+        <img className=" mobile:hidden tablet:block tablet:w-96  tablet:h-96 laptop:w-5/12 laptop:h-5/6 desktop:w-2/5   " src={sgup} alt="" />
 
-        <div className="tablet:mt-5  tablet:ml-5 laptop:mt-10
-         laptop:mr-4 laptop:w-full desktop:mt-20">
+        <div className="laptop:w-full">
           <div className="flex flex-col mobile:gap-4">
             <p className="text-[#5F2466] font-bold   mobile:text-2xl laptop:text-5xl laptop:leading-10">
               Register Account
@@ -101,9 +101,9 @@ const SignUp = () => {
           </div>
           <p className="flex tablet:text-base tablet:font-light tablet:mt-3 tablet:ml-12">
             Already have an account ?
-            <a href="login" className="text-[#5F2466] font-bold tablet:text-base">
+            <Link to ="/login" className="text-[#5F2466] font-bold tablet:text-base">
               Login
-            </a>
+            </Link>
           </p>
         </div>
       </div>
