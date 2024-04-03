@@ -43,7 +43,7 @@ function Navbar() {
             isDropdownOpen ? "block" : "hidden"
           } w-full hidden md:flex md:w-auto md:order-1`}
         >
-          <ul className="flex flex-row mr-20 sm:gap-4 items-center text-left gap-8 ">
+          <ul className="flex flex-row relative mr-20 sm:gap-4 items-center text-left gap-8 ">
             <li>
               <a
                 href="#"
@@ -55,12 +55,17 @@ function Navbar() {
                       : "#FC6517";
                 }}
               >
-                Products
+                Products  <svg
+              className="mt-2 ml-2" width="19" height="9" viewBox="0 0 19 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.50002 8.80001C8.80002 8.80001 8.10002 8.53001 7.57002 8.00001L1.05002 1.48001C0.76002 1.19001 0.76002 0.710015 1.05002 0.420015C1.34002 0.130015 1.82002 0.130015 2.11002 0.420015L8.63002 6.94001C9.11002 7.42001 9.89002 7.42001 10.37 6.94001L16.89 0.420015C17.18 0.130015 17.66 0.130015 17.95 0.420015C18.24 0.710015 18.24 1.19001 17.95 1.48001L11.43 8.00001C10.9 8.53001 10.2 8.80001 9.50002 8.80001Z" fill="#5F2466"/>
+</svg>
               </a>
+             
+
             </li>
             <li>
               <a href="#" className="text-[#5F2466] font-Poppins font-bold">
-                Solution
+                Solution 
               </a>
             </li>
             <li>
