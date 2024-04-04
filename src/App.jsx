@@ -30,7 +30,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/BulkSms" element={<BulkSms />} />
-          <Route path="/VoiceBroadcast" element={<VoiceBroadcast/>}/>
+          <Route path="/VoiceBroadcast" element={<VoiceBroadcast />} />
           <Route path="/WhatAppBusiness" element={<WhatAppBusiness />} />
           <Route path="/Videocall" element={<Videocall />} />
           <Route path="/Price" element={<Pricing />} />
@@ -42,10 +42,10 @@ function App() {
           <Route path="/thank" element={<ThnakCarts />} />
           <Route path="/sign" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/pro" element={<Products/>}/>
+          <Route path="/pro" element={<Products />} />
         </Routes>
 
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </div>
   );

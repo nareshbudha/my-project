@@ -27,7 +27,7 @@ const Home = () => {
     <div>
       <div className="  relative pb-[3px] ">
         <div className="flex  gap-8">
-          <div className="relative w-full gap-10 mt-3">
+          <div className="relative w-full gap-10 ">
             <img className=" w-full" src={iamges} alt="Logo" />
             <div className=" text-[#702D77] font-spline-sans absolute flex flex-col  justify-between pl-14  ml-8 top-2/4 -translate-y-2/4 mobile:space-y-4">
               <p className=" mobile:leading-5 mobile:text-xl mobile:font-light mobile:mr-20 tablet:text-3xl tablet:font-semibold tablet:mx-36 laptop:text-5xl  laptop:font-medium desktop:text-6xl desktop:pl-12 desktop:mr-80 desktop:ml-36">
@@ -57,9 +57,9 @@ const Home = () => {
             effortlessly.
           </p>
         </div>
-         {/* product div */}
+        {/* product div */}
         <div className="  bg-[#5F2466] rounded-lg mx-auto flex flex-col gap-3 mobile:w-11/12 tablet:w-4/5  laptop:w-5/6 laptop:flex-row mb-12 py-7 px-9 justify-center">
-         
+
           <div className="flex flex-col gap-5 items-center justify-center ">
             <h2 className=" text-[#FFFFFF] text-base   tablet:text-4xl tablet:font-bold  flex items-center ">
               Our Products
@@ -69,8 +69,8 @@ const Home = () => {
               Call-Center capabilities in one platform.
             </p>
           </div>
-              
-          <div className=" w-fit flex flex-col  gap-6 mt-4  "> 
+
+          <div className=" w-fit flex flex-col  gap-6 mt-4  ">
             <div className="bg-[#FFFFFF24]   p-8 rounded-laptop grid gap-10">
               <div className=" gap-10">
                 <p className=" text-[#FFFFFF] text-xs font-medium  tablet:text-2xl tablet:font-bold  tracking-normal text-left flex flex-row gap-1 items-center">
@@ -191,7 +191,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-             {/*pictures div  */}
+        {/*pictures div  */}
         <div className="  flex flex-col items-center  mt-4 text-center">
           <p className="text-[#000000]   my-1 w-[40%] text-center  text-xs font-extralight  tablet:text-2xl tablet:font-light  ">
             Join the 290,000+ brands that use SpellCPaaS to connect with their
@@ -242,7 +242,7 @@ const Home = () => {
               Streamline Your Communication with Bulk Sms Services
             </h2>
             <p className="text-[#000000] mobile:text-xs mobile:mx-8 tablet:text-lg tablet:pl-2 tablet:font-medium laptop:text-base laptop:font-light laptop:-mr-20 laptop:ml-8 desktop:mr-80 desktop:ml-12">
-            Instantly reach a broad audience with our Bulk SMS feature—ideal for mass communication and marketing. Effortlessly send personalized messages, promotions, and updates to engage customers and fuel business growth.
+              Instantly reach a broad audience with our Bulk SMS feature—ideal for mass communication and marketing. Effortlessly send personalized messages, promotions, and updates to engage customers and fuel business growth.
             </p>
             <button
               className="bg-[#5F2466] text-[#FFFFFF] mobile:rounded-lg mobile:py-2 mobile:px-1 mobile:mr-60 mobile:my-2  tablet:-ml-64 tablet:py-4 tablet:px-3 tablet:text-lg tablet:font-medium tablet:rounded-xl laptop:rounded-xl laptop:px-2 laptop:py-3 laptop:-ml-36 desktop:-ml-96 desktop:mr-80"
@@ -279,7 +279,7 @@ const Home = () => {
             </p>
             <button
               className="bg-[#5F2466] text-[#FFFFFF] active:bg-[#FC6517] duration-10 mobile:rounded-lg mobile:py-2 mobile:px-1 mobile:mr-60 mobile:my-2  tablet:-ml-72 tablet:py-4 tablet:px-3 tablet:text-lg tablet:font-medium tablet:rounded-xl laptop:px-2 laptop:py-3 laptop:-ml-72 desktop:-ml-60"
-            
+
             >
               Learn More
             </button>
@@ -287,7 +287,7 @@ const Home = () => {
         </div>
         <div className="flex flex-col lg:flex-row w-full tablet:gap-5 tablet:py-3">
           <div className="flex flex-col justify-center items-center mobile:gap-3 tablet:gap-4 laptop:gap-5 desktop:gap-6 ">
-          <h2 className=" text-[#5F2466] mobile:leading-5 mobile:text-xl mobile:font-semibold mobile:ml-8 mobile:mr-12 tablet:text-3xl tablet:font-semibold tablet:pl-2 tablet:mr-52 laptop:text-4xl laptop:font-bold laptop:pl-1 laptop:-mr-14 laptop:ml-8 desktop:ml-10 desktop:mr-72    ">
+            <h2 className=" text-[#5F2466] mobile:leading-5 mobile:text-xl mobile:font-semibold mobile:ml-8 mobile:mr-12 tablet:text-3xl tablet:font-semibold tablet:pl-2 tablet:mr-52 laptop:text-4xl laptop:font-bold laptop:pl-1 laptop:-mr-14 laptop:ml-8 desktop:ml-10 desktop:mr-72    ">
               Efficiently manage customer communications with our powerful
               Call-Center solution.
             </h2>
@@ -296,7 +296,7 @@ const Home = () => {
               interactions seamlessly, improving customer satisfaction and
               boosting productivity.
             </p>
-            <Buttom  />
+            <Buttom />
           </div>
           <img
             className="mobile:my-3 mobile:w-48 mobile:h-48 mobile:ml-2 tablet:w-72 tablet:h-72 laptop:w-96 lg:h-96 lg:ml-40 lg:pb-16 lg:mr-6"
@@ -362,10 +362,10 @@ const Home = () => {
         <div className="flex flex-col laptop:flex-row w-full mobile:my-3 mt-28">
           <div className="flex flex-col justify-center items-center gap-5 ">
             <h2 className="text-[#5F2466] text-base mobile:leading-6 font-normal mobile:text-xl mobile:font-medium mobile:pl-8 mobile:mt-2 tablet:text-3xl tablet:font-semibold tablet:pl-8  laptop:text-4xl laptop:font-bold laptop:pr-5 laptop:-ml-2 laptop:-mr-12 desktop:ml-4 desktop:mr-80 ">
-            Seamless Conversations and Enhanced User Experiences through Chat-Bot
+              Seamless Conversations and Enhanced User Experiences through Chat-Bot
             </h2>
             <p className="text-[#000000] mobile:text-xs mobile:mx-8 mobile:-my-2 tablet:text-base tablet:font-semibold tablet:pl-2 tablet:pr-2 laptop:text-base laptop:font-light  laptop:ml-8 laptop:-mr-20 desktop:mr-80 desktop:ml-8">
-            Transform communication with CPaaS Chatbots, delivering personalized and interactive experiences through seamless integration of dynamic chat            </p>
+              Transform communication with CPaaS Chatbots, delivering personalized and interactive experiences through seamless integration of dynamic chat            </p>
             <Buttom />
           </div>
           <img

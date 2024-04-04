@@ -27,34 +27,34 @@ import Frequtly from "./Frequtly";
 const VoiceBroadcast = () => {
   return (
     <div className="font-Roboto">
-   <div className="   flex flex-col justify-center tablet:flex-row ">
-<div className=" flex flex-col items-center justify-center mobile:gap-3  tablet:gap-4 ">
-  <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold mobile:ml-7 mobile:mr-11 tablet:w-1/4 tablet:text-3xl tablet:font-semibold tablet:-mr-32 tablet:-ml-20  laptop:text-4xl laptop:font-bold laptop:mr-20 desktop:pr-1 desktop:text-5xl desktop:font-bold desktop:ml-64 desktop:mr-40    ">
-    Automate Your Voice Broadcast with Ease
-  </h2>
-  <p className=" text-[#000000] mobile:text-xs mobile:mx-8 mobile:-my-2 tablet:text-lg tablet:ml-80 tablet:w-1/4 tablet:-mr-96 tablet:font-light laptop:text-base laptop:pr-4 laptop:pl-2 laptop:font-light desktop:pl-52 desktop:ml-14 desktop:mr-60">
-    Our Voice Broadcast feature allows you to automate calls and
-    deliver messages to a large audience, saving you time and effort.
-    Reach your customers effectively and efficiently.
-  </p>
-  <button
-    className="bg-[#5F2466] text-[#FFFFFF]  mobile:rounded-lg mobile:py-2 mobile:px-1 mobile:mr-60 mobile:my-2 tablet:py-3 tablet:px-2 tablet:text-base tablet:font-light tablet:rounded-xl tablet:-ml-36 tablet:mr-10 laptop:px-2 laptop:py-3 laptop:-ml-72 desktop:-ml-60"
-    onClick={(event) => {
-      event.target.style.backgroundColor =
-        event.target.style.backgroundColor === "rgb(252, 101, 23)"
-          ? "#5F2466"
-          : "#FC6517";
-    }}
-  >
-    Get in touch
-  </button>
-</div>
-<img
-  className="mobile:my-3 mobile:w-48 mobile:h-48 tablet:w-56 tablet:h-56 tablet:ml-12 laptop:w-80 laptop:h-80"
-  src={bc}
-  alt="Logo"
-/>
-</div>
+      <div className="   flex flex-col justify-center tablet:flex-row ">
+        <div className=" flex flex-col items-center justify-center mobile:gap-3  tablet:gap-4 ">
+          <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mob tablet:font-semibold  laptop:text-4xlont-bold  desktop:text-5xl desktop:font-bold ">
+            Automate Your Voice Broadcast with Ease
+          </h2>
+          <p className=" text-[#000000] mobile:text-xs  tablet:text-lg  tablet:w-1/4  tablet:font-light laptop:text-base  laptop:font-light  ">
+            Our Voice Broadcast feature allows you to automate calls and
+            deliver messages to a large audience, saving you time and effort.
+            Reach your customers effectively and efficiently.
+          </p>
+          <button
+            className="bg-[#5F2466] text-[#FFFFFF]  mobile:rounded-lg mobile:py-2 mobile:px-1  mobile:my-2 tablet:py-3 tablet:px-2 tablet:text-base tablet:font-light tablet:rounded-xl laptop:px-2 laptop:py-3 "
+            onClick={(event) => {
+              event.target.style.backgroundColor =
+                event.target.style.backgroundColor === "rgb(252, 101, 23)"
+                  ? "#5F2466"
+                  : "#FC6517";
+            }}
+          >
+            Get in touch
+          </button>
+        </div>
+        <img
+          className="mobile:my-3 mobile:w-48 mobile:h-48 tablet:w-56 tablet:h-56  laptop:w-80 laptop:h-80"
+          src={bc}
+          alt="Logo"
+        />
+      </div>
       <div className="flex mobile:flex-col mobile:ml-10 mobile:w-2/4 tablet:flex-row justify-end    gap-6 ">
         <div className="flex flex-col rounded-md bg-[#F7F7F7]   ">
           <LuArrowUpRightSquare className="text-[#5F2466] w-[50px] h-[50px] " />
