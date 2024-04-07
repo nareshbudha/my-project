@@ -4,9 +4,6 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-
-
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
@@ -44,10 +41,10 @@ function Navbar() {
         <div
           id="mega-menu-full"
           className={`items-center justify-between font-medium ${isDropdownOpen ? "block" : "hidden"
-            } w-full hidden md:flex md:w-auto md:order-1`}
+            } w-full  md:flex md:w-auto md:order-1`}
         >
           {/* Dropdown product menu start  */}
-          <ul className="flex flex-row relative  sm:gap-4 items-center text-left gap-8 ">
+          <ul className="flex flex-col md:flex-row relative   sm:text-right sm:items-start md:items-center md:text-left md:gap-8 ">
             <li className="relative group "  >
               <button className="text-[#5F2466]  font-bold flex flex-row">
                 Products
@@ -58,7 +55,7 @@ function Navbar() {
               </button>
               <div className="bg-[#F7F7F7] absolute  rounded-lg p-2 z-10 group-hover:block hidden "
               >
-                <ul className="space-y-3 w-56" >
+                <ul className="space-y-3 w-56 text-base  sm:pt-10" >
                   <li className=" flex gap-7 rounded-md hover:bg-[#5F246663]">
                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="13.5" cy="15.75" r="1.125" fill="#5F2466" />
@@ -149,17 +146,15 @@ function Navbar() {
             </li>
             <li>
               <Link
-                to="price"
+                to={"price"}
                 className="text-[#5F2466]  font-bold"
                 onClick={(event) => {
-                  event.target.style.backgroundColor =
-                    event.target.style.backgroundColor === "rgb(252, 101, 23)"
-                      ? "#5F2466"
-                      : "#FC6517";
+                  event.target.classList.toggle("text-[#F05327]");
                 }}
               >
                 Pricing
               </Link>
+
             </li>
             <li>
               <Link
@@ -175,13 +170,16 @@ function Navbar() {
             <li className="flex flex-row gap-10">
               <Link to={"contact"}
                 className="text-[#5F2466]  font-bold"
+                onClick={(event) => {
+                  event.target.classList.toggle("text-[#F05327]");
+                }}
               >
                 ContactUs
               </Link>
             </li>
             <li>
               <Link to={'/login'} className="login-button">
-                <button className="bg-[#5F2466] text-[#FFFFFF] w-[100px] h-[56px] rounded-xl text-base font-bold py-[10px] px-[25px]">
+                <button className="bg-[#5F2466] text-[#FFFFFF] p-1 text-xs  rounded-lg md:w-[100px] md:h-[56px] md:rounded-xl md:text-base font-bold md:py-2 md:px-6">
                   Log In
                 </button>
               </Link>

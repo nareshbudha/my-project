@@ -192,12 +192,12 @@ const Home = () => {
           </div>
         </div>
         {/*pictures div  */}
-        <div className="  flex flex-col items-center  mt-4 text-center">
-          <p className="text-[#000000]   my-1 w-[40%] text-center  text-xs font-extralight  tablet:text-2xl tablet:font-light  ">
+        <div className="w-full  flex flex-col items-center text-center mobile:py-1 py-10">
+          <p className="text-[#000000] text-center w-1/4 text-xs font-extralight tablet:text-2xl tablet:font-light">
             Join the 290,000+ brands that use SpellCPaaS to connect with their
             customers
           </p>
-          <div className="flex flex-col tablet:flex-row items-center justify-between w-4/5 mobile:gap-3 tablet:mr-20 ">
+          <div className="flex flex-col mobile:py-10 py-20 tablet:flex-row items-center justify-between w-5/6 mobile:gap-3">
             <img
               className="w-full h-auto max-w-[60px] max-h-[60px] tablet:max-w-[110px] tablet:max-h-[110px] lg:max-w-[132px] lg:max-h-[132px]"
               src={pizza}
@@ -235,146 +235,145 @@ const Home = () => {
             />
           </div>
         </div>
+        <section className="w-[80%] mx-auto mobile:py-5 tablet:py-10 laptop:py-20 desktop:py-24 ">
+          <div className="flex flex-col lg:flex-row w-full mobile:py-5 mobile:gap-5 tablet:py-10 tablet:gap-16 laptop:gap-32 desktop:gap-48">
+            <div className="flex flex-col mobile:gap-3 tablet:gap-5 laptop:gap-6 desktop:gap-5 justify-center items-start">
+              <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl desktop:text-5xl desktop:font-bold">
+                Streamline Your Communication with Bulk Sms Services
+              </h2>
+              <p className="text-[#000000] mobile:text-xs mobile:font-light tablet:text-base">
+                Instantly reach a broad audience with our Bulk SMS feature—ideal for mass communication and marketing. Effortlessly send personalized messages, promotions, and updates to engage customers and fuel business growth.
+              </p>
+              <button
+                className="bg-[#5F2466] text-[#FFFFFF] mobile:rounded-lg mobile:py-2 mobile:px-1 mobile:my-2 tablet:py-4 tablet:px-3 tablet:text-lg tablet:font-medium tablet:rounded-xl laptop:rounded-xl laptop:px-2 laptop:py-3 "
+                onClick={(event) => {
+                  event.target.style.backgroundColor =
+                    event.target.style.backgroundColor === "rgb(252, 101, 23)"
+                      ? "#5F2466"
+                      : "#FC6517";
+                }}
+              >
+                Learn More
+              </button>
+            </div>
+            <img
+              className="mobile:w-40 mobile:h-40 tablet:w-72 tablet:h-72 laptop:w-80 "
+              src={bb}
+              alt="Logo"
+            />
+          </div>
+          <div className="flex flex-col-reverse lg:flex-row w-full mobile:py-5 mobile:gap-5 tablet:py-10 tablet:gap-16 laptop:gap-32 desktop:gap-48">
+            <img
+              className="mobile:w-48 mobile:h-48 tablet:w-72 tablet:h-72 laptop:w-80 laptop:h-80"
+              src={bc}
+              alt="Logo"
+            />
+            <div className="flex flex-col mobile:gap-3 tablet:gap-5 laptop:gap-6 desktop:gap-5 justify-center items-start">
+              <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl desktop:text-5xl desktop:font-bold">
+                Automate Your Voice Broadcast with Ease
+              </h2>
+              <p className=" text-[#000000] mobile:text-xs mobile:font-light tablet:text-base">
+                Our Voice Broadcast feature allows you to automate calls and
+                deliver messages to a large audience, saving you time and effort.
+                Reach your customers effectively and efficiently.
+              </p>
+              <button
+                className="bg-[#5F2466] text-[#FFFFFF] active:bg-[#FC6517] duration-10 mobile:rounded-lg mobile:py-2 mobile:px-1 mobile:my-2  tablet:px-3 tablet:text-lg tablet:font-medium tablet:rounded-xl laptop:px-2 laptop:py-3 "
 
-        <div className="flex flex-col lg:flex-row w-full mobile:my-5  tablet:mt-20 laptop:mt-20 desktop:mt-28">
-          <div className="flex flex-col mobile:gap-2 tablet:gap-5 tablet:justify-center  items-center ">
-            <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold mobile:mx-7 tablet:text-3xl tablet:font-semibold tablet:pl-4 tablet:mr-44 laptop:text-4xl laptop:font-semibold  laptop:ml-5 laptop:-mr-6 desktop:text-5xl desktop:font-bold desktop:ml-8 desktop:mr-32">
-              Streamline Your Communication with Bulk Sms Services
-            </h2>
-            <p className="text-[#000000] mobile:text-xs mobile:mx-8 tablet:text-lg tablet:pl-2 tablet:font-medium laptop:text-base laptop:font-light laptop:-mr-20 laptop:ml-8 desktop:mr-80 desktop:ml-12">
-              Instantly reach a broad audience with our Bulk SMS feature—ideal for mass communication and marketing. Effortlessly send personalized messages, promotions, and updates to engage customers and fuel business growth.
-            </p>
-            <button
-              className="bg-[#5F2466] text-[#FFFFFF] mobile:rounded-lg mobile:py-2 mobile:px-1 mobile:mr-60 mobile:my-2  tablet:-ml-64 tablet:py-4 tablet:px-3 tablet:text-lg tablet:font-medium tablet:rounded-xl laptop:rounded-xl laptop:px-2 laptop:py-3 laptop:-ml-36 desktop:-ml-96 desktop:mr-80"
-              onClick={(event) => {
-                event.target.style.backgroundColor =
-                  event.target.style.backgroundColor === "rgb(252, 101, 23)"
-                    ? "#5F2466"
-                    : "#FC6517";
-              }}
-            >
-              Learn More
-            </button>
+              >
+                Learn More
+              </button>
+            </div>
           </div>
-          <img
-            className=" mobile:my-3 mobile:mx-3 mobile:w-40 mobile:h-40 tablet:w-72 tablet:h-72 laptop:w-80 laptop:h-80 laptop:ml-40 laptop:pb-16"
-            src={bb}
-            alt="Logo"
-          />
-        </div>
-        <div className="   flex flex-col-reverse lg:flex-row  justify-center ">
-          <img
-            className="mobile:my-3 mobile:w-48 mobile:h-48 tablet:w-72 tablet:h-72 laptop:w-80 laptop:h-80"
-            src={bc}
-            alt="Logo"
-          />
-          <div className=" flex flex-col items-center justify-center mobile:gap-3  tablet:gap-5">
-            <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold mobile:ml-7 mobile:mr-11 tablet:text-3xl tablet:font-semibold tablet:mr-52 tablet:ml-12  laptop:text-4xl laptop:font-bold laptop:mr-20 desktop:pr-1 desktop:text-5xl desktop:font-bold desktop:ml-64 desktop:mr-40    ">
-              Automate Your Voice Broadcast with Ease
-            </h2>
-            <p className=" text-[#000000] mobile:text-xs mobile:mx-8 mobile:-my-2 tablet:text-lg tablet:pl-2 tablet:font-medium laptop:text-base laptop:pr-4 laptop:pl-2 laptop:font-light desktop:pl-52 desktop:ml-14 desktop:mr-60">
-              Our Voice Broadcast feature allows you to automate calls and
-              deliver messages to a large audience, saving you time and effort.
-              Reach your customers effectively and efficiently.
-            </p>
-            <button
-              className="bg-[#5F2466] text-[#FFFFFF] active:bg-[#FC6517] duration-10 mobile:rounded-lg mobile:py-2 mobile:px-1 mobile:mr-60 mobile:my-2  tablet:-ml-72 tablet:py-4 tablet:px-3 tablet:text-lg tablet:font-medium tablet:rounded-xl laptop:px-2 laptop:py-3 laptop:-ml-72 desktop:-ml-60"
-
-            >
-              Learn More
-            </button>
+          <div className="flex flex-col lg:flex-row w-full mobile:py-5 mobile:gap-5 tablet:py-10 tablet:gap-16 laptop:gap-32 desktop:gap-48">
+            <div className="flex flex-col mobile:gap-3 tablet:gap-5 laptop:gap-6 desktop:gap-5 justify-center items-start">
+              <h2 className=" text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl desktop:text-5xl desktop:font-bold">
+                Efficiently manage customer communications with our powerful Call-Center solution.
+              </h2>
+              <p className="text-[#000000] mobile:text-xs mobile:font-light tablet:text-base">
+                Our Call-Center solution empowers businesses to handle customer
+                interactions seamlessly, improving customer satisfaction and
+                boosting productivity.
+              </p>
+              <Buttom />
+            </div>
+            <img
+              className=" mobile:w-48 mobile:h-48  tablet:w-72 tablet:h-72 laptop:w-96 lg:h-96 "
+              src={cc}
+              alt="Logo"
+            />
           </div>
-        </div>
-        <div className="flex flex-col lg:flex-row w-full tablet:gap-5 tablet:py-3">
-          <div className="flex flex-col justify-center items-center mobile:gap-3 tablet:gap-4 laptop:gap-5 desktop:gap-6 ">
-            <h2 className=" text-[#5F2466] mobile:leading-5 mobile:text-xl mobile:font-semibold mobile:ml-8 mobile:mr-12 tablet:text-3xl tablet:font-semibold tablet:pl-2 tablet:mr-52 laptop:text-4xl laptop:font-bold laptop:pl-1 laptop:-mr-14 laptop:ml-8 desktop:ml-10 desktop:mr-72    ">
-              Efficiently manage customer communications with our powerful
-              Call-Center solution.
-            </h2>
-            <p className="text-[#000000] mobile:text-xs mobile:mx-8 mobile:-my-2 tablet:text-base tablet:font-semibold tablet:pl-2 tablet:pr-2 laptop:text-base laptop:font-light laptop:-mr-52 laptop:ml-8 desktop:ml-8 desktop:mr-64">
-              Our Call-Center solution empowers businesses to handle customer
-              interactions seamlessly, improving customer satisfaction and
-              boosting productivity.
-            </p>
-            <Buttom />
+          <section className="flex flex-col-reverse lg:flex-row w-full mobile:py-5 mobile:gap-5 tablet:py-10 tablet:gap-16 laptop:gap-32 desktop:gap-48">
+            <img
+              className="mobile:w-44 mobile:h-44 tablet:w-72 tablet:h-72 laptop:w-96 laptop:h-96 "
+              src={ll}
+              alt="Logo"
+            />
+            <div className="flex flex-col mobile:gap-3 tablet:gap-5 laptop:gap-6 desktop:gap-5 justify-center items-start">
+              <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl desktop:text-5xl desktop:font-bold">
+                Experience Personal Customer Engagement with Interactive Video
+                Calls
+              </h2>
+              <p className="text-[#000000] mobile:text-xs mobile:font-light tablet:text-base">
+                Our video call feature allows you to connect with customers on a
+                more personal level, fostering stronger relationships and
+                increasing customer satisfaction.
+              </p>
+              <Buttom />
+            </div>
+          </section>
+          <section className="flex flex-col  lg:flex-row w-full mobile:py-5 mobile:gap-5 tablet:py-10 tablet:gap-16 laptop:gap-32 desktop:gap-48">
+            <div className="flex flex-col mobile:gap-3 tablet:gap-5 laptop:gap-6 desktop:gap-5 justify-center items-start">
+              <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl desktop:text-5xl desktop:font-bold">
+                Enhance Customer Support with Versatile Messaging Solutions
+              </h2>
+              <p className="text-[#000000] mobile:text-xs mobile:font-light tablet:text-base">
+                Messaging is a powerful tool for customer support and service.
+                With our versatile messaging solutions, you can streamline
+                communication, resolve issues faster, and provide a seamless
+                customer experience.
+              </p>
+              <Buttom />
+            </div>
+            <img
+              className="mobile:w-40 mobile:h-40 tablet:w-72 tablet:h-72 laptop:w-96 laptop:h-96 "
+              src={dd}
+              alt="Logo"
+            />
+          </section>
+          <div className="flex flex-col-reverse lg:flex-row w-full mobile:py-5 mobile:gap-5 tablet:py-10 tablet:gap-16 laptop:gap-32 desktop:gap-48">
+            <img
+              className="mobile:w-44 mobile:h-44  tablet:w-72 tablet:h-72 laptop:w-96 laptop:h-96 "
+              src={ee}
+              alt="Logo"
+            />
+            <div className="flex flex-col mobile:gap-3 tablet:gap-5 laptop:gap-6 desktop:gap-5 justify-center items-start">
+              <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl desktop:text-5xl desktop:font-bold">
+                Enhance Customer Communication with Whatsapp Business Integration
+              </h2>
+              <p className="text-[#000000] mobile:text-xs mobile:font-light tablet:text-base">
+                With our CPaaS platform, you can leverage the power of Whatsapp
+                Business to connect with your customers more effectively.
+              </p>
+              <Buttom />
+            </div>
           </div>
-          <img
-            className="mobile:my-3 mobile:w-48 mobile:h-48 mobile:ml-2 tablet:w-72 tablet:h-72 laptop:w-96 lg:h-96 lg:ml-40 lg:pb-16 lg:mr-6"
-            src={cc}
-            alt="Logo"
-          />
-        </div>
-        <section className="flex flex-col-reverse lg:flex-row w-full mobile:my-3 mt-28 desktop:justify-between">
-          <img
-            className="mobile:my-3 mobile:w-44 mobile:h-44 mobile:ml-4 tablet:w-72 tablet:h-72 laptop:w-96 laptop:h-96 laptop:ml-16 laptop:pb-16 laptop:mr-6"
-            src={ll}
-            alt="Logo"
-          />
-          <div className="flex flex-col justify-center items-center mobile:gap-3 tablet:gap-5 ">
-            <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold mobile:ml-8 mobile:mr-12 tablet:text-3xl tablet:font-semibold tablet:pl-2 tablet:mr-52 laptop:text-4xl laptop:font-bold laptop:pr-5 laptop:ml-24 laptop:-mr-4 desktop:mr-96 desktop:ml-28 ">
-              Experience Personal Customer Engagement with Interactive Video
-              Calls
-            </h2>
-            <p className="text-[#000000] mobile:text-xs mobile:mx-8 mobile:-my-2 tablet:text-base tablet:font-semibold tablet:pl-2 tablet:pr-2 laptop:text-base laptop:font-light  laptop:ml-24 laptop:-mr-20 desktop:mr-80 desktop:ml-28">
-              Our video call feature allows you to connect with customers on a
-              more personal level, fostering stronger relationships and
-              increasing customer satisfaction.
-            </p>
-            <Buttom />
+          <div className="flex flex-col lg:flex-row w-full mobile:py-5 mobile:gap-5 tablet:py-10 tablet:gap-16 laptop:gap-32 desktop:gap-48">
+            <div className="flex flex-col mobile:gap-3 tablet:gap-5 laptop:gap-6 desktop:gap-5 justify-center items-start">
+              <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl desktop:text-5xl desktop:font-bold ">
+                Seamless Conversations and Enhanced User Experiences through Chat-Bot
+              </h2>
+              <p className="text-[#000000] mobile:text-xs mobile:font-light tablet:text-base">
+                Transform communication with CPaaS Chatbots, delivering personalized and interactive experiences through seamless integration of dynamic chat            </p>
+              <Buttom />
+            </div>
+            <img
+              className="mobile:w-44 mobile:h-44  tablet:w-72 tablet:h-72 laptop:w-96"
+              src={ff}
+              alt="Logo"
+            />
           </div>
         </section>
-        <section className="flex flex-col laptop:flex-row w-full mobile:my-3 tablet:my-10 ">
-          <div className="flex flex-col justify-center items-center gap-5 ">
-            <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold mobile:ml-8 mobile:mr-12 tablet:text-3xl tablet:font-semibold tablet:pl-2 tablet:mr-52 laptop:text-5xl laptop:font-bold  laptop:ml-2 laptop:-mr-72 desktop:ml-16 desktop:mr-12 ">
-              Enhance Customer Support with Versatile Messaging Solutions
-            </h2>
-            <p className="text-[#000000] mobile:text-xs mobile:mx-8 mobile:-my-2 tablet:text-base tablet:font-semibold tablet:pl-2 tablet:pr-2 laptop:text-base  laptop:font-light laptop:ml-4 laptop:-mr-44 desktop:mr-12 desktop:ml-16">
-              Messaging is a powerful tool for customer support and service.
-              With our versatile messaging solutions, you can streamline
-              communication, resolve issues faster, and provide a seamless
-              customer experience.
-            </p>
-            <Buttom />
-          </div>
-          <img
-            className="mobile:my-3 mobile:w-40 mobile:h-40 mobile:ml-6 tablet:w-72 tablet:h-72 laptop:w-96 laptop:h-96 laptop:ml-52 laptop:pb-16 laptop:-mr-10"
-            src={dd}
-            alt="Logo"
-          />
-        </section>
-        <div className="flex flex-col-reverse laptop:flex-row w-full mobile:my-3 mt-28">
-          <img
-            className="mobile:my-3 mobile:w-44 mobile:h-44 mobile:ml-4 tablet:w-72 tablet:h-72 laptop:w-96 laptop:h-96 laptop:ml-16 laptop:pb-16 laptop:mr-6"
-            src={ee}
-            alt="Logo"
-          />
-          <div className="flex flex-col justify-center items-center gap-5 ">
-            <h2 className="text-[#5F2466] text-base  font-normal mobile:leading-6 mobile:text-xl mobile:font-medium mobile:pl-8 mobile:mt-2 tablet:text-3xl tablet:font-semibold tablet:pl-8 laptop:text-4xl laptop:font-bold laptop:pr-5 laptop:ml-8 laptop:-mr-10 desktop:mr-96 desktop:ml-16">
-              Enhance Customer Communication with Whatsapp Business Integration
-            </h2>
-            <p className="text-[#000000] mobile:text-xs mobile:mx-8 mobile:-my-2 tablet:text-base tablet:font-semibold tablet:pl-2 tablet:pr-2 laptop:text-base laptop:font-light  laptop:ml-16 laptop:-mr-20 desktop:mr-80 desktop:ml-20">
-              With our CPaaS platform, you can leverage the power of Whatsapp
-              Business to connect with your customers more effectively.
-            </p>
-            <Buttom />
-          </div>
-        </div>
-        <div className="flex flex-col laptop:flex-row w-full mobile:my-3 mt-28">
-          <div className="flex flex-col justify-center items-center gap-5 ">
-            <h2 className="text-[#5F2466] text-base mobile:leading-6 font-normal mobile:text-xl mobile:font-medium mobile:pl-8 mobile:mt-2 tablet:text-3xl tablet:font-semibold tablet:pl-8  laptop:text-4xl laptop:font-bold laptop:pr-5 laptop:-ml-2 laptop:-mr-12 desktop:ml-4 desktop:mr-80 ">
-              Seamless Conversations and Enhanced User Experiences through Chat-Bot
-            </h2>
-            <p className="text-[#000000] mobile:text-xs mobile:mx-8 mobile:-my-2 tablet:text-base tablet:font-semibold tablet:pl-2 tablet:pr-2 laptop:text-base laptop:font-light  laptop:ml-8 laptop:-mr-20 desktop:mr-80 desktop:ml-8">
-              Transform communication with CPaaS Chatbots, delivering personalized and interactive experiences through seamless integration of dynamic chat            </p>
-            <Buttom />
-          </div>
-          <img
-            className="mobile:my-3 mobile:w-44 mobile:h-44 mobile:ml-4 tablet:w-72 tablet:h-72 laptop:w-96 laptop:h-96 laptop:ml-40 laptop:pb-16 laptop:mr-6"
-            src={ff}
-            alt="Logo"
-          />
-        </div>
-
         <Frequtly />
         <Photo />
       </div>

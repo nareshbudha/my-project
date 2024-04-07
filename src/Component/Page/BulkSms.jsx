@@ -20,26 +20,26 @@ import ce from "../Image/ce.png";
 import su from "../Image/su.png";
 import ph from "../Image/ph.png";
 import nn from "../Image/nn.png";
- 
+
 import oo from "../Image/oo.png";
 import Photo from "./Photo";
 import Frequtly from "./Frequtly";
 
 const BulkSms = () => {
   return (
-    <div className="font-Roboto">
-      <div className="flex flex-col laptop:flex-row  w-full gap-5 px-0 py-20 desktop:px-20">
-        <div className="flex flex-col gap-2 mobile:-mt-16 tablet:gap-5 justify-center items-center w-2/4 ">
-          <h2 className="text-[#5F2466] mobile:leading-5 mobile:text-lg mobile:font-medium mobile:ml-4 mobile:-mr-16 mobile:pr-4 tablet:text-2xl tablet:font-normal tablet:-ml-8 tablet:-mr-64 tablet:pl-48 laptop:pl-0 laptop:text-4xl laptop:font-medium laptop:ml-8 laptop:-mr-8  desktop:text-5xl desktop:font-medium ">
+    <div className="tablet:w-11/12 laptop:w-10/12  mx-auto">
+      <div className="flex flex-col tablet:flex-row tablet:gap-4 ">
+        <div className="flex flex-col tablet:gap-3 justify-center items-start  ">
+          <h2 className="text-[#5F2466] mobile:leading-5 mobile:text-lg mobile:font-medium  tablet:text-2xl tablet:font-normal laptop:text-4xl laptop:font-medium desktop:text-5xl desktop:font-medium ">
             Streamline Your Communication with Bulk SMS Services
           </h2>
-          <p className="text-[#000000]  mobile:text-xs mobile:font-light mobile:pr-12 mobile:-mr-28 mobile:ml-4 tablet:text-base tablet:ml-12 tablet:pl-0 tablet:-mr-96 laptop:ml-8 laptop:-mr-32 desktop:font-light desktop:text-xl">
+          <p className="text-[#000000]  mobile:text-xs mobile:font-light tablet:text-base  desktop:font-light desktop:text-xl">
             Reach a vast audience instantly with Bulk SMS on our CPaaS platform.
             Send personalized messages, promotions, and updates to engage
             customers and fuel business growth
           </p>
           <button
-            className="bg-[#5F2466] text-[#FFFFFF] rounded-lg text-xs mobile:-ml-20 mobile:py-2 mobile:px-2 tablet:font-bold tablet:text-base tablet:rounded-xl tablet:ml-40 tablet:-mr-20 laptop:-ml-4 laptop:mr-80 desktop:ml-1 desktop:-mt-3"
+            className="bg-[#5F2466] text-[#FFFFFF] rounded-lg text-xs py-2 px-1 tablet:font-bold tablet:text-base tablet:rounded-xl "
             onClick={(event) => {
               event.target.style.backgroundColor =
                 event.target.style.backgroundColor === "rgb(252, 101, 23)"
@@ -51,18 +51,18 @@ const BulkSms = () => {
           </button>
         </div>
         <img
-          className=" mobile:w-32 mobile:ml-2 tablet:w-80 tablet:ml-40 laptop:w-80 laptop:ml-40 desktop:w-96 desktop:h-96 desktop:ml-96"
+          className=" mobile:w-32  tablet:w-80 laptop:w-80 laptop:ml-40 desktop:w-96 desktop:h-96"
           src={bb}
           alt="Logo"
         />
       </div>
-      <div className="flex  mobile:flex-col mobile:-mt-14 gap-3 mobile:ml-4 tablet:flex-row justify-center desktop:gap-8     ">
-        <div className=" bg-[#F7F7F7] flex flex-col rounded-xl mobile:w-60  mobile:h-32 tablet:w-96 tablet:h-44 laptop:w-60 laptop:h-44 desktop:w-72 desktop:h-48 desktop:px-3 desktop:py-1  ">
-          <LuArrowUpRightSquare className="text-[#5F2466]  mobile:w-5 mobile:h-5 tablet:w-8 tablet:h-8 laptop:w-10 laptop:h-10  " />
+      <div className="flex justify-between gap-5 py-28">
+        <div className=" bg-[#F7F7F7] flex flex-col rounded-xl mobile:w-60  mobile:h-32 tablet:w-96 tablet:h-44 laptop:w-60 laptop:h-44 desktop:w-72 desktop:h-48  ">
+          <LuArrowUpRightSquare className="text-[#5F2466]  mobile:w-10 mobile:h-5 tablet:w-8 tablet:h-8 laptop:w-10 laptop:h-10  " />
           <h3 className="text-[#5F2466] mobile:text-base mobile:font-medium tablet:text-2xl	tablet:font-semibold 	   ">
             Send at scale
           </h3>
-          <p className="text-[#000000] flex items-center mobile:text-xs mobile:font-light pr-5 text-base font-normal desktop:text-lg desktop:leading-6 ">
+          <p className="text-[#000000] flex items-center mobile:text-xs mobile:font-light  text-base font-normal desktop:text-lg desktop:leading-6 ">
             Send SMS messages to hundreds, thousands, or millions of customers
             globally, all made possible by our intelligent routing engine.
           </p>
@@ -103,7 +103,7 @@ const BulkSms = () => {
         <h2 className="text-[#5F2466] mobile:mr-24 mobile:text-2xl mobile:font-normal tablet:text-3xl  tablet:font-semibold laptop:text-4xl laptop:font-bold laptop:mr-48 flex justify-end	">
           Why you need SMS APIs
         </h2>
-        <p className="text-[#000000] mobile:text-xs mobile:font-light mobile:ml-4 mobile:mr-24 tablet:text-sm tablet:ml-8 tablet:mr-0 laptop:ml-20 laptop:mr-10 laptop:px-10 desktop:text-xl desktop:font-normal desktop:mr-5 desktop:-ml-12 desktop:px-52">
+        <p className="text-[#000000] mobile:text-xs mobile:font-light  tablet:text-sm  desktop:text-xl desktop:font-normal ">
           SMS APIs offer seamless connectivity with contact lists, allowing not
           only bulk messaging but also the creation of IVR menus, execution of
           promotions, and smooth customer interactions. Additionally, they
@@ -115,7 +115,7 @@ const BulkSms = () => {
       </div>
 
       <div className=" flex flex-row items-center">
-        <div className="flex flex-col  mobile:ml-3 mobile:my-5 tablet:my-8 tablet:ml-48 laptop:my-12 laptop:ml-72 laptop:mt-12 laptop:mb-12 desktop:ml-96">
+        <div className="flex flex-col  ">
           <div className="bg-[#F05327] text-[#FFFFFF] flex flex-row gap-5 rounded-t-lg py-2 px-14  mobile:w-72 tablet:w-80 laptop:w-96  ">
             <RxCross2 />
             <BsCircle className="pl-2" />
@@ -134,7 +134,7 @@ const BulkSms = () => {
         </div>
 
         <img
-          className="  mobile:hidden  tablet:block tablet:w-72  tablet:-ml-28  mt-14"
+          className="  mobile:hidden  tablet:block tablet:w-72  "
           src={mm}
           alt="Logo"
         />

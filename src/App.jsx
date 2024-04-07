@@ -21,6 +21,7 @@ import SignUp from "./Component/Page/SignUp";
 import Login from "./Component/Page/Login";
 import VoiceBroadcast from "./Component/Page/VoiceBroadcast";
 import Products from "./Component/Products";
+import Frequtly from "./Component/Page/Frequtly";
 
 function App() {
   return (
@@ -43,9 +44,10 @@ function App() {
           <Route path="/sign" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/pro" element={<Products />} />
+          <Route path="/frequ" element={<Frequtly />} />
         </Routes>
 
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </div>
   );
