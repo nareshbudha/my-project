@@ -12,7 +12,7 @@ const Login = () => {
          laptop:mr-4 laptop:w-full desktop:mt-20">
           <div className="flex flex-col mobile:gap-4 ">
             <p className="text-[#5F2466] font-bold  laptop:text-5xl laptop:leading-10 mobile:text-2xl">
-              Welcome Back 
+              Welcome Back
             </p>
             <span className="text-[#000000] font-light mobile:text-base tablet:text-xl ">
               Sign in to continue to Spell CPasS.
@@ -36,9 +36,9 @@ const Login = () => {
                 <p className="text-[#5F2466] font-bold mobile:text-sm mobile:leading-3 text-base leading-5 pb-2 ">
                   Password
                 </p>
-                <span className="text-[#000000] mobile:mr-2 mobile:-mt-2 tablet:mr-2  ">
+                <Link to={"/sign"} className="text-[#000000] mobile:mr-2 mobile:-mt-2 tablet:mr-2  ">
                   Forget Password?
-                </span>
+                </Link>
               </div>
 
               <input

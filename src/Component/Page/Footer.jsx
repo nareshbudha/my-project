@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col gap-2 tablet:w-48 laptop:-ml-28laptop:w-80 desktop:w-96 ">
             <h2 className="text-2xl text-[#5F2466]  tablet:text-xl tablet:font-medium "> Our Associate</h2>
-            <p className="text-[#000000] text-base font-light hover:font-bold ">Spell SMS</p>
+            <p className="text-[#000000] text-base font-light hover:font-bold  ">Spell SMS</p>
             <p className="text-[#000000] text-base font-light hover:font-bold">Spell Voice</p>
             <p className="text-[#000000] text-base font-light hover:font-bold">
               Spell Digital Media
