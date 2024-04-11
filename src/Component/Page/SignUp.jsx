@@ -17,7 +17,6 @@ const SignUp = () => {
               Get your free Spell CPaaS account now.
             </span>
           </div>
-
           <div className="text-[#000000] flex flex-col mobile:gap-4 mobile:my-3 mt-10">
             <div className="relative gap-3 ">
               <p className="text-[#5F2466] font-bold mobile:text-sm mobile:leading-3 text-base leading-5 pb-2">
@@ -101,7 +100,7 @@ const SignUp = () => {
           </div>
           <p className="flex tablet:text-base tablet:font-light tablet:mt-3 tablet:ml-12">
             Already have an account ?
-            <Link to ="/login" className="text-[#5F2466] font-bold tablet:text-base">
+            <Link to="/login" className="text-[#5F2466] font-bold tablet:text-base">
               Login
             </Link>
           </p>
