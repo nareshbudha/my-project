@@ -1,6 +1,6 @@
 import { useState } from "react";
 import computer from "../Component/Image/logo.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -46,7 +46,7 @@ function Navbar() {
           {/* Dropdown product menu start  */}
           <ul className="flex flex-col md:flex-row relative   sm:text-right sm:items-start md:items-center md:text-left md:gap-8 ">
             <li className="relative group "  >
-              <button className="text-[#5F2466]  font-bold flex flex-row">
+              <button className="text-[#5F2466]   font-bold flex flex-row">
                 Products
                 <svg
                   className="mt-2 ml-2" width="19" height="9" viewBox="0 0 19 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,8 +86,8 @@ function Navbar() {
                         </clipPath>
                       </defs>
                     </svg>
-                    <Link to={"/contact"} className="text-[#5F2466] font-semibold text-base">Call-Center
-                    </Link>
+                    <NavLink to={"/contact"} className="text-[#5F2466] font-semibold text-base">Call-Center
+                    </NavLink>
                   </li>
                   <li className=" flex gap-7 rounded-md hover:bg-[#5F246663]">
                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -140,42 +140,41 @@ function Navbar() {
 
             </li>
             <li>
-              <Link to="#" className="text-[#5F2466]  font-bold">
+              <NavLink to="#" className={({ isActive }) =>
+                isActive ? "text-[#F05327] font-bold" : "text-[#5F2466] font-bold"
+              }>
                 Solution
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to={"price"}
-                className="text-[#5F2466]  font-bold"
-                onClick={(event) => {
-                  event.target.classList.toggle("text-[#F05327]");
-                }}
+                className={({ isActive }) =>
+                  isActive ? "text-[#F05327] font-bold" : "text-[#5F2466]"
+                }
               >
                 Pricing
-              </Link>
+              </NavLink>
 
             </li>
             <li>
-              <Link
+              <NavLink
                 to={"about"}
-                className="text-[#5F2466]  font-bold"
-                onClick={(event) => {
-                  event.target.classList.toggle("text-[#F05327]");
-                }}
+                className={({ isActive }) =>
+                  isActive ? "text-[#F05327] font-bold" : "text-[#5F2466]"
+                }
               >
                 About
-              </Link>
+              </NavLink>
             </li>
             <li className="flex flex-row gap-10">
-              <Link to={"contact"}
-                className="text-[#5F2466]  font-bold"
-                onClick={(event) => {
-                  event.target.classList.toggle("text-[#F05327]");
-                }}
+              <NavLink to={"contact"}
+                className={({ isActive }) =>
+                  isActive ? "text-[#F05327] font-bold" : "text-[#5F2466]"
+                }
               >
                 ContactUs
-              </Link>
+              </NavLink>
             </li>
             <li>
               <Link to={'/login'} className="login-button">

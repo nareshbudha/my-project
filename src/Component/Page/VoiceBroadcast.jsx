@@ -26,36 +26,30 @@ import Frequtly from "./Frequtly";
 
 const VoiceBroadcast = () => {
   return (
-    <div className="font-Roboto">
-      <div className="   flex flex-col justify-center tablet:flex-row ">
-        <div className=" flex flex-col items-center justify-center mobile:gap-3  tablet:gap-4 ">
-          <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mob tablet:font-semibold  laptop:text-4xlont-bold  desktop:text-5xl desktop:font-bold ">
+    <div className="font-Roboto w-[80 %] mx-auto mobile:py-5 mobile:px-10 tablet:py-10 laptop:py-20 desktop:py-24">
+      <div className="flex flex-col tablet:flex-row mobile:py-8 mobile:gap-12 ">
+        <div className=" flex flex-col mobile:gap-2   tablet:gap-5 laptop:gap-6 desktop:gap-5 justify-center items-start">
+          <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl laptop:font-medium">
             Automate Your Voice Broadcast with Ease
           </h2>
-          <p className=" text-[#000000] mobile:text-xs  tablet:text-lg  tablet:w-1/4  tablet:font-light laptop:text-base  laptop:font-light  ">
+          <p className="text-[#000000] mobile:text-xs mobile:font-light tablet:text-base">
             Our Voice Broadcast feature allows you to automate calls and
             deliver messages to a large audience, saving you time and effort.
             Reach your customers effectively and efficiently.
           </p>
           <button
-            className="bg-[#5F2466] text-[#FFFFFF]  mobile:rounded-lg mobile:py-2 mobile:px-1  mobile:my-2 tablet:py-3 tablet:px-2 tablet:text-base tablet:font-light tablet:rounded-xl laptop:px-2 laptop:py-3 "
-            onClick={(event) => {
-              event.target.style.backgroundColor =
-                event.target.style.backgroundColor === "rgb(252, 101, 23)"
-                  ? "#5F2466"
-                  : "#FC6517";
-            }}
+            className="bg-[#5F2466] text-[#FFFFFF] hover:bg-[#FC6517] duration-10 mobile:rounded-lg mobile:py-2 mobile:px-1 mobile:my-2  tablet:px-3 tablet:text-lg tablet:font-medium tablet:rounded-xl laptop:px-2 laptop:py-3"
           >
             Get in touch
           </button>
         </div>
         <img
-          className="mobile:my-3 mobile:w-48 mobile:h-48 tablet:w-56 tablet:h-56  laptop:w-80 laptop:h-80"
+          className="mobile:w-48 mobile:h-48 tablet:w-72 tablet:h-72 laptop:w-80 laptop:h-80"
           src={bc}
           alt="Logo"
         />
       </div>
-      <div className="flex mobile:flex-col mobile:ml-10 mobile:w-2/4 tablet:flex-row justify-end    gap-6 ">
+      <div className="flex mobile:flex-col  mobile:w-2/4 tablet:flex-row justify-end    gap-6 ">
         <div className="flex flex-col rounded-md bg-[#F7F7F7]   ">
           <LuArrowUpRightSquare className="text-[#5F2466] w-[50px] h-[50px] " />
 
@@ -97,17 +91,17 @@ const VoiceBroadcast = () => {
         <h2 className="text-[#5F2466] mobile:mr-2 mobile:text-2xl mobile:font-normal tablet:text-3xl  tablet:font-semibold laptop:text-4xl laptop:font-bold laptop:mr-48 flex justify-end">
           Why you need Voice Broadcast
         </h2>
-        <h1 className="text-[#000000] mobile:text-xs mobile:font-light mobile:ml-8 mobile:mr-12 tablet:text-sm tablet:ml-8 tablet:mr-0 laptop:ml-20 laptop:mr-10 laptop:px-10 desktop:text-xl desktop:font-normal desktop:mr-5 desktop:-ml-12 desktop:px-52">
+        <h1 className="text-[#000000] mobile:text-xs mobile:font-light tablet:text-sm  desktop:text-xl desktop:font-normal ">
           Cut through inbox overload! Reach thousands instantly with
           personalized voice messages. Alerts, reminders, campaigns - Voice
         </h1>
-        <p className="text-[#000000] mobile:text-xs mobile:font-light mobile:ml-8 mobile:mr-12 tablet:text-sm tablet:ml-8 tablet:mr-0 laptop:ml-20 laptop:mr-10 laptop:px-10 desktop:text-xl desktop:font-normal desktop:mr-5 desktop:-ml-12 desktop:px-52">
+        <p className="text-[#000000] mobile:text-xs mobile:font-light tablet:text-sm ">
           Broadcast gets heard, loud and clear. No spam folders, just engagement
           boost.
         </p>
       </div>
       <div className="flex flex-row items-center">
-        <div className="flex flex-col  mobile:ml-3 mobile:my-5 tablet:my-8 tablet:ml-48 laptop:my-12 laptop:ml-72 laptop:mt-12 laptop:mb-12 desktop:ml-96">
+        <div className="flex flex-col  ">
           <div className="bg-[#F05327] text-[#FFFFFF] flex flex-row gap-5 rounded-t-lg py-2 px-14  mobile:w-72 tablet:w-80 laptop:w-96">
             <RxCross2 />
             <BsCircle className="pl-2" />
