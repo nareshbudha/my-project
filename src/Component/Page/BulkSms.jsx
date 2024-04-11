@@ -27,13 +27,13 @@ import Frequtly from "./Frequtly";
 
 const BulkSms = () => {
   return (
-    <div className="tablet:w-11/12 laptop:w-10/12  mx-auto">
-      <div className="flex flex-col tablet:flex-row tablet:gap-4 ">
-        <div className="flex flex-col tablet:gap-3 justify-center items-start  ">
-          <h2 className="text-[#5F2466] mobile:leading-5 mobile:text-lg mobile:font-medium  tablet:text-2xl tablet:font-normal laptop:text-4xl laptop:font-medium desktop:text-5xl desktop:font-medium ">
+    <div className="tablet:w-11/12 laptop:w-10/12 mobile:mx-10">
+      <div className="flex flex-col  tablet:flex-row tablet:gap-4 ">
+        <div className="flex flex-col mobile:gap-2   tablet:gap-5 laptop:gap-6 desktop:gap-5 justify-center items-start">
+          <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl laptop:font-medium">
             Streamline Your Communication with Bulk SMS Services
           </h2>
-          <p className="text-[#000000]  mobile:text-xs mobile:font-light tablet:text-base  desktop:font-light desktop:text-xl">
+          <p className="">
             Reach a vast audience instantly with Bulk SMS on our CPaaS platform.
             Send personalized messages, promotions, and updates to engage
             customers and fuel business growth

@@ -10,6 +10,7 @@ import { IoIosCall } from "react-icons/io";
 
 import logoImage from "../Image/logo.png";
 const Footer = () => {
+  const today = new Date();
   return (
     <div>
       <div className="bg-[#F7F7F7] flex mobile:flex-col mobile:py-10 mobile:gap-10 mobile:items-end tablet:flex-row tablet:gap-10 tablet:px-10  ">
@@ -84,7 +85,7 @@ const Footer = () => {
       </div>
       <p className="border-b-2 w-full  border-[#000000]  "></p>
       <p className=" bg-[#F7F7F7] flex justify-items-center  items-center ">
-        ©2024 Spell Innovation. All rights reserved
+        &copy; {today.getFullYear()} Spell Innovation. All rights reserved
       </p>
     </div>
   );
