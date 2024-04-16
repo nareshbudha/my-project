@@ -76,7 +76,7 @@ const Home = () => {
               <div className=" gap-10">
                 <p className=" text-[#FFFFFF] text-xs font-medium  tablet:text-2xl tablet:font-bold  tracking-normal text-left flex flex-row gap-1 items-center">
                   <FaMailBulk className="gap-10 tablet:mr-3 mr-1 w-4 h-4 tablet:w-9 tablet:h-9" />
-                  Bulk mobileS
+                  Bulk mobile Sms
                 </p>
                 <h1 className=" text-[#FFFFFF] text-xs font-extralight  tablet:text-base tablet:font-light  tracking-normal text-left">
                   Send personalized or mass smS messages seamlessly. Utilize

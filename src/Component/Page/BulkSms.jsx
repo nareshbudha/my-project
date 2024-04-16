@@ -50,7 +50,7 @@ const BulkSms = () => {
             alt="Logo"
           />
         </div>
-        <div className="flex justify-between mobile:gap-1 mobile:py-10">
+        <div className="flex justify-between mobile:gap-1 mobile:py-10 tablet:gap-3 laptop:gap-6">
           <div className=" bg-[#F7F7F7] flex flex-col rounded-xl mobile:w-72 mobile:gap-1 mobile:h-56 tablet:w-96 tablet:h-44 laptop:w-60 laptop:h-44 desktop:w-72 desktop:h-48  ">
             <LuArrowUpRightSquare className="text-[#5F2466] mobile:w-3 tablet:w-8 tablet:h-8 laptop:w-10 laptop:h-10  " />
             <h3 className="text-[#5F2466] mobile:text-sm mobile:font-medium tablet:text-2xl	tablet:font-semibold 	   ">
@@ -128,16 +128,12 @@ const BulkSms = () => {
           </div>
 
           <img
-            className="mobile:hidden tablet:block tablet:w-60"
+            className="mobile:hidden tablet:block tablet:w-72 tablet:-ml-28"
             src={mm}
             alt="Logo"
           />
         </div>
       </section>
-
-
-
-
 
       <div className="flex flex-col bg-[#F7F7F7] justify-around items-center mobile:py-5 mobile:my-3 py-10 my-20 gap-4">
         <p className="text-[#000000] my-1 w-[40%] text-center  text-xs font-extralight  tablet:text-2xl tablet:font-light">
@@ -223,7 +219,7 @@ const BulkSms = () => {
 
 
 
-        <div className=" flex flex-col">
+        <div className=" flex flex-col tablet:items-center tablet:gap-5 ">
           <div className="flex flex-col mobile:items-center mobile:gap-3">
             <h2 className=" text-[#5F2466] flex text-base font-semibold  tablet:text-4xl  tablet:font-bold ">
               Why SMS solutions are perfect for you
