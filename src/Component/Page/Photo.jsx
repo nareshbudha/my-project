@@ -14,7 +14,7 @@ const Photo = () => {
           <p className="text-[#000000] flex mobile:text-xs tablet:text-base tablet:font-medium tablet:py-10 laptop:text-base">
             Try our cloud contact center software today.
           </p>
-          <div className="flex flex-col  mobile:gap-2 mobile:py-3 mobile:px-4 tablet:w-full tablet:gap-4 tablet:py-2 laptop:flex-row">
+          <div className="flex flex-col mobile:gap-2 mobile:py-3 mobile:px-4 tablet:w-full tablet:gap-4 tablet:py-2 laptop:flex-row">
             <div className="relative">
               <input
                 className="bg-[#E6E6E6] border-none flex rounded placeholder-[#000000] placeholder-opacity-75 outline-none w-full mobile:py-3 mobile:px-10"
@@ -44,7 +44,7 @@ const Photo = () => {
               </svg>
             </div>
           </div>
-          <div className="flex flex-col  mobile:gap-5 mobile:py-3 mobile:px-4 tablet:w-full tablet:gap-4 tablet:py-2 laptop:flex-row laptop:py-8">
+          <div className="flex flex-col mobile:gap-6 mobile:py-3 mobile:px-4 tablet:w-full tablet:gap-4 tablet:py-2 laptop:flex-row laptop:py-8">
             <div className="relative">
               <input
                 className="bg-[#E6E6E6] border-none flex rounded  placeholder-[#000000] placeholder-opacity-75 outline-none  w-full mobile:py-3 mobile:px-10 "
