@@ -11,7 +11,7 @@ const Frequtly = () => {
     }
     return (
         <div>
-            <div className="bg-[#F7F7F7] py-6 my-10  mobile:flex-col tablet:flex-row mobile:px-8 mobile:gap-12  tablet:px-36 mx-auto flex w-full  items-center justify-between ">
+            <div className="bg-[#F7F7F7] py-6 my-10  mobile:flex-col tablet:flex-row mobile:px-8 mobile:gap-12  tablet:px-10 mx-auto flex w-full  items-center justify-between ">
                 <div className="flex flex-col  mobile:gap-3 ">
                     <h2 className="text-[#5F2466] mobile:text-xl mobile:font-bold tablet:text-4xl">
                         Frequently Asked Question
