@@ -94,7 +94,7 @@ const Photo = () => {
           </div>
 
           <button
-            className="bg-[#5F2466] text-[#FFFFFF] rounded-lg  mobile:py-3 mobile:px-2 tablet:rounded-xl laptop:ml-3" >
+            className="bg-[#5F2466] text-[#FFFFFF] rounded-lg mobile:my-2 mobile:py-3 mobile:px-2 tablet:rounded-xl laptop:ml-3" >
             Submit
           </button>
         </div>
