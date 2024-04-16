@@ -14,7 +14,7 @@ const Photo = () => {
           <p className="text-[#000000] flex mobile:text-xs tablet:text-base tablet:font-medium tablet:py-10 laptop:text-base">
             Try our cloud contact center software today.
           </p>
-          <div className="flex flex-col mobile:gap-2 mobile:py-3 mobile:px-4 tablet:w-full tablet:gap-4 tablet:py-2 laptop:flex-row">
+          <div className="flex flex-col mobile:gap-2 mobile:py-3 mobile:px-4 tablet:w-full tablet:gap-3 tablet:py-2 laptop:flex-row">
             <div className="relative">
               <input
                 className="bg-[#E6E6E6] border-none flex rounded placeholder-[#000000] placeholder-opacity-75 outline-none w-full mobile:py-3 mobile:px-10"
@@ -44,7 +44,7 @@ const Photo = () => {
               </svg>
             </div>
           </div>
-          <div className="flex flex-col mobile:gap-6 mobile:py-3 mobile:px-4 tablet:w-full tablet:gap-4 tablet:py-2 laptop:flex-row laptop:py-8">
+          <div className="flex flex-col mobile:gap-6 mobile:py-3 mobile:px-4 tablet:w-full tablet:gap-7 tablet:py-2 tablet:mt-3 laptop:flex-row laptop:py-8">
             <div className="relative">
               <input
                 className="bg-[#E6E6E6] border-none flex rounded  placeholder-[#000000] placeholder-opacity-75 outline-none  w-full mobile:py-3 mobile:px-10 "
@@ -94,7 +94,7 @@ const Photo = () => {
           </div>
 
           <button
-            className="bg-[#5F2466] text-[#FFFFFF] rounded-lg mobile:my-2 mobile:py-3 mobile:px-2 tablet:rounded-xl laptop:ml-3" >
+            className="bg-[#5F2466] text-[#FFFFFF] rounded-lg mobile:my-2 mobile:py-3 mobile:px-2 tablet:rounded-xl tablet:my-4 laptop:ml-3" >
             Submit
           </button>
         </div>
