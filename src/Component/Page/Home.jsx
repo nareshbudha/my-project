@@ -19,8 +19,9 @@ import { FaMailBulk } from "react-icons/fa";
 import { HiOutlineMicrophone } from "react-icons/hi2";
 
 import Buttom from "./Buttom";
-import Frequtly from "./Frequtly";
+
 import Photo from "./Photo";
+import Frequtly from "./Frequtly";
 
 const Home = () => {
   return (
@@ -246,12 +247,7 @@ const Home = () => {
               </p>
               <button
                 className="bg-[#5F2466] text-[#FFFFFF] mobile:rounded-lg mobile:py-2 mobile:px-1 mobile:my-2 tablet:py-4 tablet:px-3 tablet:text-lg tablet:font-medium tablet:rounded-xl laptop:rounded-xl laptop:px-2 laptop:py-3 "
-                onClick={(event) => {
-                  event.target.style.backgroundColor =
-                    event.target.style.backgroundColor === "rgb(252, 101, 23)"
-                      ? "#5F2466"
-                      : "#FC6517";
-                }}
+
               >
                 Learn More
               </button>

@@ -19,28 +19,28 @@ import Photo from "./Photo";
 
 const WhatAppBusiness = () => {
   return (
-    <div>
-      <div className=" text-[#702D77] flex flex-row pt-40 ">
-        <div className="flex flex-col gap-7 w-[]610px h-[411] ml-20">
-          <h2 className="text-[40px] leading-[50px] font-medium w-2/4 ">
+    <div className="w-[80%] mx-auto">
+      <div className=" flex flex-col  lg:flex-row w-full mobile:py-5 mobile:gap-5 tablet:py-10 tablet:gap-16 laptop:gap-32 desktop:gap-48">
+        <div className="flex flex-col mobile:gap-3 tablet:gap-5 laptop:gap-6 desktop:gap-5 justify-center items-start">
+          <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl desktop:font-bold">
             Enhance Customer Communication with WhatsApp Business Integration
           </h2>
-          <p className="text-[#000000] w-2/3">
+          <p className="text-[#000000] mobile:text-xs mobile:font-light tablet:text-base">
             With SpellCPaaS platform, you can leverage the power of WhatsApp
             Business to Connect with your customers more effectively.
           </p>
 
-          <div className="  text-[#FFFFFF]  flex flex-row gap-[10px] font-bold   justify-start items-center">
-            <button className="bg-[#702D77]  rounded-xl py-[10px] px-[25px] ">
+          <div className="  text-[#FFFFFF]  flex flex-row justify-start items-center gap-3">
+            <button className="bg-[#5F2466] text-[#FFFFFF] mobile:rounded-md mobile:px-3 mobile:py-2  tablet:rounded-xl tablet:px-3 tablet:py-4 laptop:py-3 laptop:px-4">
               Get In touch
             </button>
-            <button className="bg-[#702D77]  rounded-xl py-[10px] px-[25px]">
+            <button className="bg-[#5F2466] text-[#FFFFFF] mobile:rounded-md mobile:px-3 mobile:py-2  tablet:rounded-xl tablet:px-3 tablet:py-4 laptop:py-3 laptop:px-4">
               View pricing
             </button>
           </div>
         </div>
 
-        <img className="mr-56 mb-32" src={ww} alt="Logo" />
+        <img className="mobile:w-40 mobile:h-40 tablet:w-72 tablet:h-72 laptop:w-96 laptop:h-96" src={ww} alt="Logo" />
       </div>
       <div className=" flex flex-col justify-center items-center w-full mt-20 gap-3">
         <h2 className="text-[#5F2466] text-[40px] leading-[50px] font-bold flex justify-end	">
@@ -49,7 +49,7 @@ const WhatAppBusiness = () => {
         <h1 className="text-[#000000] font-light	 text-base px-40 w-[80%] mt-10 ">
           Conversational marketing, sales or support use cases can be designed
           and deployed throughout the entire customer journey on WhatsApp over a
-          unified platform.  
+          unified platform.
         </h1>
       </div>
       <div className="flex flex-row ">
@@ -159,7 +159,7 @@ const WhatAppBusiness = () => {
 
       <div className="flex flex-col">
         <h2 className=" text-[#5F2466] text-[40px]  font-bold mt-20 flex justify-center leading-[50px]">
-          Increase conversion rates with personalized offers and promotions 
+          Increase conversion rates with personalized offers and promotions
         </h2>
         <div className="flex flex-row    ">
           <div className="flex flex-col pl-32">
@@ -181,7 +181,7 @@ const WhatAppBusiness = () => {
                 Send automated conversational commerce messages with our API or
                 over our customer engagement solution M and interact with
                 customers with a chatbot built on Answers or on our cloud
-                contact center Conversations and API.  
+                contact center Conversations and API.
               </p>
             </div>
           </div>
