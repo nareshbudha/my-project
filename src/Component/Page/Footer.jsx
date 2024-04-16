@@ -68,8 +68,8 @@ const Footer = () => {
             <div className="relativem ">
               <p className="text-[#000000] text-base font-light hover:font-bold px-6">
                 info@spellinnovation.com
-              </p>{" "}
-              <MdEmail className="text-[#5F2466] absolute  top-1 gap-1" />
+              </p>
+              <MdEmail className="text-[#5F2466] absolute mobile:-mt-5 gap-1" />
             </div>
             <p className="text-[#000000] text-base font-light hover:font-bold px-6">
               contact@spellinnovation.com
