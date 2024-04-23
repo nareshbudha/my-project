@@ -1,12 +1,11 @@
 import React from "react";
-import { FaUserAlt, FaPhone, FaUserFriends } from "react-icons/fa";
-import { MdOutlineMarkEmailUnread } from "react-icons/md";
+import { FaUserAlt } from "react-icons/fa";
 import gg from "../Image/gg.png";
 
 const Photo = () => {
   return (
     <div>
-      <div className=" flex flex-col py-10 justify-center items-center mobile:flex-row mobile:gap-3 gap-5 ">
+      <div className=" flex flex-col py-10 justify-center items-center mobile:flex-row">
         <div className="flex flex-col items-center laptop:items-start  ">
           <h2 className="text-[#5F2466] mobile:text-base mobile:font-normal mobile:w-full tablet:text-2xl tablet:font-semibold laptop:text-4xl laptop:font-bold">
             You’re at the start of something special.
@@ -14,7 +13,7 @@ const Photo = () => {
           <p className="text-[#000000] flex mobile:text-xs tablet:text-base tablet:font-medium tablet:py-10 laptop:text-base">
             Try our cloud contact center software today.
           </p>
-          <div className="flex flex-col  mobile:gap-2 mobile:py-3 mobile:px-4 tablet:w-full tablet:gap-4 tablet:py-2 laptop:flex-row">
+          <div className="flex flex-col  mobile:gap-2 mobile:py-3 mobile:px-4 tablet:w-full tablet:gap-3 tablet:py- laptop:flex-row">
             <div className="relative">
               <input
                 className="bg-[#E6E6E6] border-none flex rounded placeholder-[#000000] placeholder-opacity-75 outline-none w-full mobile:py-3 mobile:px-10"
@@ -44,7 +43,7 @@ const Photo = () => {
               </svg>
             </div>
           </div>
-          <div className="flex flex-col  mobile:gap-5 mobile:py-3 mobile:px-4 tablet:w-full tablet:gap-4 tablet:py-2 laptop:flex-row laptop:py-8">
+          <div className="flex flex-col  mobile:gap-6 mobile:py-3 mobile:px-4 tablet:w-full tablet:gap-7 tablet:py-2 tablet:mt-2 laptop:flex-row laptop:py-8">
             <div className="relative">
               <input
                 className="bg-[#E6E6E6] border-none flex rounded  placeholder-[#000000] placeholder-opacity-75 outline-none  w-full mobile:py-3 mobile:px-10 "
@@ -68,9 +67,9 @@ const Photo = () => {
             </div>
             <div className="relative">
               <input
-                className="bg-[#E6E6E6] border-none flex rounded  placeholder-[#000000] placeholder-opacity-75 outline-none w-full mobile:py-3 mobile:px-10"
+                className="bg-[#E6E6E6] border-none flex rounded  placeholder-[#000000] placeholder-opacity-75 outline-none w-full mobile:py-3  mobile:px-10"
                 type="text"
-                placeholder="Phone number"
+                placeholder="Number of users"
               />
               <svg
                 className="-mt-8 ml-1"
@@ -94,7 +93,7 @@ const Photo = () => {
           </div>
 
           <button
-            className="bg-[#5F2466] text-[#FFFFFF] rounded-lg  mobile:py-3 mobile:px-2 tablet:rounded-xl laptop:ml-3" >
+            className="bg-[#5F2466] text-[#FFFFFF] rounded-lg mobile:mt-2 mobile:py-3 mobile:px-2 tablet:rounded-xl tablet:mt-4 " >
             Submit
           </button>
         </div>
