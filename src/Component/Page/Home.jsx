@@ -26,7 +26,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div>
-      <div className="  relative pb-[3px] ">
+      <div className="  relative pb-1 ">
         <div className="flex  gap-8">
           <div className="relative w-full gap-10 ">
             <img className=" w-full" src={iamges} alt="Logo" />

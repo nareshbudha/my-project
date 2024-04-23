@@ -11,8 +11,8 @@ const Frequtly = () => {
     setSelected(i)
   }
   return (
-    <div>
-      <div className="bg-[#F7F7F7] py-6 my-10   mobile:flex-col tablet:flex-row mobile:px-8 mobile:gap-12  tablet:px-36 mx-auto flex w-full  items-center justify-between ">
+    <div className="w-full">
+      <div className="bg-[#F7F7F7] py-6 my-10   mobile:flex-col tablet:flex-row mobile:px-8 mobile:gap-12  tablet:px-36 mx-auto flex w-full  items-start tablet:items-center justify-between ">
         <div className="flex flex-col  mobile:gap-3 ">
           <h2 className="text-[#5F2466] mobile:text-xl mobile:font-bold tablet:text-4xl">
             Frequently Asked Question
@@ -31,11 +31,11 @@ const Frequtly = () => {
             </p>
           </h1>
         </div>
-        <div className="w-2/4 flex justify-center items-center  flex-col">
+        <div className="flex justify-center items-center  flex-col">
 
           {data.map((item, i) => (
             <div className=" w-full mb-1 border-b-2 border-b-black py-3 ">
-              <div className="w-full flex justify-between items-center cursor-pointer text-[#000] leading-9  mobile:font-medium mobile:text-base tablet:text-lg laptop:text-2xl   " onClick={() => toggle(i)}>
+              <div className="w-full flex justify-between items-center cursor-pointer text-[#000] leading-9  mobile:font-medium mobile:text-xs tablet:text-lg laptop:text-2xl   " onClick={() => toggle(i)}>
                 <h2>{item.question}</h2>
                 {
                   selected === i ? <GoTriangleUp /> : <GoTriangleDown />

@@ -139,11 +139,11 @@ const BulkSms = () => {
           alt="Logo"
         />
       </div>
-      <div className="flex flex-col bg-[#F7F7F7] justify-around items-center py-4 gap-4 mobile:-ml-28">
+      <div className="flex flex-col bg-[#F7F7F7] justify-around items-center py-4 gap-4 ">
         <p className="text-[#000000] my-1 w-[40%] text-center  text-xs font-extralight  tablet:text-2xl tablet:font-light">
           We support 10+ programming languages including
         </p>
-        <div className="flex mobile:flex-col mobile:gap-3 mobile:w-10 tablet:flex-row tablet:gap-12 tablet:ml-12  tablet:w-4/5 tablet:justify-center laptop:justify-between ">
+        <div className="flex mobile:flex-col mobile:gap-3 mobile:w-10 tablet:flex-row tablet:gap-12   tablet:w-4/5 tablet:justify-center laptop:justify-between ">
           <img
             className="w-full h-auto max-w-[60px] max-h-[60px] md:max-w-[110px] md:max-h-[110px] lg:max-w-[132px] lg:max-h-[132px]"
             src={jaa}
@@ -175,7 +175,7 @@ const BulkSms = () => {
         <h2 className="flex justify-between mobile:text-lg mobile:-mt-2 tablet:text-3xl tablet:font-bold tablet:pl-28 desktop:ml-72 desktop:pt-20">
           There’s so much to do with SMS API
         </h2>
-        <div className="flex flex-row justify-center mobile:gap-4 mobile:mt-3 desktop:pt-4 desktop:pb-12 desktop:mb-14">
+        <div className="flex flex-row justify-center mobile:gap-4 mobile:mt-3 desktop:pt-4 desktop:pb-12 d">
           <div className="flex flex-col bg-[#782C8080]  desktop:w-96  ">
             <h3 className="flex mobile:text-sm mobile:font-normal mobile:gap-1 tablet:text-xl tablet:gap-3 desktop:text-3xl ">
               <CiUser />
