@@ -12,7 +12,7 @@ import logoImage from "../Image/logo.png";
 const Footer = () => {
   const today = new Date();
   return (
-    <div className="w-fu;;">
+    <div className="w-full">
       <div className="bg-[#F7F7F7] flex mobile:flex-col mobile:py-10 mobile:gap-10 mobile:items-end tablet:flex-row tablet:gap-10 tablet:px-10  ">
         <div className=" flex flex-col mobile:gap-10 mobile:justify-evenly">
           <img className="mobile:w-32 mobile:h-16" src={logoImage} alt="Logo" />
