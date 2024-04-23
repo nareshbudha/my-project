@@ -12,11 +12,11 @@ import logoImage from "../Image/logo.png";
 const Footer = () => {
   const today = new Date();
   return (
-    <div>
+    <div className="w-fu;;">
       <div className="bg-[#F7F7F7] flex mobile:flex-col mobile:py-10 mobile:gap-10 mobile:items-end tablet:flex-row tablet:gap-10 tablet:px-10  ">
         <div className=" flex flex-col mobile:gap-10 mobile:justify-evenly">
-          <img className="mobile:w-32 mobile:h-16 tablet:mr-16" src={logoImage} alt="Logo" />
-          <p className="text-[#000000]  mobile:w-80  mobile:text-sm tablet:w-40 tablet:text-sm tablet:font-light laptop:w-80 desktop:w-96">
+          <img className="mobile:w-32 mobile:h-16" src={logoImage} alt="Logo" />
+          <p className="text-[#000000] items-center">
             We SPELL INNOVATION say we’re young because we’re peopled by young,
             energetic, curious and committed minds who are excited to solve one
             stop automated solution for you.
