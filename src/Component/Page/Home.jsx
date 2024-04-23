@@ -22,13 +22,13 @@ import Buttom from "./Buttom";
 
 import Photo from "./Photo";
 import Frequtly from "./Frequtly";
+import Photo from "./Photo";
 import { Link } from "react-router-dom";
-import VoiceBroadcast from "./VoiceBroadcast";
 
 const Home = () => {
   return (
     <div>
-      <div className="  relative pb-[3px] ">
+      <div className="  relative pb-1 ">
         <div className="flex  gap-8">
           <div className="relative w-full gap-10 ">
             <img className=" w-full" src={iamges} alt="Logo" />
@@ -51,7 +51,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="bg-[#F7F7F7]  w-full  flex flex-col items-center  mobile:my-4 tablet:my-6 ">
+        <div className="bg-[#F7F7F7]  w-full  flex flex-col items-center  mobile:my-8 tablet:my-10 mobile:py-5 tablet:py-8 ">
           <p className=" text-[#000000]  mobile:text-sm mobile:pr-2  tablet:text-base tablet:py-5 tablet:px-20 w-[75%] ">
             Elevate your business communication. Our CPaaS platform integrates
             Bulk smS, Voice Broadcast, Call Center, Video Calls, Messaging,
@@ -61,7 +61,7 @@ const Home = () => {
           </p>
         </div>
         {/* product div */}
-        <div className="  bg-[#5F2466] rounded-lg mx-auto flex flex-col gap-3 mobile:w-11/12 tablet:w-4/5  laptop:w-5/6 laptop:flex-row mb-12 py-7 px-9 justify-center">
+        <div className="  bg-[#5F2466] rounded-lg mx-auto flex flex-col mobile:my-10 mobile:py-5 mobile:w-11/12 tablet:w-4/5  laptop:w-5/6 laptop:flex-row laptop:my-28  laptop:py-6 justify-center">
 
           <div className="flex flex-col gap-5 items-center justify-center ">
             <h2 className=" text-[#FFFFFF] text-base   tablet:text-4xl tablet:font-bold  flex items-center ">
@@ -241,14 +241,14 @@ const Home = () => {
         <section className="w-[80%] mx-auto mobile:py-5 tablet:py-10 laptop:py-20 desktop:py-24 ">
           <div className="flex flex-col lg:flex-row w-full mobile:py-5 mobile:gap-5 tablet:py-10 tablet:gap-16 laptop:gap-32 desktop:gap-48">
             <div className="flex flex-col mobile:gap-3 tablet:gap-5 laptop:gap-6 desktop:gap-5 justify-center items-start">
-              <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl desktop:text-5xl desktop:font-bold">
+              <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl laptop:font-medium">
                 Streamline Your Communication with Bulk Sms Services
               </h2>
               <p className="text-[#000000] mobile:text-xs mobile:font-light tablet:text-base">
                 Instantly reach a broad audience with our Bulk SMS feature—ideal for mass communication and marketing. Effortlessly send personalized messages, promotions, and updates to engage customers and fuel business growth.
               </p>
               <button
-                className="bg-[#5F2466] text-[#FFFFFF] mobile:rounded-lg mobile:py-2 mobile:px-1 mobile:my-2 tablet:py-4 tablet:px-3 tablet:text-lg tablet:font-medium tablet:rounded-xl laptop:rounded-xl laptop:px-2 laptop:py-3 "
+                className="bg-[#5F2466] hover:bg-[#FC6517] text-[#FFFFFF] mobile:rounded-lg mobile:py-2 mobile:px-1 mobile:my-2 tablet:py-4 tablet:px-3 tablet:text-lg tablet:font-medium tablet:rounded-xl laptop:rounded-xl laptop:px-2 laptop:py-3 "
 
               >
                 Learn More
@@ -267,7 +267,7 @@ const Home = () => {
               alt="Logo"
             />
             <div className="flex flex-col mobile:gap-3 tablet:gap-5 laptop:gap-6 desktop:gap-5 justify-center items-start">
-              <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl desktop:text-5xl desktop:font-bold">
+              <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl laptop:font-medium">
                 Automate Your Voice Broadcast with Ease
               </h2>
               <p className=" text-[#000000] mobile:text-xs mobile:font-light tablet:text-base">
@@ -287,7 +287,7 @@ const Home = () => {
           </div>
           <div className="flex flex-col lg:flex-row w-full mobile:py-5 mobile:gap-5 tablet:py-10 tablet:gap-16 laptop:gap-32 desktop:gap-48">
             <div className="flex flex-col mobile:gap-3 tablet:gap-5 laptop:gap-6 desktop:gap-5 justify-center items-start">
-              <h2 className=" text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl desktop:text-5xl desktop:font-bold">
+              <h2 className=" text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl laptop:font-medium">
                 Efficiently manage customer communications with our powerful Call-Center solution.
               </h2>
               <p className="text-[#000000] mobile:text-xs mobile:font-light tablet:text-base">
@@ -295,7 +295,7 @@ const Home = () => {
                 interactions seamlessly, improving customer satisfaction and
                 boosting productivity.
               </p>
-              <Buttom />
+              < Buttom />
             </div>
             <img
               className=" mobile:w-48 mobile:h-48  tablet:w-72 tablet:h-72 laptop:w-96 lg:h-96 "
@@ -310,7 +310,7 @@ const Home = () => {
               alt="Logo"
             />
             <div className="flex flex-col mobile:gap-3 tablet:gap-5 laptop:gap-6 desktop:gap-5 justify-center items-start">
-              <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl desktop:text-5xl desktop:font-bold">
+              <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl laptop:font-medium">
                 Experience Personal Customer Engagement with Interactive Video
                 Calls
               </h2>
@@ -324,7 +324,7 @@ const Home = () => {
           </section>
           <section className="flex flex-col  lg:flex-row w-full mobile:py-5 mobile:gap-5 tablet:py-10 tablet:gap-16 laptop:gap-32 desktop:gap-48">
             <div className="flex flex-col mobile:gap-3 tablet:gap-5 laptop:gap-6 desktop:gap-5 justify-center items-start">
-              <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl desktop:text-5xl desktop:font-bold">
+              <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl laptop:font-medium">
                 Enhance Customer Support with Versatile Messaging Solutions
               </h2>
               <p className="text-[#000000] mobile:text-xs mobile:font-light tablet:text-base">
@@ -348,7 +348,7 @@ const Home = () => {
               alt="Logo"
             />
             <div className="flex flex-col mobile:gap-3 tablet:gap-5 laptop:gap-6 desktop:gap-5 justify-center items-start">
-              <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl desktop:text-5xl desktop:font-bold">
+              <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl laptop:font-medium">
                 Enhance Customer Communication with Whatsapp Business Integration
               </h2>
               <p className="text-[#000000] mobile:text-xs mobile:font-light tablet:text-base">
@@ -360,7 +360,7 @@ const Home = () => {
           </div>
           <div className="flex flex-col lg:flex-row w-full mobile:py-5 mobile:gap-5 tablet:py-10 tablet:gap-16 laptop:gap-32 desktop:gap-48">
             <div className="flex flex-col mobile:gap-3 tablet:gap-5 laptop:gap-6 desktop:gap-5 justify-center items-start">
-              <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl desktop:text-5xl desktop:font-bold ">
+              <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl laptop:font-medium">
                 Seamless Conversations and Enhanced User Experiences through Chat-Bot
               </h2>
               <p className="text-[#000000] mobile:text-xs mobile:font-light tablet:text-base">

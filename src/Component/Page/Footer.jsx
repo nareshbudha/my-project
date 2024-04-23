@@ -5,12 +5,12 @@ import {
   FaXTwitter,
 } from "react-icons/fa6";
 import { MdEmail, MdEditLocation } from "react-icons/md";
-import { Link } from "react-router-dom";
 
 import { IoIosCall } from "react-icons/io";
 
 import logoImage from "../Image/logo.png";
 const Footer = () => {
+  const today = new Date();
   return (
     <div>
       <div className="bg-[#F7F7F7] flex mobile:flex-col mobile:py-10 mobile:gap-10 tablet:flex-row tablet:gap-10 tablet:px-5  ">
@@ -21,7 +21,7 @@ const Footer = () => {
             energetic, curious and committed minds who are excited to solve one
             stop automated solution for you.
           </p>
-          <div className=" gap-3 mobile:hidden tablet:block tablet:w-full tablet:flex">
+          <div className=" gap-3 mobile:hidden tablet:block tablet:w-full flex">
             <FaSquareInstagram className="text-[#5F2466] text-3xl" />
             <FaFacebook className="text-[#5F2466] text-3xl " />
             <FaLinkedin className="text-[#5F2466] text-3xl " />
@@ -85,7 +85,7 @@ const Footer = () => {
       </div>
       <p className="border-b-2 w-full  border-[#000000]  "></p>
       <p className=" bg-[#F7F7F7] flex justify-items-center  items-center ">
-        ©2024 Spell Innovation. All rights reserved
+        &copy; {today.getFullYear()} Spell Innovation. All rights reserved
       </p>
     </div>
   );
