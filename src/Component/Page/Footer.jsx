@@ -21,7 +21,7 @@ const Footer = () => {
             energetic, curious and committed minds who are excited to solve one
             stop automated solution for you.
           </p>
-          <div className="mobile:hidden tablet:block tablet:w-full">
+          <div className=" gap-3 mobile:hidden tablet:block tablet:w-full tablet:flex">
             <FaSquareInstagram className="text-[#5F2466] text-3xl" />
             <FaFacebook className="text-[#5F2466] text-3xl " />
             <FaLinkedin className="text-[#5F2466] text-3xl " />
@@ -55,14 +55,14 @@ const Footer = () => {
           </div>
           <div className="flex flex-col  mobile:gap-1 mobile:items-center tablet:text-sm tablet:w-40 tablet:items-start laptop:w-80 desktop:w-96">
             <h2 className="text-2xl text-[#5F2466]  tablet:text-xl tablet:font-bold "> Contact Us</h2>
-            <div className="relative">
-              <p className="text-[#000000] text-base hover:font-bold font-light ">
+            <div className="relative laptop:ml-4">
+              <p className="text-[#000000] text-base hover:font-bold font-light laptop:ml-2 ">
                 01-5910781
               </p>
               <IoIosCall className="text-[#5F2466] absolute top-1 gap-1 mobile:-ml-5" />
             </div>
 
-            <p className="text-[#000000] text-base font-light px-6 mt-6 hover:font-bold">
+            <p className="text-[#000000] text-base font-light px-6  hover:font-bold">
               9801047737
             </p>
             <div className="relativem ">

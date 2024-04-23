@@ -28,7 +28,7 @@ import Frequtly from "./Frequtly";
 const BulkSms = () => {
   return (
     <div className=" ">
-      <section className="w-5/6 mx-auto ">
+      <section className="mobile:w-5/6 tablet:w-11/12 mx-auto ">
         <div className="flex flex-col lg:flex-row w-full mobile:py-5 mobile:gap-10 tablet:gap-16 laptop:gap-32 desktop:gap-48">
           <div className="flex flex-col mobile:gap-3 tablet:gap-5 laptop:gap-6 desktop:gap-5 justify-center items-start">
             <h2 className="text-[#5F2466] mobile:text-xl mobile:font-medium tablet:text-3xl laptop:text-4xl desktop:text-5xl">
@@ -219,7 +219,7 @@ const BulkSms = () => {
 
 
 
-        <div className=" flex flex-col tablet:items-center tablet:gap-5 ">
+        <div className=" flex flex-col tablet:items-center tablet:gap-5 laptop:flex-row laptop:justify-between laptop:items-center  laptop:w-11/12 laptop:mx-auto  ">
           <div className="flex flex-col mobile:items-center mobile:gap-3">
             <h2 className=" text-[#5F2466] flex text-base font-semibold  tablet:text-4xl  tablet:font-bold ">
               Why SMS solutions are perfect for you
@@ -227,7 +227,7 @@ const BulkSms = () => {
             <h1 className=" text-[#5F2466]  text-base tablet:text-xl tablet:font-bold">
               Enable personal customer care
             </h1>
-            <p className="text-base font-light text-[#000000]">Give your service teams the ability to receive and respond
+            <p className="text-base font-light text-[#000000] mobile:ml-14">Give your service teams the ability to receive and respond
 
             </p>
             <span className="text-base font-light text-[#000000]">to SMS messages from a shared Inbox.</span>
@@ -249,26 +249,24 @@ const BulkSms = () => {
             alt="Logo"
           />
         </div>
-        <div className="flex flex-row justify-center items-center  mobile:gap-5 mobile:py-5 tablet:gap-2">
+        <div className="flex flex-row justify-center items-center  mobile:gap-5 mobile:py-3  tablet:gap-2">
           <button
-            className="bg-[#5F246663]   text-[#000000] hover:text-[#ffff] rounded-lg mobile:py-1 mobile:px-2 mobile:text-xs mobile:font-light tablet:text-sm tablet:py-2 tablet:px-5 tablet:font-normal"
+            className="bg-[#5F246663] text-[#000000] hover:text-[#ffff] rounded-lg mobile:py-1 mobile:px-1 mobile:text-xs mobile:font-light tablet:text-sm tablet:py-2 tablet:px-5 tablet:font-normal"
 
           >
             Customer care
           </button>
-          <a
-            href="#"
+          <button
             className=" bg-[#5F2466] hover:bg-[#5F246663] text-[#000000] hover:text-[#ffff] rounded-lg mobile:py-1 mobile:px-2 mobile:text-xs mobile:font-light tablet:text-sm tablet:py-2 tablet:px-5 tablet:font-normal"
           >
             Marketing campaigns
-          </a>
-          <a
-            href="#"
+          </button>
+          <button
             className="bg-[#5F2466] text-[#000000] hover:text-[#ffff] rounded-lg mobile:py-1 mobile:px-2 mobile:text-xs mobile:font-light tablet:text-sm tablet:py-2 tablet:px-5 tablet:font-normal"
 
           >
             Optimizer for efficiency
-          </a>
+          </button>
         </div>
       </div>
       <div className="bg-[#5F2466] flex flex-col-reverse tablet:flex-row items-center mobile:py-5 mobile:my-8 mobile:px-5 tablet:px-28  tablet:py-40 tablet:w-full tablet:h-44 ">

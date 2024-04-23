@@ -2,20 +2,20 @@ import map from "../Image/map.png";
 
 const ContactUs = () => {
   return (
-    <div className="pt-28">
-      <div className="flex flex-row justify-between ">
-        <div className="flex flex-col w-[35%] ml-20">
-          <h2 className="text-[#5F2466] font-bold text-[48px] leading-[56.25px]">
+    <div className="mobile:w-5/6 tablet:w-11/12 laptop:w-11/12 mx-auto">
+      <div className="flex flex-col laptop:flex-row  laptop:justify-between">
+        <div className="flex flex-col laptop:w-2/5 mobile:gap-3 tablet:py-5 laptop:py-20 laptop:gap-10">
+          <h2 className="text-[#5F2466] font-bold mobile:text-base tablet:text-3xl laptop:text-5xl">
             Any problem, any sector. We’re ready to dive in.
           </h2>
-          <p className="my-6">
+          <p className="">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
             elit, odio dictumst dolor, egestas.
           </p>
-          <div className="bg-[#F7F7F7] flex rounded-lg flex-col w-[460px] h-[103px] mt-10">
-            <div className="flex flex-row">
+          <div className="bg-[#F7F7F7] flex rounded-lg flex-col laptop:py-5">
+            <div className="flex flex-row mobile:gap-3 ">
               <svg
-                className="ml-4 mt-4"
+                className=" laptop:mx-3"
                 width="22"
                 height="21"
                 viewBox="0 0 22 21"
@@ -43,23 +43,23 @@ const ContactUs = () => {
                   </clipPath>
                 </defs>
               </svg>
-              <h1 className="text-[16px] leading-[18.75px] text-[#5F2466] font-bold mt-4 ml-3">
+              <h1 className=" text-[#5F2466] text-base font-bold ">
                 Phone
               </h1>
             </div>
-            <div className=" text-[#000000] flex rounded-xl mt-3">
-              <p className="ml-12  font-light text-[16px] leading-[25.89px">
+            <div className=" text-[#000000] flex rounded-xl mobile:gap-8 mobile:mx-7 mobile:py-2 tablet:gap-10 laptop:mx-14">
+              <p className="font-light text-base">
                 +977 01-5910781
               </p>
-              <p className="ml-12  font-light text-[16px] leading-[25.89px">
+              <p className="font-light text-base">
                 +977 01-5910781
               </p>
             </div>
           </div>
-          <div className="bg-[#F7F7F7] flex rounded-lg flex-col w-[460px] h-[103px] mt-10">
-            <div className="flex flex-row">
+          <div className="bg-[#F7F7F7] flex rounded-lg flex-col">
+            <div className="flex flex-row mobile:gap-3 laptop:py-3 laptop:gap-1">
               <svg
-                className="ml-4 mt-4"
+                className="laptop:mx-4 laptop:mt-1"
                 width="21"
                 height="14"
                 viewBox="0 0 21 14"
@@ -72,23 +72,23 @@ const ContactUs = () => {
                 />
               </svg>
 
-              <h1 className="text-[16px] leading-[18.75px] text-[#5F2466] font-bold mt-4 ml-3">
+              <h1 className="text-[#5F2466] text-base font-bold">
                 Email{" "}
               </h1>
             </div>
-            <div className=" text-[#000000] flex flex-col rounded-xl mt-3">
-              <p className="ml-12  font-light text-[16px] leading-[25.89px">
+            <div className=" text-[#000000] flex flex-col rounded-xl mobile:gap-1 mobile:mx-7 laptop:mx-14">
+              <p className="font-light text-base">
                 info@spellinnovation.com
               </p>
-              <p className="ml-12  font-light text-[16px] leading-[25.89px">
+              <p className="font-light text-base">
                 Contact@spellinnovation.com
               </p>
             </div>
           </div>
-          <div className="bg-[#F7F7F7] flex rounded-lg flex-col w-[460px] h-[103px] mt-10">
-            <div className="flex flex-row">
+          <div className="bg-[#F7F7F7] flex rounded-lg flex-col ">
+            <div className="flex flex-row mobile:gap-3 laptop:py-3 laptop:gap-1">
               <svg
-                className="ml-4 mt-4"
+                className="laptop:mx-4"
                 width="16"
                 height="19"
                 viewBox="0 0 16 19"
@@ -101,59 +101,59 @@ const ContactUs = () => {
                 />
               </svg>
 
-              <h1 className="text-[16px] leading-[18.75px] text-[#5F2466] font-bold mt-4 ml-3">
+              <h1 className="text-[#5F2466] text-base font-bold">
                 Location
               </h1>
             </div>
-            <div className=" text-[#000000] flex rounded-xl mt-3">
-              <p className="ml-12 font-light text-[16px] leading-[25.89px]">
+            <div className=" text-[#000000] flex rounded-xl mobile:gap-1 mobile:mx-7 mobile:py-2">
+              <p className="font-light text-base">
                 Pipal bot, Mid baneswor
               </p>
             </div>
           </div>
         </div>
-        <div className="ml-36 pr-10">
-          <div className="text-[#000000] font-Poppins font-base  w-[35%] flex flex-col gap-5 ">
+        <div className="mobile:py-10 laptop:justify-start">
+          <div className="text-[#000000] font-base mobile:w-[35%] flex flex-col gap-5 tablet:w-full">
             <div className="relative gap-3">
-              <p className="text-[#5F2466] font-bold text-[16px] leading-[18.75px] pb-2 ">
+              <p className="text-[#5F2466] font-bold text-base pb-2 ">
                 Full Name
               </p>
               <input
-                className=" border-[#D0D7E2] border-[1px] flex rounded-[8px] px-3 py-3 w-[654px] h-[56px]"
+                className=" border-[#D0D7E2] border-[1px] flex rounded-lg px-3 py-3 mobile:w-80 tablet:w-full"
                 type="text"
                 placeholder="Full Name"
                 required
               />
             </div>
             <div className="relative gap-3">
-              <p className="text-[#5F2466] font-bold text-[16px] leading-[18.75px] pb-2 ">
+              <p className="text-[#5F2466] font-bold text-base pb-2 ">
                 Email Address
               </p>
               <input
-                className=" border-[#D0D7E2] border-[1px] flex rounded-[8px] px-3 py-3 w-[654px] h-[56px]"
+                className=" border-[#D0D7E2] border-[1px] flex rounded-lg px-3 py-3 mobile:w-80 tablet:w-full"
                 type="text"
                 placeholder="Email Address"
                 required
               />
             </div>
             <div className="relative gap-3">
-              <p className="text-[#5F2466] font-bold text-[16px] leading-[18.75px] pb-2 ">
+              <p className="text-[#5F2466] font-bold text-base pb-2 ">
                 Phone Number
               </p>
               <input
-                className=" border-[#D0D7E2] border-[1px] flex rounded-[8px] px-3 py-3 w-[654px] h-[56px]"
+                className=" border-[#D0D7E2] border-[1px] flex rounded-[8px] px-3 py-3 mobile:w-80 tablet:w-full"
                 type="text"
                 placeholder="Phone Number"
                 required
               />
             </div>
             <div className="relative gap-3">
-              <p className="text-[#5F2466] font-bold text-[16px] leading-[18.75px] pb-2 ">
+              <p className="text-[#5F2466] font-bold text-base pb-2 ">
                 Service{" "}
               </p>
-              <select className=" border-[#D0D7E2] border-[1px] flex rounded-[8px] px-3 py-3 w-[654px] h-[56px]    ">
+              <select className=" border-[#D0D7E2] border-[1px] flex rounded-lg px-3 py-3 mobile:w-80 tablet:w-full">
                 <option
-                  className="text-[#000000] font-light text-[16px] leading-[28px]"
+                  className="text-[#000000] font-light text-base"
                   value=""
                 >
                   Select
@@ -164,28 +164,28 @@ const ContactUs = () => {
               </select>
             </div>
             <div className="relative gap-3">
-              <p className="text-[#5F2466] font-bold text-[16px] leading-[18.75px] pb-2 ">
+              <p className="text-[#5F2466] font-bold text-base pb-2 ">
                 Inquiry for
               </p>
-              <select className=" border-[#D0D7E2] border-[1px] flex rounded-[8px] px-3 py-3 w-[654px] h-[56px]    ">
+              <select className=" border-[#D0D7E2] border-[1px] flex rounded-lg px-3 py-3 mobile:w-80 tablet:w-full">
                 <option
-                  className="text-[#000000] font-light text-[16px] leading-[28px]"
+                  className="text-[#000000] font-light text-base"
                   value=""
                 >
                   Select
                 </option>
-                <option className="" value=""></option>
-                <option value=""></option>
-                <option value=""></option>
+                <option className="" value="">yellow</option>
+                <option value="">hellow</option>
+                <option value="">nepal</option>
               </select>
             </div>
             <div className="relative gap-3">
-              <p className="text-[#5F2466] font-bold text-[16px] leading-[18.75px] pb-2 ">
+              <p className="text-[#5F2466] font-bold text-base pb-2 ">
                 Inquiry for
               </p>
-              <select className=" border-[#D0D7E2] border-[1px] flex rounded-[8px] px-3 py-3 w-[654px] h-[56px]    ">
+              <select className=" border-[#D0D7E2] border-[1px] flex rounded-lg px-3 py-3 mobile:w-80 tablet:w-full">
                 <option
-                  className="text-[#000000] font-light text-[16px] leading-[28px]"
+                  className="text-[#000000] font-light text-base"
                   value=""
                 >
                   Select
@@ -196,24 +196,19 @@ const ContactUs = () => {
               </select>
             </div>
             <div className="relative gap-3">
-              <p className="text-[#5F2466] font-bold text-[16px] leading-[18.75px] pb-2">
+              <p className="text-[#5F2466] font-bold text-base pb-2">
                 Message
               </p>
               <input
-                className=" border-[#D0D7E2] border-[1px] flex rounded-[8px] px-3 pb-20 w-[654px] h-[128px]"
+                className=" border-[#D0D7E2] border-[1px] flex rounded-lg px-3 pb-20 mobile:w-80 mobile:h-66 tablet:w-full"
                 type="text"
                 placeholder="I would like to.........."
               />
             </div>
 
             <button
-              className="bg-[#5F2466] text-[#FFFFFF] rounded-xl w-fit mt-1 mr-[800px] py-[15px] px-[25px] m"
-              onClick={(event) => {
-                event.target.style.backgroundColor =
-                  event.target.style.backgroundColor === "rgb(252, 101, 23)"
-                    ? "#5F2466"
-                    : "#FC6517";
-              }}
+              className="bg-[#5F2466] text-[#FFFFFF] rounded-xl w-fit  py-4 px-6"
+
             >
               Submit
             </button>
@@ -221,7 +216,7 @@ const ContactUs = () => {
         </div>
       </div>
       <img
-        className="w-[1240px] h-[405px] flex rounded-[8px] my-7 mx-20"
+        className="w-96 h-40 flex rounded-lg tablet:w-full tablet:h-60 tablet:my-10"
         src={map}
         alt=""
       />

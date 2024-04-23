@@ -22,6 +22,8 @@ import Buttom from "./Buttom";
 
 import Photo from "./Photo";
 import Frequtly from "./Frequtly";
+import { Link } from "react-router-dom";
+import VoiceBroadcast from "./VoiceBroadcast";
 
 const Home = () => {
   return (
@@ -274,10 +276,12 @@ const Home = () => {
                 Reach your customers effectively and efficiently.
               </p>
               <button
+
                 className="bg-[#5F2466] text-[#FFFFFF] active:bg-[#FC6517] duration-10 mobile:rounded-lg mobile:py-2 mobile:px-1 mobile:my-2  tablet:px-3 tablet:text-lg tablet:font-medium tablet:rounded-xl laptop:px-2 laptop:py-3 "
 
               >
                 Learn More
+
               </button>
             </div>
           </div>
