@@ -4,7 +4,7 @@ import gg from "../Image/gg.png";
 
 const Photo = () => {
   return (
-    <div>
+    <div className="tablet:w-11/12 mobile:mx-10 laptop:mx-5">
       <div className=" flex flex-col py-10 justify-center items-center mobile:flex-row">
         <div className="flex flex-col items-center laptop:items-start  ">
           <h2 className="text-[#5F2466] mobile:text-base mobile:font-normal mobile:w-full tablet:text-2xl tablet:font-semibold laptop:text-4xl laptop:font-bold">

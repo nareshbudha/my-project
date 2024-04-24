@@ -27,9 +27,9 @@ import Frequtly from "./Frequtly";
 
 const BulkSms = () => {
   return (
-    <div className="tablet:w-11/12 laptop:w-10/12 mobile:mx-10">
-      <div className="flex flex-col  tablet:flex-row tablet:gap-4 ">
-        <div className="flex flex-col mobile:gap-2   tablet:gap-5 laptop:gap-6 desktop:gap-5 justify-center items-start">
+    <div>
+      <div className=" tablet:w-11/12 mobile:mx-10 laptop:mx-5 desktop:mx-28 flex flex-col mobile:gap-10 tablet:flex-row tablet:gap-4 ">
+        <div className="flex flex-col mobile:gap-3 tablet:gap-5 laptop:gap-4 desktop:gap-5 justify-center mobile:items-start">
           <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl laptop:font-medium">
             Streamline Your Communication with Bulk SMS Services
           </h2>
@@ -40,24 +40,19 @@ const BulkSms = () => {
           </p>
           <button
             className="bg-[#5F2466] text-[#FFFFFF] rounded-lg text-xs py-2 px-1 tablet:font-bold tablet:text-base tablet:rounded-xl "
-            onClick={(event) => {
-              event.target.style.backgroundColor =
-                event.target.style.backgroundColor === "rgb(252, 101, 23)"
-                  ? "#5F2466"
-                  : "#FC6517";
-            }}
+
           >
             Get in touch
           </button>
         </div>
         <img
-          className=" mobile:w-32  tablet:w-80 laptop:w-80 laptop:ml-40 desktop:w-96 desktop:h-96"
+          className=""
           src={bb}
           alt="Logo"
         />
       </div>
-      <div className="flex justify-between gap-5 py-28">
-        <div className=" bg-[#F7F7F7] flex flex-col rounded-xl mobile:w-60  mobile:h-32 tablet:w-96 tablet:h-44 laptop:w-60 laptop:h-44 desktop:w-72 desktop:h-48  ">
+      <div className="tablet:w-11/12 mobile:mx-10 laptop:mx-5 desktop:mx-28 py-20 laptop:flex laptop:gap-5">
+        <div className=" bg-[#F7F7F7] flex flex-col rounded-xl laptop:w-64 laptop:h-44 desktop:w-72 desktop:h-48">
           <LuArrowUpRightSquare className="text-[#5F2466]  mobile:w-10 mobile:h-5 tablet:w-8 tablet:h-8 laptop:w-10 laptop:h-10  " />
           <h3 className="text-[#5F2466] mobile:text-base mobile:font-medium tablet:text-2xl	tablet:font-semibold 	   ">
             Send at scale
@@ -67,9 +62,9 @@ const BulkSms = () => {
             globally, all made possible by our intelligent routing engine.
           </p>
         </div>
-        <div className="flex flex-col   bg-[#F7F7F7] rounded-xl mobile:w-60  mobile:h-32 tablet:w-96 tablet:h-44 laptop:w-64 laptop:h-44 desktop:w-72 desktop:h-48 desktop:px-3 desktop:py-1">
+        <div className="flex flex-col   bg-[#F7F7F7] rounded-xl mobile:my-8 laptop:my-1 laptop:w-64 laptop:h-44 desktop:w-72 desktop:h-48 desktop:px-3 desktop:py-1">
           <BiSolidBarChartAlt2 className="text-[#5F2466] mobile:w-5 mobile:h-5 tablet:w-8 tablet:h-8 laptop:w-10 laptop:h-10  " />
-          <h3 className="text-[#5F2466] mr-5 mobile:text-base mobile:font-medium tablet:text-2xl	tablet:font-semibold 	 	   ">
+          <h3 className="text-[#5F2466] mr-5 mobile:text-base mobile:font-medium tablet:text-2xl	tablet:font-semibold">
             Performance insights
           </h3>
           <p className="text-[#000000] flex justify-center mobile:text-xs mobile:font-light text-base font-normal desktop:text-lg desktop:leading-6 ">
@@ -77,7 +72,7 @@ const BulkSms = () => {
             with real-time metrics on network-level deliverability.{" "}
           </p>
         </div>
-        <div className="bg-[#F7F7F7] flex flex-col rounded-xl mobile:w-60  mobile:h-32 tablet:w-96 tablet:h-44 laptop:w-64 laptop:h-44 desktop:w-72 desktop:h-48 desktop:ml-1  ">
+        <div className="bg-[#F7F7F7] flex flex-col rounded-xl mobile:mb-8 laptop:w-64 laptop:h-44 desktop:w-72 desktop:h-48 desktop:ml-1  ">
           <HiOutlineComputerDesktop className="text-[#5F2466] mobile:w-5 mobile:h-5 tablet:w-8 tablet:h-8 laptop:w-10 laptop:h-10 " />
           <h3 className="text-[#5F2466] mobile:text-base mobile:font-medium tablet:text-2xl	tablet:font-semibold 	 	   ">
             Integrate via REST API
@@ -88,7 +83,7 @@ const BulkSms = () => {
             and SDKs.
           </p>
         </div>
-        <div className="bg-[#F7F7F7] flex flex-col rounded-xl mobile:w-60  mobile:h-32 tablet:w-96 tablet:h-44 laptop:w-60 laptop:h-44 desktop:w-72 desktop:h-48 desktop:px-3 desktop:py-1">
+        <div className="bg-[#F7F7F7] flex flex-col rounded-xl mobile:mb-8  laptop:w-60 laptop:h-44 desktop:w-72 desktop:h-48 desktop:px-3 desktop:py-1">
           <FaGlobeAfrica className="text-[#5F2466] mobile:w-5 mobile:h-5 tablet:w-8 tablet:h-8 laptop:w-10 laptop:h-10" />
           <h3 className="text-[#5F2466] mobile:text-base mobile:font-medium tablet:text-2xl	tablet:font-semibold 	   ">
             Globally compliant
@@ -99,8 +94,8 @@ const BulkSms = () => {
           </p>
         </div>
       </div>
-      <div className=" flex flex-col justify-center items-center w-full mt-10">
-        <h2 className="text-[#5F2466] mobile:mr-24 mobile:text-2xl mobile:font-normal tablet:text-3xl  tablet:font-semibold laptop:text-4xl laptop:font-bold laptop:mr-48 flex justify-end	">
+      <div className=" flex flex-col tablet:w-11/12 mobile:mx-10 laptop:mx-5 desktop:mx-28 mobile:gap-8">
+        <h2 className="text-[#5F2466] flex mobile:text-2xl mobile:font-normal tablet:text-3xl  tablet:font-semibold laptop:text-4xl laptop:justify-center laptop:font-bold  	">
           Why you need SMS APIs
         </h2>
         <p className="text-[#000000] mobile:text-xs mobile:font-light  tablet:text-sm  desktop:text-xl desktop:font-normal ">
@@ -114,7 +109,7 @@ const BulkSms = () => {
         </p>
       </div>
 
-      <div className=" flex flex-row items-center">
+      <div className=" flex flex-row tablet:w-11/12 mobile:mx-10 laptop:mx-5 desktop:mx-28 mobile:py-14 laptop:justify-center">
         <div className="flex flex-col  ">
           <div className="bg-[#F05327] text-[#FFFFFF] flex flex-row gap-5 rounded-t-lg py-2 px-14  mobile:w-72 tablet:w-80 laptop:w-96  ">
             <RxCross2 />
@@ -134,12 +129,12 @@ const BulkSms = () => {
         </div>
 
         <img
-          className="  mobile:hidden  tablet:block tablet:w-72  "
+          className="  mobile:hidden  tablet:block tablet:w-80 laptop:-ml-40 "
           src={mm}
           alt="Logo"
         />
       </div>
-      <div className="flex flex-col bg-[#F7F7F7] justify-around items-center py-4 gap-4 ">
+      <div className="flex flex-col bg-[#F7F7F7] justify-around items-center py-4 gap-4 laptop:my-20">
         <p className="text-[#000000] my-1 w-[40%] text-center  text-xs font-extralight  tablet:text-2xl tablet:font-light">
           We support 10+ programming languages including
         </p>
@@ -171,12 +166,12 @@ const BulkSms = () => {
           />
         </div>
       </div>
-      <div className=" bg-[#5F2466] text-[#FFFFFF] flex flex-col mobile:py-4 mobile:px-7 w-full  ">
-        <h2 className="flex justify-between mobile:text-lg mobile:-mt-2 tablet:text-3xl tablet:font-bold tablet:pl-28 desktop:ml-72 desktop:pt-20">
+      <div className=" bg-[#5F2466] text-[#FFFFFF] flex flex-col mobile:py-4 mobile:px-7 w-full tablet:items-center tablet:py-10 tablet:my-20 ">
+        <h2 className=" mobile:text-lg tablet:text-3xl tablet:font-bold tablet: desktop:ml-72 desktop:pt-20">
           There’s so much to do with SMS API
         </h2>
         <div className="flex flex-row justify-center mobile:gap-4 mobile:mt-3 desktop:pt-4 desktop:pb-12 d">
-          <div className="flex flex-col bg-[#782C8080]  desktop:w-96  ">
+          <div className="flex flex-col bg-[#782C8080] tablet:my-2 tablet:py-3 tablet:px-5  desktop:w-96  ">
             <h3 className="flex mobile:text-sm mobile:font-normal mobile:gap-1 tablet:text-xl tablet:gap-3 desktop:text-3xl ">
               <CiUser />
               Great for customers
@@ -196,7 +191,7 @@ const BulkSms = () => {
               </li>
             </ul>
           </div>
-          <div className="flex flex-col bg-[#782C8080]   desktop:w-96  ">
+          <div className="flex flex-col bg-[#782C8080] tablet:my-2 tablet:py-3 tablet:px-5   desktop:w-96  ">
             <h3 className="flex mobile:text-sm mobile:font-normal mobile:gap-1 tablet:text-xl tablet:gap-3 desktop:text-3xl">
               <AiFillMessage />
               Quick and convenient
@@ -218,21 +213,22 @@ const BulkSms = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col">
-        <h2 className=" text-[#5F2466] mt-20 flex text-base font-semibold  tablet:text-4xl  tablet:font-bold  tablet:justify-center ">
+      <div className="flex flex-col tablet:w-11/12 mobile:mx-10 laptop:mx-5 mobile:py-10 mobile:gap-5 laptop:items-center  laptop:gap-10">
+        <h2 className=" text-[rgb(95,36,102)] flex text-base font-semibold  tablet:text-4xl  tablet:font-bold  tablet:justify-center laptop:my-20">
           Why SMS solutions are perfect for you
         </h2>
-        <div className="flex flex-col tablet:flex-row    ">
-          <div className="flex flex-col ">
-            <h1 className=" text-[#5F2466]  text-base tablet:text-xl tablet:font-bold tablet:ml-12 tablet:mt-4 desktop:ml-44  ">
+        <div className="flex flex-col mobile:gap-10 tablet:flex-row    ">
+          <div className="flex flex-col mobile:gap-5 laptop:items-center ">
+            <h1 className=" text-[#5F2466]  text-base tablet:text-xl tablet:font-bold   ">
               Enable personal customer care
             </h1>
-            <div className=" flex flex-col  items-center">
-              <p className=" text-sm py-3 tablet:pl-1 tablet:pt-4 tablet:w-4/5 font-light	 ">
-                Give your service teams the ability to receive and respond to
-                SMS messages from a shared Inbox.
+            <div className=" flex flex-col laptop:items-center ">
+              <p className=" text-base font-light">
+                Give your service teams the ability to receive and respond
               </p>
-              <ul className="list-disc ml-5 mobile:pr-60 tablet:mt-3 tablet:ml-16 tablet:pr-48 laptop:ml-48 ">
+              <span className=" text-base font-light	">to
+                SMS messages from a shared Inbox.</span>
+              <ul className="list-disc ml-5 ">
                 <li className=" font-light	">Automation to handle volumes </li>
                 <li className="  font-light	">Self-serve resolution </li>
                 <li className=" font-light	">Escalate to agent</li>
@@ -242,20 +238,15 @@ const BulkSms = () => {
           </div>
 
           <img
-            className="mobile:w-48 mobile:mt-5 tablet:ml-12"
+            className="mobile:w-48 "
             src={nn}
             alt="Logo"
           />
         </div>
-        <div className="flex flex-row justify-center items-center mt-5 mobile:gap-1 tablet:mr-28 tablet:gap-2 desktop:ml-16">
+        <div className="flex flex-row  gap-2 tablet:gap-2 ">
           <button
             className="bg-[#5F246663]   text-[#000000] hover:text-[#ffff] rounded-lg mobile:py-1 mobile:px-2 mobile:text-xs mobile:font-light tablet:text-sm tablet:py-2 tablet:px-5 tablet:font-normal"
-            onTouchMoveCapture={(event) => {
-              event.target.style.backgroundColor =
-                event.target.style.backgroundColor === "rgb(95, 36, 102)"
-                  ? "#5F2466"
-                  : "#5F246663";
-            }}
+
           >
             Customer care
           </button>
@@ -268,31 +259,21 @@ const BulkSms = () => {
           <a
             href="#"
             className="bg-[#5F2466] text-[#000000] hover:text-[#ffff] rounded-lg mobile:py-1 mobile:px-2 mobile:text-xs mobile:font-light tablet:text-sm tablet:py-2 tablet:px-5 tablet:font-normal"
-            onClick={(event) => {
-              event.target.style.backgroundColor =
-                event.target.style.backgroundColor === "rgb(95, 36, 102)"
-                  ? "#5F2466"
-                  : "#5F246663";
-            }}
+
           >
             Optimizer for efficiency
           </a>
         </div>
       </div>
-      <div className="bg-[#5F2466] flex flex-col-reverse tablet:flex-row items-center mt-28  tablet:w-full tablet:h-44 tablet:mt-20 ">
-        <div className="flex flex-col tablet:ml-16 ">
-          <h1 className="text-[#FFFFFF] text-lg font-light tablet:max-w-full tablet:text-xl tablet:font-normal tablet:mr-20 laptop:text-3xl desktop:text-5xl   ">
+      <div className="bg-[#5F2466] flex flex-col-reverse tablet:flex-row items-center mobile:my-10 tablet:w-full tablet:h-44">
+        <div className="flex flex-col ">
+          <h1 className="text-[#FFFFFF] text-lg font-light tablet:max-w-full tablet:text-xl tablet:font-normal laptop:text-3xl desktop:text-5xl   ">
             Extend beyond text messages; personalize your calls with the
             utilization of Voice APIs.
           </h1>
           <btn
             className="text-[#FFFFFF] text-sm tablet:text-xl tablet:font-normal mt-2 flex items-center "
-            onClick={(event) => {
-              event.target.style.backgroundColor =
-                event.target.style.backgroundColor === "rgb(252, 101, 23)"
-                  ? "#5F2466"
-                  : "#FC6517";
-            }}
+
           >
             Explore our Voice API solution{" "}
             <svg
@@ -354,7 +335,7 @@ const BulkSms = () => {
           </btn>
         </div>
         <img
-          className=" hidden tablet:block  tablet:mb-28 tablet:w-1/4 tablet:mr-4"
+          className=" hidden tablet:block  tablet:mb-28 tablet:w-1/4 "
           src={oo}
           alt="Logo"
         />
