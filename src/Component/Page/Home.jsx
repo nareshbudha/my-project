@@ -28,7 +28,7 @@ const Home = () => {
 
     <div className="w-full">
       <img className=" w-full" src={iamges} alt="Logo" />
-      <div className=" text-[#702D77] absolute flex flex-col mobile:mx-10 justify-between mobile:top-[20%] laptop:top-2/4 -translate-y-2/4 mobile:space-y-4">
+      <div className=" text-[#702D77] absolute flex flex-col mobile:mx-10 justify-between mobile:top-[30%] desktop:top-[40%] -translate-y-2/4 mobile:space-y-4">
         <p className=" mobile:leading-5 mobile:text-xl mobile:font-light  tablet:text-3xl tablet:font-semibold tablet:mx-10 laptop:text-5xl  laptop:font-medium desktop:text-6xl ">
           Seamless CPaaS for Unparalleled
         </p>
