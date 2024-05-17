@@ -57,6 +57,7 @@ const About = () => {
           <img src={c} alt="" />
           <img src={d} alt="" />
         </div>
+        <div>dkfjh idjsfhsdiu </div>
 
       </div>
 
