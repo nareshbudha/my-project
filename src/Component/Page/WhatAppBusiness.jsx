@@ -1,80 +1,68 @@
 import React from "react";
 import ww from "../Image/ww.png";
 import fff from "../Image/fff.png";
-
-import { BsCircle } from "react-icons/bs";
-import { RxCross2 } from "react-icons/rx";
-import { TbMinus } from "react-icons/tb";
-
 import su from "../Image/su.png";
 import ce from "../Image/ce.png";
 import wwwq from "../Image/wwwq.png";
 import am from "../Image/am.png";
 import sp from "../Image/sp.png";
 import sss from "../Image/sss.png";
-
+import { BsArrowRight } from "react-icons/bs";
 import { CiUser } from "react-icons/ci";
+import { HiUserGroup } from "react-icons/hi";
+import { FaUserGroup } from "react-icons/fa6";
 import Frequtly from "./Frequtly";
 import Photo from "./Photo";
 
 const WhatAppBusiness = () => {
   return (
     <div>
-      <div className=" text-[#702D77] flex flex-row pt-40 ">
-        <div className="flex flex-col gap-7 w-[]610px h-[411] ml-20">
-          <h2 className="text-[40px] leading-[50px] font-medium w-2/4 ">
-            Enhance Customer Communication with WhatsApp Business Integration
-          </h2>
-          <p className="text-[#000000] w-2/3">
-            With SpellCPaaS platform, you can leverage the power of WhatsApp
-            Business to Connect with your customers more effectively.
-          </p>
-
-          <div className="  text-[#FFFFFF]  flex flex-row gap-[10px] font-bold   justify-start items-center">
-            <button className="bg-[#702D77]  rounded-xl py-[10px] px-[25px] ">
-              Get In touch
-            </button>
-            <button className="bg-[#702D77]  rounded-xl py-[10px] px-[25px]">
-              View pricing
-            </button>
-          </div>
-        </div>
-
-        <img className="mr-56 mb-32" src={ww} alt="Logo" />
-      </div>
-      <div className=" flex flex-col justify-center items-center w-full mt-20 gap-3">
-        <h2 className="text-[#5F2466] text-[40px] leading-[50px] font-bold flex justify-end	">
-          Enhance your WhatsApp business messages on a reliable platform{" "}
-        </h2>
-        <h1 className="text-[#000000] font-light	 text-base px-40 w-[80%] mt-10 ">
-          Conversational marketing, sales or support use cases can be designed
-          and deployed throughout the entire customer journey on WhatsApp over a
-          unified platform.  
-        </h1>
-      </div>
-      <div className="flex flex-row ">
-        <div className="flex flex-col  justify-center items-center ml-52 mt-10 ">
-          <div className="bg-[#F05327] text-[#FFFFFF] py-3 pl-6 gap-2   w-2/3 flex rounded-t-lg  ">
-            <RxCross2 />
-            <BsCircle className="pl-2" />
-            <TbMinus />
-          </div>
-          <div className="bg-[#5F2466] w-2/3  rounded-b-lg    ">
-            <p className="text-[#FFFFFF]  text-base font-light pl-8 mt-11 mb-24 w-[65%] ">
-              import http.client import json conn =
-              http.client.HTTPSConnection(“baseUrl”) payload = json.dumps
-              “from”: “441134960000”, “to”: “441134960001”, “messageId”:
-              “a28dd97c-1ffb-4fcf-99f1-0b557ed381da”, “content”: “text”: “Some
-              text” , “callbackData”: “Callback data”,
+      <div className="flex tablet:flex-row tabletmd:w-[90%] laptop:w-[80%] desktop:w-[65%] w-[90%] mx-auto ">
+        <div className="flex flex-col lg:flex-row w-full mobile:py-5 mobile:gap-5 tablet:py-10 tablet:gap-16 laptop:gap-32 desktop:gap-48">
+          <div className="flex flex-col mobile:gap-3 tablet:gap-5 laptop:gap-6 desktop:gap-5 justify-center items-start">
+            <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl laptop:font-medium">
+              Enhance Customer Communication with WhatsApp Business Integration
+            </h2>
+            <p className="text-[#000000] mobile:text-xs mobile:font-light tablet:text-base">
+              With SpellCPaaS platform, you can leverage the power of WhatsApp
+              Business to Connect with your customers more effectively.
             </p>
+            <div className="flex flex-row gap-2">
+              <button className="bg-[#5F2466] hover:bg-[#FC6517] text-[#FFFFFF] text-xs mobile:rounded-lg px-1 py-2 mobile:my-2 tablet:px-5 tablet:text-lg tablet:font-medium tablet:rounded-xl">
+                Get in touch
+              </button>
+              <button className="bg-[#5F2466] hover:bg-[#FC6517] text-[#FFFFFF] text-xs mobile:rounded-lg px-1 py-2 mobile:my-2 tablet:px-5 tablet:text-lg tablet:font-medium tablet:rounded-xl">
+                View pricing
+              </button>
+            </div>
+          </div>
+          <div>
+            <img
+              className="hidden tablet:block tablet:w-72 tablet:h-72 laptop:w-80  "
+              src={ww}
+              alt="Logo"
+            />
           </div>
         </div>
-        <img
-          className="w-[380px] h-[350px] -ml-80 mr-96 mt-24 "
-          src={fff}
-          alt="Logo"
-        />
       </div>
+      <div className=" flex py-20 flex-col justify-center items-center gap-4 tabletmd:w-[90%] laptop:w-[80%] desktop:w-[65%] w-[90%] mx-auto">
+        <div className="max-w-4xl mx-auto flex flex-col gap-4">
+          <h2 className="text-[#5F2466] flex mobile:text-2xl mobile:font-normal tablet:text-3xl  tablet:font-semibold laptop:text-4xl justify-center laptop:font-bold  	">
+            Enhance your WhatsApp business messages on a reliable platform
+          </h2>
+          <p className="text-[#000000] text-base font-normal text-center">
+            Conversational marketing, sales or support use cases can be designed
+            and deployed throughout the entire customer journey on WhatsApp over
+            a unified platform.  
+          </p>
+          <img
+            className=" hidden  tablet:block  tablet:mt-5 w-[100%] "
+            src={fff}
+            alt="Logo"
+          />
+        </div>
+      </div>
+
       <div className="flex flex-col bg-[#F7F7F7] justify-center items-center mt-16 py-4 gap-4">
         <p className="text-[#000000] text-2xl font-light">
           We support 10+ programming languages including
@@ -88,129 +76,142 @@ const WhatAppBusiness = () => {
           <img src={sp} alt="Logo" />
         </div>
       </div>
-      <div className="bg-[#5F2466] pb-56">
-        <h2 className="text-[#FFFFFF] text-[40px] font-bold py-10 mt-14	flex justify-center ">
-          Elevate your communications with WhatsApp
-        </h2>
-        <div className="flex flex-row justify-center items-center gap-7">
-          <div className="bg-[#782C8080] w-[403.35px] h-[299px] ml-52 ">
-            <h3 className="text-[#ffffff] font-semibold flex 	text-2xl leading-6 gap-5 ml-5 mt-5	">
-              <CiUser className="ml-2 w-[36px] h-[36px]  " />
-              Smart API’s happy clients
-            </h3>
-            <ul className="list-disc mt-6 flex flex-col gap-3">
-              <li className="ml-5 text-base text-[#ffffff] font-normal">
-                Leverage real-time data and take customer interactions to the
-                next level via Webhooks
-              </li>
-              <li className="ml-5 text-base text-[#ffffff] font-normal">
-                Tailor your solutions and add additional capabilities to look
-                after your clients’ needs
-              </li>
-              <li className="ml-5 text-base text-[#ffffff] font-normal">
-                Add a click-to-call button to your website or app and let your
-                callers reach you instantly
-              </li>
-            </ul>
-          </div>
-          <div className="bg-[#782C8080] w-[404px] h-[300.65px]  ">
-            <h3 className="text-[#ffffff] font-semibold flex 	text-2xl leading-6 gap-5 ml-5 mt-5	">
-              <CiUser className="ml-2 w-[32.08px] h-[32.08px]" />
-              Empowered employees every where
-            </h3>
-            <ul className="list-disc mt-6 flex flex-col gap-3">
-              <li className="ml-5 text-base text-[#ffffff] font-normal">
-                Reduce agent workload significantly with features like ring
-                groups and virtual receptionist
-              </li>
-              <li className="ml-5 text-base text-[#ffffff] font-normal">
-                Deploy number masking to disguise client and agent contact
-                details, and ensure privacy
-              </li>
-              <li className="ml-5 text-base text-[#ffffff] font-normal">
-                Handle large call volumes even during peak season efficiently,
-                with API-enabled call queues
-              </li>
-            </ul>
-          </div>
-          <div className="bg-[#782C8080]  w-[403.35px] h-[298.65px] mr-52 ">
-            <h3 className="text-[#ffffff] font-semibold  flex	text-2xl leading-6 gap-5 ml-5 mt-5	">
-              <CiUser className="ml-5 w-[36px] h-[36px]  " />
-              Developer-friendly all the way
-            </h3>
-
-            <ul className="list-disc mt-6 flex flex-col gap-3">
-              <li className="ml-5 text-base text-[#ffffff] font-normal">
-                Give developers complete control over your voice capabilities
-                with easy-to-configure APIs
-              </li>
-              <li className="ml-5 text-base text-[#ffffff] font-normal">
-                Receive quick clarifications to all your API queries with
-                comprehensive Acefone guides
-              </li>
-              <li className="ml-5 text-base text-[#ffffff] font-normal">
-                No question is too tough for SpellCPaaS expert support team—get
-                in touch with us 24x7x365
-              </li>
-            </ul>
+      <div className="bg-[#5F2466] w-full my-10">
+        <div className="   text-[#FFFFFF] flex flex-col justify-center  items-center tabletmd:w-[90%] laptop:w-[80%] desktop:w-[65%] w-[90%] mx-auto ">
+          <h2 className=" mobile:text-lg tablet:text-3xl tablet:font-bold py-5">
+            Elevate your communications with WhatsApp
+          </h2>
+          <div className="grid grid-cols-1 tabletmd:grid-cols-3 tablet:grid-cols-2 gap-3 py-20">
+            <div className="flex flex-col bg-[#782C8080] p-4">
+              <h3 className="flex items-center mobile:text-sm mobile:font-medium mobile:gap-1 tablet:text-xl tablet:gap-3 desktop:text-3xl ">
+                <CiUser />
+                Smart API’s happy clients
+              </h3>
+              <ul className="flex py-3 flex-col list-disc mobile mobile:ml-5 mobile:text-xs mobile:font-thin mobile:leading-3 mobile:gap-1 tablet tablet:text-base tablet:font-normal gap-3 desktop: desktop:gap-4">
+                <li className="text-[#ffffff]  ">
+                  Leverage real-time data and take customer interactions to the
+                  next level via Webhooks
+                </li>
+                <li className="text-[#ffffff]  ">
+                  Tailor your solutions and add additional capabilities to look
+                  after your clients’ needs
+                </li>
+                <li className=" text-[#ffffff] ">
+                  Add a click-to-call button to your website or app and let your
+                  callers reach you instantly
+                </li>
+              </ul>
+            </div>
+            <div className="flex flex-col bg-[#782C8080]  p-4">
+              <h3 className="flex items-center mobile:text-sm mobile:font-medium mobile:gap-1 tablet:text-xl tablet:gap-3 desktop:text-3xl ">
+                <HiUserGroup className="" />
+                <span>Empowered employees every where</span>
+              </h3>
+              <ul className="flex py-3 flex-col list-disc mobile:ml-5 mobile:text-xs mobile:font-thin mobile:leading-3 mobile:gap-1  tablet:text-base tablet:font-normal gap-3  desktop:gap-4">
+                <li className="text-[#ffffff]  ">
+                  Reduce agent workload significantly with features like ring
+                  groups and virtual receptionist
+                </li>
+                <li className="text-[#ffffff]  ">
+                  Deploy number masking to disguise client and agent contact
+                  details, and ensure privacy
+                </li>
+                <li className=" text-[#ffffff] ">
+                  Handle large call volumes even during peak season efficiently,
+                  with API-enabled call queues
+                </li>
+              </ul>
+            </div>
+            <div className="flex flex-col bg-[#782C8080]  p-4">
+              <h3 className="flex items-center mobile:text-sm mobile:font-medium mobile:gap-1 tablet:text-xl tablet:gap-3 desktop:text-3xl ">
+                <FaUserGroup className="" />
+                <span>Developer-friendly all the way</span>
+              </h3>
+              <ul className="flex py-4 flex-col list-disc  mobile:ml-5 mobile:text-xs mobile:font-thin mobile:leading-3 mobile:gap-1  tablet:text-base tablet:font-normal gap-3 desktop:gap-4">
+                <li className="text-[#ffffff]  ">
+                  Give developers complete control over your voice capabilities
+                  with easy-to-configure APIs
+                </li>
+                <li className="text-[#ffffff]  ">
+                  Receive quick clarifications to all your API queries with
+                  comprehensive Acefone guides
+                </li>
+                <li className=" text-[#ffffff] ">
+                  No question is too tough for SpellCPaaS expert support
+                  team—get in touch with us 24x7x365
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="flex flex-col">
-        <h2 className=" text-[#5F2466] text-[40px]  font-bold mt-20 flex justify-center leading-[50px]">
-          Increase conversion rates with personalized offers and promotions 
-        </h2>
-        <div className="flex flex-row    ">
-          <div className="flex flex-col pl-32">
-            <div className=" flex flex-col  items-center">
-              <ul className="list-disc mt-6">
-                <li className="pr-32 font-light	">
-                  Abandoned cart reminders Orders management Related products
-                  suggestions Repeated orders
-                </li>
-                <li className="pr-32 font-light	">Orders management</li>
-                <li className="pr-32 font-light	">
-                  Related products suggestions
-                </li>
-                <li className="pr-32 font-light	">
-                  Related products suggestions
-                </li>
+
+      <div className="flex flex-col my-20 py-20 tabletmd:w-[90%] laptop:w-[80%] desktop:w-[65%] w-[90%] mx-auto">
+        <div className=" desktop:w-4/6 mx-auto">
+          <h2 className=" text-[rgb(95,36,102)]  text-xl font-bold text-center  tablet:text-2xl tabletmd:text-4xl gap-4">
+            Increase conversion rates with personalized offers and promotions 
+          </h2>
+          <div className="flex flex-col justify-center tablet:flex-row w-[100%] ">
+            <div className="flex flex-col mobile:gap-4  tablet:gap-12 desktop:gap-10 ">
+              <ul className="list-disc flex flex-col ml-7">
+                <li className=" font-light	">Abandoned cart reminders</li>
+                <li className="  font-light	">Orders management</li>
+                <li className=" font-light	">Related products suggestions</li>
+                <li className=" font-light	">Repeated orders</li>
               </ul>
-              <p className="pr-32 font-light	">
+              <p className=" text-base font-light max-w-[400px]">
                 Send automated conversational commerce messages with our API or
                 over our customer engagement solution M and interact with
                 customers with a chatbot built on Answers or on our cloud
                 contact center Conversations and API.  
               </p>
             </div>
+            <img className="hidden tablet:block " src={sp} alt="Logo" />
           </div>
+         
+          
 
-          <img className="ml-12" src={sp} alt="Logo" />
-        </div>
-        <div className="flex flex-row px-10 mt-5 justify-center items-center mr-24 gap-6 ">
-          <button className="rounded-[5px] bg-[#5F2466] text-[#FFFFFF]  py-3 px-12">
-            Conversational commerce{" "}
-          </button>
-          <button className="rounded-[5px] bg-[#5F246663] text-[#000000]   py-3 px-12">
-            Conversational marketing
-          </button>
-          <button className="rounded-[5px] bg-[#5F246663] text-[#000000]    py-3 px-12">
-            Conversational support
-          </button>
+          <div className="flex flex-row flex-wrap justify-center mobile:py-5 gap-2 tablet:gap-5 ">
+            <button className="bg-[#5F246663]   text-[#000000] hover:text-[#ffff] rounded-lg  text-xs font-light  tablet:text-sm py-3 tablet:px-10 tablet:font-normal">
+              Customer care
+            </button>
+            <a
+              href="#"
+              className=" bg-[#5F2466] hover:bg-[#5F246663] text-[#000000] hover:text-[#ffff] rounded-lg px-3 py-3 text-xs font-light tablet:text-sm tablet:px-5 tablet:font-normal"
+            >
+              Marketing campaigns
+            </a>
+            <a
+              href="#"
+              className="bg-[#5F3466] text-[#000000] hover:text-[#ffff] rounded-lg  text-xs font-light tablet:text-sm px-3 py-3 tablet:px-5 tablet:py-5 tablet:font-normal"
+            >
+              Optimizer for efficiency lol
+            </a>
+          </div>
         </div>
       </div>
-      <div className="bg-[#5F2466] w-full h-[403px] flex flex-row items-center mt-60 ">
-        <div className="flex flex-col ml-24 ">
-          <h1 className="text-[#FFFFFF] font-medium max-w-full	  text-[48px] leading-[50px]">
-            Why go for just customised calling when you can personalise your SMS
+  
+        <div className="bg-[#5F2466]  ">
+      <div className="flex flex-col tablet:flex-row justify-between tabletmd:w-[90%] laptop:w-[80%] desktop:w-[65%] w-[90%] mx-auto">
+        <div className="flex flex-col  tabletmd:w-[80%] gap-5 py-10">
+          <h1 className="text-[#FFFFFF] text-lg font-bold  tablet:max-w-[100%] tablet:text-3xl tablet:font-normal laptop:text-4xl desktop:text-5xl   ">
+          Why go for just customised calling when you can personalise your SMS
             capabilities too?
           </h1>
-          <btn className="text-[#FFFFFF] text-2xl mt-2 ">
-            Explore our Voice API solution
+          <btn className="text-[#FFFFFF] flex items-center  gap-5 text-base  font-light tablet:text-xl tablet:font-semibold">
+            Explore our Voice API solution <BsArrowRight />
           </btn>
         </div>
-        <img className="mb-48 w-2/6 mr-36" src={sss} alt="Logo" />
+        <div>
+        <img
+          className=" hidden tablet:block  tabletmd:-mt-40"
+          src={sss}
+          alt="Logo"
+        />
+        </div>
+       
+      </div>
       </div>
       <Frequtly />
       <Photo />

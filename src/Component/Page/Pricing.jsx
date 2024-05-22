@@ -6,23 +6,31 @@ import Photo from "./Photo";
 
 const Pricing = () => {
   return (
-    <div className="">
-      <div className="flex  mobile:flex-col tablet:flex-row tablet:justify-between ">
-        <div className="flex flex-col mobile:py-2 tablet:py-3 tablet:gap-3 desktop:ml-20 desktop:mt-28 ">
-          <h3 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold mobile:mx-7 tablet:text-3xl tablet:font-semibold tablet:pl-4 tablet:mr-36 laptop:text-4xl laptop:font-semibold  laptop:ml-5 laptop:-mr-6 desktop:text-5xl desktop:font-bold desktop:ml-8 desktop:mr-32	">
-            Plans & Pricing
-          </h3>
-          <p className="text-[#000000] mobile:text-xs mobile:mx-8 tablet:text-lg tablet:pl-2 tablet:font-medium laptop:text-base laptop:font-light laptop:-mr-20 laptop:ml-8 desktop:mr-8 desktop:ml-12">
-            Our video call feature allows you to connect with customers on a
-            more personal level, fostering stronger relationships and increasing
-            customer satisfaction.
-          </p>
+    <div >
+     <div className="flex tablet:flex-row tabletmd:w-[90%] laptop:w-[80%] desktop:w-[65%] w-[90%] mx-auto ">
+        <div className="flex flex-col lg:flex-row w-full mobile:py-5 mobile:gap-5 tablet:py-10 tablet:gap-16 laptop:gap-32 desktop:gap-48">
+          <div className="flex flex-col mobile:gap-3 tablet:gap-5 laptop:gap-6 desktop:gap-5 justify-center items-start">
+            <h2 className="text-[#5F2466] leading-6 text-xl font-semibold tablet:text-3xl laptop:text-4xl laptop:font-medium">
+              Plans & Pricing
+            </h2>
+            <p className="text-[#000000] text-xs first-letter:font-light tablet:text-base">
+              Our video call feature allows you to connect with customers on a
+              more personal level, fostering stronger relationships and
+              increasing customer satisfaction.
+            </p>
+          </div>
+          <div>
+            <img
+              className="hidden tablet:block tablet:w-72 tablet:h-72 laptop:w-80  "
+              src={pss}
+              alt="Logo"
+            />
+          </div>
         </div>
-        <img className="mobile:my-3 mobile:mx-3 mobile:w-40 mobile:h-40 tablet:w-72 tablet:h-56 tablet:ml-12 laptop:w-80 laptop:h-80 laptop:ml-40 laptop:pb-16 desktop:w-2/4 desktop:h-96" src={pss} alt="Logo" />
       </div>
-      <div className="flex mobile:flex-col laptop:flex-row justify-center items-center mobile:gap-2 tablet:gap-8 ">
+      <div className="flex flex-col laptop:flex-row justify-center items-center gap-5 ">
         <div className="flex flex-col items-center">
-          <div className="w-[343px] h-[500px] bg-[#5F2466]">
+          <div className="w-[343px] h-[600px] bg-[#5F2466]">
             <h1 className="bg-[#1E56A8] rounded-md	flex text-[40px] font-bold leading-[50px] px-3 py-3 mx-2 mt-2 text-[#FFFFFF] items-center justify-center">
               Essential
             </h1>
@@ -122,15 +130,16 @@ const Pricing = () => {
                   </svg>
                   Sample Text Here
                 </p>
-              </div>
-              <button className="bg-[#1E56A8] text-[#FFFFFF] w-[138.07px] h-[36.6px] justify-center items-center  rounded-lg text-[16px] leading-[18.75px]  font-bold ">
+                <div className="flex justify-center items-center py-10">   <button className="bg-[#1E56A8] text-[#FFFFFF] w-[138.07px] h-[36.6px] justify-center items-center  rounded-lg text-[16px] leading-[18.75px]  font-bold ">
                 SUBSCRIBE
-              </button>
+              </button></div>
+              </div>
+           
             </div>
           </div>
           <div
-            className="w-[343px] h-[300px]
-            flex flex-col justify-center items-center
+            className="hidden tablet:block tablet:w-[343px] tablet:h-[10px]
+            tabletmd:flex flex-col justify-center items-center
           border-l-[170px] border-l-transparent
           border-t-[110px] border-t-[#5F2466]
           border-r-[170px] border-r-transparent "
@@ -138,7 +147,7 @@ const Pricing = () => {
         </div>
 
         <div className="flex flex-col items-center">
-          <div className="w-[343px] h-[500px] bg-[#5F2466]">
+          <div className="w-[343px] h-[600px] bg-[#5F2466]">
             <h1 className="bg-[#287870] rounded-md	flex text-[40px] font-bold leading-[50px] px-3 py-3 mx-2 mt-2 text-[#FFFFFF] items-center justify-center">
               Professional
             </h1>
@@ -238,21 +247,22 @@ const Pricing = () => {
                   </svg>
                   Sample Text Here
                 </p>
-              </div>
-              <button className="bg-[#287870] text-[#FFFFFF] w-[138.07px] h-[36.6px] justify-center items-center  rounded-lg text-[16px] leading-[18.75px]  font-bold ">
+                <div className="flex justify-center items-center py-10">   <button className="bg-[#287870] text-[#FFFFFF] w-[138.07px] h-[36.6px] justify-center items-center  rounded-lg text-[16px] leading-[18.75px]  font-bold ">
                 SUBSCRIBE
-              </button>
+              </button></div>
+              </div>
+             
             </div>
           </div>
           <div
-            class="w-[343px] h-[300px]
+            class="w-[343px] h-[10px]
           border-l-[170px] border-l-transparent
           border-t-[110px] border-t-[#5F2466]
           border-r-[170px] border-r-transparent"
           ></div>
         </div>
         <div className="flex flex-col items-center">
-          <div className="w-[343px] h-[500px] bg-[#5F2466]">
+          <div className="w-[343px] h-[600px] bg-[#5F2466]">
             <h1 className="bg-[#FC6517] rounded-md	flex text-[40px] font-bold leading-[50px] px-3 py-3 mx-2 mt-2 text-[#FFFFFF] items-center justify-center">
               Essential
             </h1>
@@ -351,15 +361,16 @@ const Pricing = () => {
                     />
                   </svg>
                   Sample Text Here
-                </p>
-              </div>
-              <button className="bg-[#FC6517] text-[#FFFFFF] w-[138.07px] h-[36.6px] justify-center items-center  rounded-lg text-[16px] leading-[18.75px]  font-bold ">
+                </p> 
+                <div className="flex justify-center items-center py-10">   <button className="bg-[#FC6517] text-[#FFFFFF] w-[138.07px] h-[36.6px] justify-center items-center  rounded-lg text-[16px] leading-[18.75px]  font-bold ">
                 SUBSCRIBE
-              </button>
+              </button></div>
+              </div>
+              
             </div>
           </div>
           <div
-            class="w-[343px] h-[300px]
+            class="w-[343px] h-[10px]
           border-l-[170px] border-l-transparent
           border-t-[110px] border-t-[#5F2466]
           border-r-[170px] border-r-transparent"

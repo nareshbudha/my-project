@@ -7,10 +7,10 @@ import {
   HiOutlineComputerDesktop,
   HiOutlinePhoneArrowUpRight,
 } from "react-icons/hi2";
-import { BsCircle } from "react-icons/bs";
-import { RxCross2 } from "react-icons/rx";
-import { TbMinus } from "react-icons/tb";
-import { MdEvent } from "react-icons/md";
+import { FaUserCheck } from "react-icons/fa";
+import { MdEvent,MdPendingActions } from "react-icons/md";
+import { TbHeartRateMonitor } from "react-icons/tb";
+import { BsArrowRight } from "react-icons/bs";
 import su from "../Image/su.png";
 import ce from "../Image/ce.png";
 import wwwq from "../Image/wwwq.png";
@@ -22,124 +22,99 @@ import Photo from "./Photo";
 const Videocall = () => {
   return (
     <div>
-      <div className=" flex  sm:flex-col lg:flex-row w-full  justify-between gap-5 pt-28 ">
-        <div className="flex flex-col gap-5 ml-24">
-          <h2 className="text-[#5F2466] text-4xl  w-[70%] font-bold justify-center items-center ">
-            Experience Personal Customer Engagement with Interactive Video Calls
-          </h2>
-          <p className="text-[#000000] w-[65%]	text-xs	leading-6 flex   items-center">
-            Our video call feature allows you to connect with customers on a
-            more personal level, fostering stronger relationships and increasing
-            customer satisfaction.
-          </p>
-          <div className="  text-[#FFFFFF]  flex flex-row  gap-[10px] font-bold   justify-start items-center">
-            <button className="bg-[#702D77]  rounded-xl py-[10px] px-[25px] ">
-              Get In touch
-            </button>
-            <button className="bg-[#702D77]  rounded-xl py-[10px] px-[25px]">
-              View pricing
-            </button>
+      <div className="flex tablet:flex-row tabletmd:w-[90%] laptop:w-[80%] desktop:w-[65%] w-[90%] mx-auto ">
+        <div className="flex flex-col lg:flex-row w-full mobile:py-5 mobile:gap-5 tablet:py-10 tablet:gap-16 laptop:gap-32 desktop:gap-48">
+          <div className="flex flex-col mobile:gap-3 tablet:gap-5 laptop:gap-6 desktop:gap-5 justify-center items-start">
+            <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl laptop:font-medium">
+              Experience Personal Customer Engagement with Interactive Video
+              Calls
+            </h2>
+            <p className="text-[#000000] mobile:text-xs mobile:font-light tablet:text-base">
+              Our video call feature allows you to connect with customers on a
+              more personal level, fostering stronger relationships and
+              increasing customer satisfaction.
+            </p>
+            <div className="flex flex-row gap-2">
+              <button className="bg-[#5F2466] hover:bg-[#FC6517] text-[#FFFFFF] text-xs mobile:rounded-lg px-1 py-2 mobile:my-2 tablet:px-5 tablet:text-lg tablet:font-medium tablet:rounded-xl">
+                Get in touch
+              </button>
+              <button className="bg-[#5F2466] hover:bg-[#FC6517] text-[#FFFFFF] text-xs mobile:rounded-lg px-1 py-2 mobile:my-2 tablet:px-5 tablet:text-lg tablet:font-medium tablet:rounded-xl">
+                View pricing
+              </button>
+            </div>
+          </div>
+          <div>
+            <img
+              className="hidden tablet:block tablet:w-72 tablet:h-72 laptop:w-80  "
+              src={ll}
+              alt="Logo"
+            />
           </div>
         </div>
-        <img className="w-[25%] mr-48" src={ll} alt="Logo" />
       </div>
-      <div className="flex flex-row justify-center items-center mx-24 gap-5">
-        <div className="flex flex-col  w-[30%] bg-[#F7F7F7]  ">
-          <BiSolidBarChartAlt2 className="text-[#5F2466] w-[50px] h-[50px]  " />
 
-          <h3 className="text-[#5F2466] text-2xl	   ">Conferencing </h3>
-          <p className="text-[#000000] flex justify-center p-2  ">
+      <div className="grid grid-cols-1 tabletmd:grid-cols-4 tablet:grid-cols-2 py-20 gap-3 justify-between tabletmd:w-[90%] laptop:w-[80%] desktop:w-[65%] w-[90%] mx-auto">
+        <div className="bg-[#F7F7F7] flex flex-col rounded-xl p-3 ">
+          <BiSolidBarChartAlt2 className="text-[#5F2466] mobile:w-10 mobile:h-5 tablet:w-8 tablet:h-8 laptop:w-10 laptop:h-10 " />
+          <h3 className="text-[#5F2466] mobile:text-base mobile:font-medium tablet:text-2xl	tablet:font-semibold 	  ">
+            Conferencing
+          </h3>
+          <p className="text-[#000000] flex items-center mobile:text-xs mobile:font-light  text-base font-normal desktop:text-lg desktop:leading-6  ">
             Engage with multiple individuals simultaneously through video
             conferencing. Connect the right people on video using any device or
             channel.
           </p>
         </div>
-        <div className="flex flex-col  w-[30%] bg-[#F7F7F7]  ">
-          <HiOutlineComputerDesktop className="text-[#5F2466] w-[50px] h-[50px]  " />
-
-          <h3 className="text-[#5F2466] text-2xl	   ">Screen sharing </h3>
-          <p className="text-[#000000] flex justify-center p-2  ">
+        <div className="flex flex-col   bg-[#F7F7F7] rounded-xl p-3">
+          <HiOutlineComputerDesktop className="text-[#5F2466] mobile:w-5 mobile:h-5 tablet:w-8 tablet:h-8 laptop:w-10 laptop:h-10" />
+          <h3 className="text-[#5F2466] mobile:text-base mobile:font-medium tablet:text-2xl	tablet:font-semibold">
+            Screen sharing
+          </h3>
+          <p className="text-[#000000] flex justify-center mobile:text-xs mobile:font-light text-base font-normal desktop:text-lg desktop:leading-6">
             Enhance visual experiences during video calls by allowing customers
             to share their screens, promoting better interactions.
           </p>
         </div>
-        <div className="flex flex-col  w-[30%] bg-[#F7F7F7]  ">
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 50 50"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M30.3961 36.61C29.5954 34.9588 28.5604 33.757 26.7735 34.4898L23.2486 35.799C20.4268 37.1083 19.0207 35.799 17.6147 33.8352L11.2777 19.3944C10.4868 17.7432 10.8969 16.1897 12.6837 15.4569L17.6147 13.493C19.4015 12.7602 19.1184 11.2067 18.3177 9.55551L14.0898 1.6805C13.2891 0.0292866 11.6487 -0.371303 9.86186 0.361483C6.28814 1.8466 3.32957 4.15243 1.41578 7.58187C-0.927639 11.7734 0.244071 17.5966 0.712755 20.049C1.18144 22.5014 2.82183 26.7907 4.94068 31.2069C7.05952 35.6232 8.91473 39.0917 10.5746 41.0556C12.2346 43.0194 16.2086 48.3932 21.1396 49.5852C25.182 50.5622 29.5368 49.7415 33.1105 48.2662C34.8974 47.5334 34.9072 45.9799 34.1065 44.3189L30.3961 36.61ZM40.3751 11.5389H34.6045L42.2987 19.2381H24.9964V23.0876H42.2987L34.6142 30.777H40.3849L50.0027 21.1531L40.3751 11.5389Z"
-              fill="#5F2466"
-            />
-          </svg>
-
-          <h3 className="text-[#5F2466] text-2xl	   "> Interactive calls </h3>
-          <p className="text-[#000000] flex justify-center p-2  ">
-            Enhance visual experiences during video calls by allowing customers
-            to share their screens, promoting better interactions.
+        <div className="bg-[#F7F7F7] flex flex-col rounded-xl p-3">
+          <HiOutlinePhoneArrowUpRight className="text-[#5F2466] mobile:w-5 mobile:h-5 tablet:w-8 tablet:h-8 laptop:w-10 laptop:h-10 " />
+          <h3 className="text-[#5F2466] mobile:text-base mobile:font-medium tablet:text-2xl	tablet:font-semibold 	 	   ">
+            Interactive calls
+          </h3>
+          <p className="text-[#000000] flex justify-center mobile:text-xs mobile:font-light text-base font-normal desktop:text-lg ">
+            Enrich video call experiences by selecting menu options through DTMF
+            recognition, sharing audio, or playing text-to-speech content.
           </p>
         </div>
-        <div className="flex flex-col  w-[30%] bg-[#F7F7F7]  ">
-          <svg
-            width="38"
-            height="42"
-            viewBox="0 0 38 42"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M33.5833 4.33332H31.5V0.166656H27.3333V4.33332H10.6667V0.166656H6.5V4.33332H4.41667C2.10417 4.33332 0.270833 6.20832 0.270833 8.49999L0.25 37.6667C0.25 38.7717 0.688987 39.8315 1.47039 40.6129C2.25179 41.3943 3.3116 41.8333 4.41667 41.8333H33.5833C35.875 41.8333 37.75 39.9583 37.75 37.6667V8.49999C37.75 6.20832 35.875 4.33332 33.5833 4.33332ZM33.5833 37.6667H4.41667V16.8333H33.5833V37.6667ZM33.5833 12.6667H4.41667V8.49999H33.5833V12.6667ZM19 23.0833H29.4167V33.5H19V23.0833Z"
-              fill="#5F2466"
-            />
-          </svg>
-
-          <h3 className="text-[#5F2466] text-2xl	   ">Network events </h3>
-          <p className="text-[#000000] flex justify-center p-2  ">
+        <div className="bg-[#F7F7F7] flex flex-col rounded-xl p-3">
+          <MdEvent className="text-[#5F2466] mobile:w-5 mobile:h-5 tablet:w-8 tablet:h-8 laptop:w-10 laptop:h-10" />
+          <h3 className="text-[#5F2466] mobile:text-base mobile:font-medium tablet:text-2xl	tablet:font-semibold 	 	  ">
+            Network events
+          </h3>
+          <p className="text-[#000000] flex justify-center mobile:text-xs mobile:font-light text-base font-normal desktop:text-lg ">
             Stay informed about network quality and events, ensuring optimal
             connections for your video interactions.
           </p>
         </div>
       </div>
-      <div className=" flex flex-col justify-center items-center w-full mt-20 gap-3">
-        <h2 className="text-[#5F2466] text-[40px] leading-[50px] font-bold flex justify-end	">
-          Why you need Video Call
-        </h2>
-        <h1 className="text-[#000000] font-light	 text-base px-40 w-[90%] ml-40 mt-10 ">
-          Video calls provide a more immersive and personal communication
-          experience, fostering stronger connections and understanding
-        </h1>
-        <p className="text-[#000000] font-light	 text-base">
-          between parties, whether for business meetings, virtual
-          collaborations, or personal interactions.
-        </p>
-      </div>
-      <div className="flex flex-row ">
-        <div className="flex flex-col  justify-center items-center ml-52 mt-10 ">
-          <div className="bg-[#F05327] text-[#FFFFFF] py-3 pl-6 gap-2   w-2/3 flex rounded-t-lg  ">
-            <RxCross2 />
-            <BsCircle className="pl-2" />
-            <TbMinus />
-          </div>
-          <div className="bg-[#5F2466] w-2/3 pb-16 rounded-b-lg    ">
-            <p className="text-[#FFFFFF]  text-base font-light pl-8 mt-11 mb-24 w-[65%] ">
-              from nexmo import Client # Your Nexmo account credentials api_key
-              = "YOUR_API_KEY" api_secret = "YOUR_API_SECRET" client =
-              Client(api_key, api_secret) # Make a call response =
-              client.calls.create( to="+1234567890", from_="+1987654321",
-              url="https://your-voice-application.com/call.php" )
-              print(f"CallID:response["id"]")
-            </p>
-          </div>
+      <div className=" flex py-20 flex-col justify-center items-center gap-4 tabletmd:w-[90%] laptop:w-[80%] desktop:w-[65%] w-[90%] mx-auto">
+        <div className="max-w-4xl mx-auto flex flex-col gap-4">
+          <h2 className="text-[#5F2466] flex mobile:text-2xl mobile:font-normal tablet:text-3xl  tablet:font-semibold laptop:text-4xl justify-center laptop:font-bold  	">
+            Why you need Video Call
+          </h2>
+          <p
+            className="text-[#000000] text-base font-normal text-center
+        "
+          >
+          
+            Video calls provide a more immersive and personal communication
+            experience, fostering stronger connections and understanding
+          </p>
+          <img
+            className=" hidden  tablet:block  tablet:mt-5 w-[100%] "
+            src={vs}
+            alt="Logo"
+          />
         </div>
-        <img
-          className="w-[380px] h-[350px] -ml-80 mr-96 mt-24 "
-          src={vs}
-          alt="Logo"
-        />
       </div>
       <div className="flex flex-col bg-[#F7F7F7] justify-center items-center mt-16 py-4 gap-4">
         <p className="text-[#000000] text-2xl font-light">
@@ -153,59 +128,116 @@ const Videocall = () => {
           <img src={ce} alt="Logo" />
         </div>
       </div>
-      <div className="flex flex-col">
-        <h2 className=" text-[#5F2466] text-[40px]  font-bold mt-20 flex justify-center leading-[50px]">
-          Create delightful calling experiences
-        </h2>
-        <div className="flex flex-row    ">
-          <div className="flex flex-col pl-32">
-            <h1 className=" font-poppins text-base text-[#5F2466] ml-48 font-bold mt-20  ">
-              The API convenience{" "}
-            </h1>
-            <div className=" flex flex-col  items-center">
-              <p className="pl-20 pt-6 w-[70%] font-light	 ">
-                Receiving, making, forwarding, and recording calls will never be
-                the same.
+      <div className="bg-[#5F2466] w-full py-10">
+        <div className="   text-[#FFFFFF] flex flex-col justify-center  items-center tabletmd:w-[90%] laptop:w-[80%] desktop:w-[65%] w-[90%] mx-auto ">
+          <h2 className=" mobile:text-lg tablet:text-3xl tablet:font-bold">
+            There’s so much to do with Voice API
+          </h2>
+          <div className="grid grid-cols-1 tabletmd:grid-cols-3 tablet:grid-cols-2 gap-3 py-20">
+            <div className="flex flex-col bg-[#782C8080] gap-3 p-4 w-full h-fit">
+              <h3 className="flex mobile:text-sm mobile:font-medium  tablet:text-xl gap-3  desktop:font-semibold desktop:text-2xl ">
+                < FaUserCheck className=" " />
+                <span>Seamless Integration</span>
+              </h3>
+              <p className="flex flex-col mobile:text-xs mobile:font-thin mobile:leading-3   tablet:text-base tablet:font-normal ">
+              Effortlessly integrate video capabilities into your applications, providing a smooth and unified user experience.
               </p>
-              <ul className="list-disc mt-6 ml-44">
+            </div>
+            <div className="flex flex-col bg-[#782C8080] p-3 w-full gap-3 h-fit ">
+              <h3 className="flex mobile:text-sm mobile:font-medium  tablet:text-xl gap-3  items-center desktop:font-semibold desktop:text-2xl ">
+                <MdPendingActions className="" />
+                <span>Customizable Interactions</span>
+              </h3>
+              <p className="  flex flex-col  py-1 mobile:text-xs mobile:font-thin mobile:leading-3   tablet:text-base tablet:font-normal">
+              Tailor video interactions with features like screen sharing, interactive menus, and audio/video effects for personalized and engaging experiences.
+              </p>
+            </div>
+            <div className="flex flex-col bg-[#782C8080] p-4 w-full gap-3 h-fit ">
+              <h3 className="flex mobile:text-sm mobile:font-medium  tablet:text-xl items-center gap-3  desktop:font-semibold desktop:text-2xl ">
+                < TbHeartRateMonitor  className="" />
+                <span>Real-Time Monitoring</span>
+              </h3>
+              <p className="  flex flex-col mobile:text-xs mobile:font-thin mobile:leading-3  tablet:text-base tablet:font-normal ">
+              Ensure optimal video quality with real-time monitoring of network events, allowing you to maintain a reliable and high-quality video communication environment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+          {/* Create delightful calling experiences */}
+          <div className="flex flex-col  py-20 tabletmd:w-[90%] laptop:w-[80%] desktop:w-[65%] w-[90%] mx-auto">
+        <div className=" desktop:w-4/6 mx-auto">
+          <h2 className=" text-[rgb(95,36,102)]  text-xl font-bold text-center  tablet:text-2xl tabletmd:text-4xl gap-4">
+            Create delightful calling experiences
+          </h2>
+          <div className="flex flex-col justify-between  tablet:flex-row w-[100%] ">
+            <div className="flex flex-col mobile:gap-4  tablet:gap-12 desktop:gap-10 ">
+              <h1 className=" text-[#5F2466] font-bold  mt-10 tablet:mt-20 ">
+                The API convenience
+              </h1>
+              <div className=" flex flex-col ">
+                <p className=" text-base font-light max-w-[400px]">
+                  Receiving, making, forwarding, and recording calls will never
+                  be the same.
+                </p>
+              </div>
+
+              <ul className="list-disc flex flex-col ml-7">
                 <li className=" font-light	">
-                  Set up using our trustworthy codes or do it yourself{" "}
+                  Set up using our trustworthy codes or do it yourself
                 </li>
-                <li className="font-light	">
-                  Use SIP trunking to integrate existing hardware with APIs{" "}
+                <li className="  font-light	">
+                  Use SIP trunking to integrate existing hardware with APIs
                 </li>
                 <li className=" font-light	">
-                  Pay only for what you need, no unpleasant billing surprises{" "}
+                  Pay only for what you need, no unpleasant billing surprises
                 </li>
               </ul>
             </div>
-          </div>
 
-          <img className="ml-12" src={rr} alt="Logo" />
-        </div>
-        <div className="flex flex-row px-10 mt-5 justify-center items-center ml-7 gap-6 ">
-          <button className="rounded-[5px] bg-[#5F2466] text-[#FFFFFF]  py-3 px-12">
+            <img className="hidden tablet:block " src={rr} alt="Logo" />
+          </div>
+          <div className="flex flex-row flex-wrap gap-3 tablet:gap-5 py-5 tablet:py-20">
+            <button className="bg-[#5F246663]   text-[#000000] hover:text-[#ffff] rounded-lg  text-xs font-light  tablet:text-sm py-3 tablet:px-10 tablet:font-normal">
             The API convenience
-          </button>
-          <button className="rounded-[5px] bg-[#5F246663] text-[#000000]   py-3 px-12">
-            Complete all command
-          </button>
-          <button className="rounded-[5px] bg-[#5F246663] text-[#000000]    py-3 px-12">
-            Build better client connection
-          </button>
+            </button>
+            <a
+              href="#"
+              className=" bg-[#5F2466] hover:bg-[#5F246663] text-[#000000] hover:text-[#ffff] rounded-lg px-3 py-3 text-xs font-light tablet:text-sm tablet:px-5 tablet:font-normal"
+            >
+             Complete all command
+            </a>
+            <a
+              href="#"
+              className="bg-[#5F3466] text-[#000000] hover:text-[#ffff] rounded-lg  text-xs font-light tablet:text-sm px-3 py-3 tablet:px-5 tablet:py-5 tablet:font-normal"
+            >
+             Build better client connection
+            </a>
+          </div>
         </div>
       </div>
-      <div className="bg-[#5F2466] w-full h-[403px] flex flex-row items-center mt-60 ">
-        <div className="flex flex-col ml-24 ">
-          <h1 className="text-[#FFFFFF] font-medium max-w-full	  text-[48px] leading-[50px]">
-            Why go for just customised calling when you can personalise your SMS
-            capabilities too?
+
+      {/* Why go for just customised calling when you can personalise your SMS
+      capabilities too? */}
+        <div className="bg-[#5F2466] my-20 ">
+      <div className="flex flex-col tablet:flex-row justify-between tabletmd:w-[90%] laptop:w-[80%] desktop:w-[65%] w-[90%] mx-auto">
+        <div className="flex flex-col tabletmd:w-4/5 gap-5 py-10">
+          <h1 className="text-[#FFFFFF] text-lg font-bold  tablet:max-w-full tablet:text-3xl tablet:font-normal laptop:text-4xl desktop:text-5xl   ">
+          Why go for just customised calling when you can personalise your SMS capabilities too?
           </h1>
-          <btn className="text-[#FFFFFF] text-2xl mt-2 ">
-            Explore our Voice API solution
+          <btn className="text-[#FFFFFF] flex text-base items-center gap-3 font-light tablet:text-xl tablet:font-semibold">
+          Explore our Chat SMS solution <BsArrowRight />
           </btn>
         </div>
-        <img className="mb-48 w-2/6 mr-36" src={sss} alt="Logo" />
+        <div>
+        <img
+          className=" hidden tablet:block  tabletmd:-mt-40"
+          src={sss}
+          alt="Logo"
+        />
+        </div>
+       
+      </div>
       </div>
       <Frequtly />
       <Photo />

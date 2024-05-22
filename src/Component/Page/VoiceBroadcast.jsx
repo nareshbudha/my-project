@@ -7,9 +7,7 @@ import {
 } from "react-icons/hi2";
 import { LuArrowUpRightSquare } from "react-icons/lu";
 import { FaUserFriends } from "react-icons/fa";
-import { BsCircle } from "react-icons/bs";
-import { RxCross2 } from "react-icons/rx";
-import { TbMinus } from "react-icons/tb";
+import { BsArrowRight } from "react-icons/bs";
 import { PiFolderUserFill } from "react-icons/pi";
 import { GrConnect } from "react-icons/gr";
 import { IoMdVideocam } from "react-icons/io";
@@ -26,260 +24,230 @@ import Frequtly from "./Frequtly";
 
 const VoiceBroadcast = () => {
   return (
-    <div >
-      <div className="flex mobile:mx-10 mobile:my-10 mobile:flex-col mobile:gap-10 laptop:flex-row laptop:mx-12">
-        <div className=" flex flex-col mobile:gap-2 mobile:items-start mobile:justify-center tablet:gap-5 laptop:gap-6 desktop:gap-5">
-          <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl laptop:font-medium">
-            Automate Your Voice Broadcast with Ease
-          </h2>
-          <p className="text-[#000000] mobile:text-xs mobile:font-light tablet:text-base">
-            Our Voice Broadcast feature allows you to automate calls and
-            deliver messages to a large audience, saving you time and effort.
-            Reach your customers effectively and efficiently.
-          </p>
-          <button
-            className="bg-[#5F2466] text-[#FFFFFF] hover:bg-[#FC6517] duration-10 mobile:rounded-lg mobile:py-2 mobile:px-1 mobile:my-2  tablet:px-3 tablet:text-lg tablet:font-medium tablet:rounded-xl laptop:px-2 laptop:py-3"
-          >
-            Get in touch
-          </button>
-
+    <div>
+      <div className="flex tablet:flex-row tabletmd:w-[90%] laptop:w-[80%] desktop:w-[65%] w-[90%] mx-auto ">
+        <div className="flex flex-col lg:flex-row w-full mobile:py-5 mobile:gap-5 tablet:py-10 tablet:gap-16 laptop:gap-32 desktop:gap-48">
+          <div className="flex flex-col mobile:gap-3 tablet:gap-5 laptop:gap-6 desktop:gap-5 justify-center items-start">
+            <h2 className="text-[#5F2466] mobile:leading-6 mobile:text-xl mobile:font-semibold tablet:text-3xl laptop:text-4xl laptop:font-medium">
+              Automate Your Voice Broadcast with Ease
+            </h2>
+            <p className="text-[#000000] mobile:text-xs mobile:font-light tablet:text-base">
+              Our Voice Broadcast feature allows you to automate calls and
+              deliver messages to a large audience, saving you time and effort.
+              Reach your customers effectively and efficiently.
+            </p>
+            <button className="bg-[#5F2466] hover:bg-[#FC6517] text-[#FFFFFF] text-xs mobile:rounded-lg px-1 py-2 mobile:my-2 tablet:px-5 tablet:text-lg tablet:font-medium tablet:rounded-xl">
+              Get in touch
+            </button>
+          </div>
+          <div>
+            <img
+              className="hidden tablet:block tablet:w-72 tablet:h-72 laptop:w-80  "
+              src={bc}
+              alt="Logo"
+            />
+          </div>
         </div>
-        <div>
-          <img
-            className="w-56 tablet:w-80 laptop:w-[850px] "
-            src={bc}
-            alt="Logo"
-          />
-        </div>
-
       </div>
 
-
-      <div className="tablet: mobile:mx-10  laptop:mx-5 desktop:mx-28 laptop:flex laptop:gap-5">
-        <div className=" bg-[#F7F7F7] flex flex-col rounded-xl mobile:py-3 mobile:px-2 mobile:my-10 laptop:p-3">
-          <LuArrowUpRightSquare className="text-[#5F2466] w-[50px] h-[50px] " />
-
-          <h3 className="text-[#5F2466] text-2xl">VoIP Call</h3>
-          <p className="text-[#000000] flex items-center  text-base  ">
+      <div className="grid grid-cols-1 tabletmd:grid-cols-4 tablet:grid-cols-2 py-20 gap-3 justify-between tabletmd:w-[90%] laptop:w-[80%] desktop:w-[65%] w-[90%] mx-auto">
+        <div className="bg-[#F7F7F7] flex flex-col rounded-xl p-3 ">
+          <LuArrowUpRightSquare className="text-[#5F2466] mobile:w-10 mobile:h-5 tablet:w-8 tablet:h-8 laptop:w-10 laptop:h-10 " />
+          <h3 className="text-[#5F2466] mobile:text-base mobile:font-medium tablet:text-2xl	tablet:font-semibold 	  ">
+            VoIP Call
+          </h3>
+          <p className="text-[#000000] flex items-center mobile:text-xs mobile:font-light  text-base font-normal desktop:text-lg desktop:leading-6  ">
             Build immersive one-to-one to large scale Voice-over-IP calls across
             browsers, app and web applications.
           </p>
         </div>
-        <div className="flex flex-col rounded-md bg-[#F7F7F7] mobile:py-3 mobile:px-2 mobile:my-10 laptop:p-3 ">
-          <HiOutlinePhoneArrowUpRight className="text-[#5F2466] w-[50px] h-[50px]  " />
-
-          <h3 className="text-[#5F2466] text-2xl">Phone Call </h3>
-          <p className="text-[#000000] flex justify-center p-2  ">
+        <div className="flex flex-col   bg-[#F7F7F7] rounded-xl p-3">
+          <HiOutlinePhoneArrowUpRight className="text-[#5F2466] mobile:w-5 mobile:h-5 tablet:w-8 tablet:h-8 laptop:w-10 laptop:h-10" />
+          <h3 className="text-[#5F2466] mobile:text-base mobile:font-medium tablet:text-2xl	tablet:font-semibold">
+            Phone Call
+          </h3>
+          <p className="text-[#000000] flex justify-center mobile:text-xs mobile:font-light text-base font-normal desktop:text-lg desktop:leading-6">
             Connect to PSTN networks globally and reach anyone with an Spell
             CPaaS phone number.
           </p>
         </div>
-        <div className="flex flex-col bg-[#F7F7F7] rounded-md mobile:py-3 mobile:px-2 mobile:my-10 laptop:p-3">
-          <HiOutlineComputerDesktop className="text-[#5F2466] w-[50px] h-[50px]  " />
-          <h3 className="text-[#5F2466] text-2xl	mobile:leading-7   ">Voice API platform </h3>
-          <p className="text-[#000000] flex justify-center p-2 ">
+        <div className="bg-[#F7F7F7] flex flex-col rounded-xl p-3">
+          <HiOutlineComputerDesktop className="text-[#5F2466] mobile:w-5 mobile:h-5 tablet:w-8 tablet:h-8 laptop:w-10 laptop:h-10 " />
+          <h3 className="text-[#5F2466] mobile:text-base mobile:font-medium tablet:text-2xl	tablet:font-semibold 	 	   ">
+            Voice API platform{" "}
+          </h3>
+          <p className="text-[#000000] flex justify-center mobile:text-xs mobile:font-light text-base font-normal desktop:text-lg ">
             Integrate voice calling within your applications. Make, receive, and
             control calls across the world programmatically.
           </p>
         </div>
-        <div className="flex flex-col  bg-[#F7F7F7] rounded-md mobile:py-3 mobile:px-2 mobile:my-10 laptop:p-3 ">
-          <FaUserFriends className="text-[#5F2466] w-[50px] h-[50px]  " />
-
-          <h3 className="text-[#5F2466] text-2xl	   ">Call Center </h3>
-          <p className="text-[#000000] flex justify-center p-2  ">
+        <div className="bg-[#F7F7F7] flex flex-col rounded-xl p-3">
+          <FaUserFriends className="text-[#5F2466] mobile:w-5 mobile:h-5 tablet:w-8 tablet:h-8 laptop:w-10 laptop:h-10" />
+          <h3 className="text-[#5F2466] mobile:text-base mobile:font-medium tablet:text-2xl	tablet:font-semibold 	 	  ">
+            Call Center{" "}
+          </h3>
+          <p className="text-[#000000] flex justify-center mobile:text-xs mobile:font-light text-base font-normal desktop:text-lg ">
             Transform your call center with seamless Voice-over-IP calls, global
             PSTN network connectivity, and integrated voice calling through our
             API platform.
           </p>
         </div>
       </div>
-      <div className="flex flex-col mobile:items-start mobile:mx-10 mobile:py-10 laptop:items-center laptop:gap-6">
-        <h2 className="text-[#5F2466] mobile:text-2xl mobile:font-normal tablet:text-3xl  tablet:font-semibold laptop:text-4xl laptop:font-bold">
-          Why you need Voice Broadcast
-        </h2>
-        <p className="text-[#000000] mobile:text-base mobile:font-light ">
-          Cut through inbox overload! Reach thousands instantly with personalized voice messages. Alerts, reminders, campaigns - Voice Broadcast gets heard, loud and clear.  No spam folders, just engagement boost.
-        </p>
-
-      </div>
-      <div className="flex flex-row items-center">
-        <div className="flex flex-col mobile:mx-10 laptop:mx-40  ">
-          <div className="bg-[#F05327] text-[#FFFFFF] flex flex-row gap-5 rounded-t-lg py-2  laptop:px-40">
-            <RxCross2 />
-            <BsCircle className="pl-1" />
-            <TbMinus />
-          </div>
-          <div className="bg-[#5F2466] rounded-b-lg py-40 px-14">
-            <p className="text-[#FFFFFF] mobile:text-xs laptop:w-72  ">
-              from nexmo import Client # Your Nexmo account credentials api_key
-              = "YOUR_API_KEY" api_secret = "YOUR_API_SECRET" client =
-              Client(api_key, api_secret) # Make a call response =
-              client.calls.create( to="+1234567890", from_="+1987654321",
-              url="https://your-voice-application.com/call.php" )
-              print(f"CallID:response["id"]")
-            </p>
-          </div>
+      <div className=" flex py-20 flex-col justify-center items-center gap-4 tabletmd:w-[90%] laptop:w-[80%] desktop:w-[65%] w-[90%] mx-auto">
+        <div className="max-w-4xl mx-auto flex flex-col gap-4">
+          <h2 className="text-[#5F2466] flex mobile:text-2xl mobile:font-normal tablet:text-3xl  tablet:font-semibold laptop:text-4xl justify-center laptop:font-bold  	">
+            Why you need Voice Broadcast
+          </h2>
+          <p
+            className="text-[#000000] text-base font-normal text-center
+        "
+          >
+            Cut through inbox overload! Reach thousands instantly with
+            personalized voice messages. Alerts, reminders, campaigns - Voice
+            Broadcast gets heard, loud and clear. No spam folders, just
+            engagement boost.
+          </p>
+          <img
+            className=" hidden  tablet:block  tablet:mt-5 w-[100%] "
+            src={pp}
+            alt="Logo"
+          />
         </div>
-        <img
-          className="mobile:hidden tablet:block laptop:-ml-80"
-          src={pp}
-          alt="Logo"
-        />
       </div>
       <div className="flex flex-col bg-[#F7F7F7] justify-around items-center mobile:py-12 mobile:my-20 gap-4 ">
         <p className="text-[#000000] text-center  text-base font-light  tablet:text-2xl tablet:font-light">
           We support 10+ programming languages including
         </p>
         <div className="flex mobile:flex-col mobile:gap-3 tablet:flex-row tablet:gap-5 tablet:justify-center laptop:justify-between laptop:gap-20 ">
-          <img
-            className=""
-            src={jaa}
-            alt="Logo"
-          />
-          <img
-            className=""
-            src={ph}
-            alt="Logo"
-          />
-          <img
-            className=""
-            src={su}
-            alt="Logo"
-          />
-          <img
-            className=""
-            src={ce}
-            alt="Logo"
-          />
-          <img
-            className=""
-            src={js}
-            alt="Logo"
-          />
+          <img className="" src={jaa} alt="Logo" />
+          <img className="" src={ph} alt="Logo" />
+          <img className="" src={su} alt="Logo" />
+          <img className="" src={ce} alt="Logo" />
+          <img className="" src={js} alt="Logo" />
         </div>
       </div>
-      <div className="bg-[#5F2466] laptop:py-10">
-        <h2 className="text-[#FFFFFF] flex items-center justify-center text-xl font-bold py-8 laptop:text-3xl ">
-          There’s so much to do with Voice API
-        </h2>
-        <div className="flex mobile:flex-col justify-center items-center gap-7 mobile:mx-5 laptop:flex-row laptop:mx-16">
-          <div className="bg-[#782C8080] mobile:p-3 mobile:rounded-md ">
-            <h3 className="text-[#ffffff] font-semibold flex text-xl gap-3">
-              <PiFolderUserFill className=" " />
-              Hassle-free Solution
-            </h3>
-            <p className="text-[#FFFFFF] font-light">
-              Build the exact call experience you want within minutes with
-              pre-packaged APIs/SDKs and a library of sample codes and
-              documentation. There is no need to set up the infrastructure, deal
-              with telecom carriers, or conduct capacity planning. We have
-              tackled the hard challenges so you do not have to.
-            </p>
-          </div>
-          <div className="bg-[#782C8080] mobile:p-3 mobile:rounded-md">
-            <h3 className="text-[#ffffff] font-semibold flex 	text-xl gap-3">
-              <GrConnect className="" />
-              Connect Globally To Any Device
-            </h3>
-            <p className="text-[#FFFFFF] font-light ">
-              With VoIP, PSTN & SIP calling, you get total freedom to reach
-              customers around the world on any platform. Whether your users are
-              on apps, browsers, SIP-enabled devices or traditional phones, we
-              get them connected.
-            </p>
-          </div>
-          <div className="bg-[#782C8080] mobile:p-3 mobile:rounded-md  ">
-            <h3 className="text-[#ffffff] font-semibold  flex	text-xl  gap-3">
-              <IoMdVideocam className="" />
-              Connect Globally To Any Device
-            </h3>
-            <p className="text-[#FFFFFF] font-light">
-              Crystal clear conversation is the goal. Engineered on WebRTC, the
-              leading real-time communication standard, we built in powerful
-              functionality and call-quality optimisation so that you and your
-              customers will always get low-latency, jittery-free conversations.
-            </p>
+      <div className="bg-[#5F2466] w-full py-10">
+        <div className="   text-[#FFFFFF] flex flex-col justify-center  items-center tabletmd:w-[90%] laptop:w-[80%] desktop:w-[65%] w-[90%] mx-auto ">
+          <h2 className=" mobile:text-lg tablet:text-3xl tablet:font-bold">
+            There’s so much to do with Voice API
+          </h2>
+          <div className="grid grid-cols-1 tabletmd:grid-cols-3 tablet:grid-cols-2 gap-3 py-20">
+            <div className="flex flex-col bg-[#782C8080] gap-3 p-4 w-full h-fit">
+              <h3 className="flex mobile:text-sm mobile:font-medium  tablet:text-xl gap-3  desktop:font-semibold desktop:text-2xl ">
+                <PiFolderUserFill className=" " />
+                <span>Hassle-free Solutions</span>
+              </h3>
+              <p className="flex flex-col mobile:text-xs mobile:font-thin mobile:leading-3   tablet:text-base tablet:font-normal ">
+                Build the exact call experience you want within minutes with
+                pre-packaged APIs/SDKs and a library of sample codes and
+                documentation. There is no need to set up the infrastructure,
+                deal with telecom carriers, or conduct capacity planning. We
+                have tackled the hard challenges so you do not have to.
+              </p>
+            </div>
+            <div className="flex flex-col bg-[#782C8080] p-3 w-full gap-3 h-fit ">
+              <h3 className="flex mobile:text-sm mobile:font-medium  tablet:text-xl gap-3  items-center desktop:font-semibold desktop:text-2xl ">
+                <GrConnect className="" />
+                <span>Connect Globally To Any Device</span>
+              </h3>
+              <p className="  flex flex-col  py-1 mobile:text-xs mobile:font-thin mobile:leading-3   tablet:text-base tablet:font-normal">
+                With VoIP, PSTN & SIP calling, you get total freedom to reach
+                customers around the world on any platform. Whether your users
+                are on apps, browsers, SIP-enabled devices or traditional
+                phones, we get them connected.
+              </p>
+            </div>
+            <div className="flex flex-col bg-[#782C8080] p-4 w-full gap-3 h-fit ">
+              <h3 className="flex mobile:text-sm mobile:font-medium  tablet:text-xl items-center gap-3  desktop:font-semibold desktop:text-2xl ">
+                <IoMdVideocam className="" />
+                <span>Crystal clear voice</span>
+              </h3>
+              <p className="  flex flex-col mobile:text-xs mobile:font-thin mobile:leading-3  tablet:text-base tablet:font-normal ">
+                Crystal clear conversation is the goal. Engineered on WebRTC,
+                the leading real-time communication standard, we built in
+                powerful functionality and call-quality optimisation so that you
+                and your customers will always get low-latency, jittery-free
+                conversations.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Create delightful calling experiences */}
-      <div className="flex flex-col my-10 mx-10 laptop:items-center">
-        <h2 className=" text-[#5F2466] text-2xl font-bold flex justify-center laptop:text-4xl">
-          Create delightful calling experiences{" "}
-        </h2>
+      <div className="flex flex-col  py-20 tabletmd:w-[90%] laptop:w-[80%] desktop:w-[65%] w-[90%] mx-auto">
+        <div className=" desktop:w-4/6 mx-auto">
+          <h2 className=" text-[rgb(95,36,102)]  text-xl font-bold text-center  tablet:text-2xl tabletmd:text-4xl gap-4">
+            Create delightful calling experiences
+          </h2>
+          <div className="flex flex-col justify-between  tablet:flex-row w-[100%] ">
+            <div className="flex flex-col mobile:gap-4  tablet:gap-12 desktop:gap-10 ">
+              <h1 className=" text-[#5F2466] font-bold  mt-10 tablet:mt-20 ">
+                The API convenience
+              </h1>
+              <div className=" flex flex-col ">
+                <p className=" text-base font-light max-w-[400px]">
+                  Receiving, making, forwarding, and recording calls will never
+                  be the same.
+                </p>
+              </div>
 
-        <div className="flex laptop:flex-row laptop:justify-between laptop:mx-14">
-          <div className="flex flex-col  laptop:py-20">
+              <ul className="list-disc flex flex-col ml-7">
+                <li className=" font-light	">
+                  Set up using our trustworthy codes or do it yourself
+                </li>
+                <li className="  font-light	">
+                  Use SIP trunking to integrate existing hardware with APIs
+                </li>
+                <li className=" font-light	">
+                  Pay only for what you need, no unpleasant billing surprises
+                </li>
+              </ul>
+            </div>
 
-            <h1 className="  text-[#5F2466] font-bold text-base mb-8 ">
-              The API convenience
-            </h1>
-            <p className="font-light">
-              Receiving, making, forwarding, and </p>
-            <span className="font-light">recording calls will never be
-              the same.</span>
-
-            <ul className="list-disc ml-5 font-light laptop:py-5">
-              <li className="">
-                Set up using our trustworthy codes or do it yourself
-              </li>
-              <li className="">
-                Use SIP trunking to integrate existing hardware with APIs
-              </li>
-              <li className=" 	">
-                Pay only for what you need, no unpleasant billing surprises
-              </li>
-            </ul>
+            <img className="hidden tablet:block " src={rr} alt="Logo" />
           </div>
-          <img className="mobile:hidden tablet:block tablet:w-72 tablet:my-10 laptop:ml-20" src={rr} alt="Logo" />
-        </div>
-        <div className="flex flex-row  gap-3 my-5 laptop:items-center ">
-          <button className="rounded-md bg-[#5F246663] text-[#000000] hover:bg-[#5F2466]  hover:text-[#FFFFFF] tablet:py-4 tablet:px-2 ">
+          <div className="flex flex-row flex-wrap gap-3 tablet:gap-5 py-5 tablet:py-20">
+            <button className="bg-[#5F246663]   text-[#000000] hover:text-[#ffff] rounded-lg  text-xs font-light  tablet:text-sm py-3 tablet:px-10 tablet:font-normal">
             The API convenience
-          </button>
-          <button className="rounded-md bg-[#5F246663] text-[#000000]  hover:bg-[#5F2466]  hover:text-[#FFFFFF] tablet:py-4 tablet:px-2">
-            Complete all command
-          </button>
-          <button className="rounded-md bg-[#5F246663] text-[#000000]  hover:bg-[#5F2466]  hover:text-[#FFFFFF] tablet:py-4 tablet:px-2">
-            Build better client connection
-          </button>
+            </button>
+            <a
+              href="#"
+              className=" bg-[#5F2466] hover:bg-[#5F246663] text-[#000000] hover:text-[#ffff] rounded-lg px-3 py-3 text-xs font-light tablet:text-sm tablet:px-5 tablet:font-normal"
+            >
+             Complete all command
+            </a>
+            <a
+              href="#"
+              className="bg-[#5F3466] text-[#000000] hover:text-[#ffff] rounded-lg  text-xs font-light tablet:text-sm px-3 py-3 tablet:px-5 tablet:py-5 tablet:font-normal"
+            >
+             Build better client connection
+            </a>
+          </div>
         </div>
       </div>
 
       {/* Why go for just customised calling when you can personalise your SMS
       capabilities too? */}
-
-      <div className="bg-[#5F2466] laptop:flex laptop:my-56">
-        <div className="flex flex-col py-10  gap-3 mx-10 laptop:py-16">
-          <h1 className="text-[#FFFFFF] font-medium text-4xl">
-            Why go for just customised calling when you can personalise your SMS
-            capabilities too?
+        <div className="bg-[#5F2466] my-20 ">
+      <div className="flex flex-col tablet:flex-row justify-between tabletmd:w-[90%] laptop:w-[80%] desktop:w-[65%] w-[90%] mx-auto">
+        <div className="flex flex-col tabletmd:w-4/5 gap-5 py-10">
+          <h1 className="text-[#FFFFFF] text-lg font-bold  tablet:max-w-full tablet:text-3xl tablet:font-normal laptop:text-4xl desktop:text-5xl   ">
+          Why go for just customised calling when you can personalise your SMS capabilities too?
           </h1>
-          <btn className="text-[#FFFFFF] text-2xl font-semibold ">
-            Explore our Voice API solution
-            <svg
-              className="-mt-7 ml-80 flex"
-              width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g filter="url(#filter0_d_813_785)">
-                <path d="M5.75 12H30.25M30.25 12L19.75 22M30.25 12L19.75 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" shape-rendering="crispEdges" />
-              </g>
-              <defs>
-                <filter id="filter0_d_813_785" x="0.25" y="0.5" width="35.5" height="31" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                  <feOffset dy="4" />
-                  <feGaussianBlur stdDeviation="2" />
-                  <feComposite in2="hardAlpha" operator="out" />
-                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_813_785" />
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_813_785" result="shape" />
-                </filter>
-              </defs>
-            </svg>
+          <btn className="text-[#FFFFFF] flex text-base items-center gap-3 font-light tablet:text-xl tablet:font-semibold">
+          Explore our Chat SMS solution <BsArrowRight />
           </btn>
         </div>
-        <img className="mobile:hidden tablet:block tablet:w-72 tablet:mx-10 laptop:-mt-40" src={sss} alt="Logo" />
+        <div>
+        <img
+          className=" hidden tablet:block  tabletmd:-mt-40"
+          src={sss}
+          alt="Logo"
+        />
+        </div>
+       
+      </div>
       </div>
       <Frequtly />
       <Photo />
