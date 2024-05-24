@@ -1,4 +1,4 @@
-function Buttom() {
+function button() {
   return (
     <div className="text-[#FFFFFF]  flex flex-row justify-start items-center gap-3">
       <button
@@ -21,4 +21,4 @@ function Buttom() {
   );
 }
 
-export default Buttom;
+export default button;

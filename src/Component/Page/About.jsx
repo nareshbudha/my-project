@@ -10,10 +10,10 @@ import Photo from "./Photo";
 const About = () => {
   return (
     <div>
-      <div className="w-[80%] mx-auto mobile:py-5 tablet:py-10 laptop:py-5 desktop:py-5 ">
-        <div className="flex mobile:flex-col-reverse mobile:gap-10 laptop:flex-row laptop:justify-between laptop:items-center ">
-          <img className="laptop:w-[650px] laptop:h-80" src={ab} alt="logo" />
-          <div className="flex flex-col mobile:gap-3 laptop:pt- laptop:gap-5  ">
+      <div className="flex tablet:flex-row tabletmd:w-[90%] laptop:w-[80%] desktop:w-[65%] w-[90%] mx-auto my-10 tablet:my-20">
+        <div className="flex mobile:flex-col-reverse gap-10 laptop:flex-row laptop:justify-between laptop:items-center ">
+          <img className="hidden tabletmd:block tabletmd:w-[650px] tabletmd:h-80" src={ab} alt="logo" />
+          <div className="flex flex-col gap-3 tablet:gap-5  ">
             <h2 className="text-[#5F2466] font-bold mobile:text-2xl laptop:text-4xl">
               Nepal's Swift and Secure <span className="text-red-500">CPaaS</span>
               <p> Provider</p>
@@ -35,7 +35,7 @@ const About = () => {
             </p>
             <a href="contact">
               <button
-                className="bg-[#5F2466]  text-[#FFFFFF] w-[129px] h-[56px] py-[10px] px-[25px] rounded-[10px]"
+                className="bg-[#5F2466]  text-[#FFFFFF] p-2 tablet:py-3 tablet:px-4 rounded-lg"
 
               >
                 Contact Us
@@ -43,6 +43,9 @@ const About = () => {
             </a>
           </div>
         </div>
+      
+      </div>
+        <div className="flex flex-col tabletmd:w-[90%] laptop:w-[80%] desktop:w-[65%] w-[90%] mx-auto">
         <div className="flex flex-col justify-center items-center mobile:gap-3 mobile:py-10 laptop:py-20  ">
           <h2 className="text-[#5F2466] text-4xl font-bold ">
             Why choose us?
@@ -51,15 +54,14 @@ const About = () => {
             We are about quality and trust
           </p>
         </div>
-        <div className="grid mobile:grid-cols-2 laptop:grid-cols-4 mobile:py-5 mobile:gap-2 mobile:tablet:gap-16 laptop:gap-3 ">
-          <img src={a} alt="" />
-          <img src={b} alt="" />
-          <img src={c} alt="" />
-          <img src={d} alt="" />
+        <div className="grid grid-cols-1 justify-center items-center gap-2 mobile:grid-cols-2 tabletmd:grid-cols-4 mobile:py-5 mobile:gap-2 tablet:gap-5 laptop:gap-5 ">
+          <img className="w-full" src={a} alt="" />
+          <img className="w-full" src={b} alt="" />
+          <img className="w-full" src={c} alt="" />
+          <img className="w-full" src={d} alt="" />
         </div>
-        <div>dkfjh idjsfhsdiu </div>
+        </div>
 
-      </div>
 
 
       <Frequtly />

@@ -3,71 +3,66 @@ import lgi from "../Image/lgi.png";
 import { Link } from "react-router-dom";
 const Login = () => {
   return (
-    <div className="mobile:ml-10">
-      <div className="flex justify-stretch  laptop:flex-row    ">
-        <img className="mobile:hidden tablet:block tablet:w-80 tablet:h-80 tablet:pt-5 laptop:w-96 laptop:h-96 laptop:mr-14 desktop:ml-2 desktop:w-full desktop:h-full
-        " src={lgi} alt="" />
+    <div className="flex flex-col gap-10 tabletmd:flex-row tabletmd:w-[90%] laptop:w-[80%] desktop:w-[65%] w-[90%] mx-auto tabletmd:py-24">
+      <div className="flex-1">
+        <img
+          className="hidden tabletmd:block 
+        "
+          src={lgi}
+          alt=""
+        />
+      </div>
 
-        <div className="tablet:mt-5  tablet:ml-5 laptop:mt-10
-         laptop:mr-4 laptop:w-full desktop:mt-20">
-          <div className="flex flex-col mobile:gap-4 ">
-            <p className="text-[#5F2466] font-bold  laptop:text-5xl laptop:leading-10 mobile:text-2xl">
-              Welcome Back
-            </p>
-            <span className="text-[#000000] font-light mobile:text-base tablet:text-xl ">
-              Sign in to continue to Spell CPasS.
-            </span>
-          </div>
-
-          <div className="text-[#000000] flex flex-col mobile:gap-4 mobile:my-3 mt-10">
-            <div className="relative gap-3">
-              <p className="text-[#5F2466] font-bold mobile:text-sm mobile:leading-3 text-base leading-5 pb-2 ">
-                Username
-              </p>
-              <input
-                className=" border-[#D0D7E2] border-2 flex rounded-lg px-3 py-3 mobile:text-xs tablet:text-lg mobile:w-80 mobile:h-10 tablet:w-full tablet:h-14 "
-                type="text"
-                placeholder="Enter Username Or Email Address"
-                required
-              />
-            </div>
-            <div className="relative gap-3 ">
-              <div className="flex flex-row justify-between whitespace-nowrap">
-                <p className="text-[#5F2466] font-bold mobile:text-sm mobile:leading-3 text-base leading-5 pb-2 ">
-                  Password
-                </p>
-                <Link to={"/sign"} className="text-[#000000] mobile:mr-2 mobile:-mt-2 tablet:mr-2  ">
-                  Forget Password?
-                </Link>
-              </div>
-
-              <input
-                className=" border-[#D0D7E2] border-2 flex rounded-lg px-3 py-3 mobile:text-xs tablet:text-lg mobile:w-80 mobile:h-10 tablet:w-full tablet:h-14 "
-                type="password"
-                placeholder="Enter password "
-                required
-              />
-            </div>
-
-            <button
-              className="bg-[#5F2466]  text-[#FFFFFF] mobile:rounded-lg mobile:w-20 mobile:ml-1 mobile:px-1 mobile:py-2 mobile:-mt-1 tablet:w-full tablet:h-14"
-              onClick={(event) => {
-                event.target.style.backgroundColor =
-                  event.target.style.backgroundColor === "rgb(252, 101, 23)"
-                    ? "#5F2466"
-                    : "#FC6517";
-              }}
-            >
-              Log In
-            </button>
-          </div>
-          <p className="flex tablet:text-base tablet:font-light tablet:mt-3 tablet:ml-12 ">
-            Don’t have an account ?{" "}
-            <Link to={"/sign"} className="text-[#5F2466]  font-bold tablet:text-base">
-              Signup now
-            </Link>
-          </p>
+      <div className=" flex-1 mt-4 ">
+        <div className="flex flex-col gap-3 ">
+          <h3 className="text-[#5F2466] flex flex-col font-bold  text-xl tablet:text-2xl tabletmd:text-4xl ">Welcome Back </h3>
+          <span className="text-[#000000] font-light text-base ">
+            Sign in to continue to Spell CPasS.
+          </span>
+          
         </div>
+
+        <form className="text-[#000000] gap-4 flex flex-col mt-4">
+          <div className="relative gap-1 flex flex-col">
+            <p className="text-[#5F2466] font-bold text-base ">
+              Username
+            </p>
+            <input
+              className=" border-[#D0D7E2] border-2  rounded-lg px-3 py-2"
+              type="text"
+              placeholder="Enter Username Or Email Address"
+              required
+            />
+          </div>
+          <div className="relative gap-1 flex flex-col ">
+            <div className="flex flex-row justify-between whitespace-nowrap">
+              <p className="text-[#5F2466] font-bold ">Password</p>
+              <Link to={"/sign"} className="text-[#000000]">
+                Forget Password?
+              </Link>
+            </div>
+
+            <input
+              className=" border-[#D0D7E2] border-2 flex rounded-lg px-3 py-2"
+              type="password"
+              placeholder="Enter password "
+              required
+            />
+          </div>
+
+          <button className="bg-[#5F2466]  text-[#FFFFFF] mobile:rounded-lg px-2 py-2">
+            Log In
+          </button>
+        </form>
+        <p className=" text-center mt-2 text-base font-light">
+          Don’t have an account ?{" "}
+          <Link
+            to={"/sign"}
+            className="text-[#5F2466]  font-bold tablet:text-base"
+          >
+            Signup now
+          </Link>
+        </p>
       </div>
     </div>
   );

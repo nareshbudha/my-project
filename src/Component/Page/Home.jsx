@@ -19,7 +19,7 @@ import { MdRecordVoiceOver,MdVideoCall, MdAddIcCall  } from "react-icons/md";
 
 import { HiOutlineMicrophone } from "react-icons/hi2";
 
-import Buttom from "./Buttom";
+import button from "./button";
 import Frequtly from "./Frequtly";
 import Photo from "./Photo";
 import { Link } from "react-router-dom";
@@ -249,7 +249,7 @@ const Home = () => {
                 interactions seamlessly, improving customer satisfaction and
                 boosting productivity.
               </p>
-              <Buttom />
+              <button />
             </div>
             <img
               className=" mobile:w-48 mobile:h-48  tablet:w-72 tablet:h-72 laptop:w-96 lg:h-96 "
@@ -273,7 +273,7 @@ const Home = () => {
                 more personal level, fostering stronger relationships and
                 increasing customer satisfaction.
               </p>
-              <Buttom />
+              <button />
             </div>
           </section>
           <section className="flex flex-col  lg:flex-row w-full mobile:py-5 mobile:gap-5 tablet:py-10 tablet:gap-16 laptop:gap-32 desktop:gap-48">
@@ -287,7 +287,7 @@ const Home = () => {
                 communication, resolve issues faster, and provide a seamless
                 customer experience.
               </p>
-              <Buttom />
+              <button />
             </div>
             <img
               className="mobile:w-40 mobile:h-40 tablet:w-72 tablet:h-72 laptop:w-96 laptop:h-96 "
@@ -310,7 +310,7 @@ const Home = () => {
                 With our CPaaS platform, you can leverage the power of Whatsapp
                 Business to connect with your customers more effectively.
               </p>
-              <Buttom />
+              <button />
             </div>
           </div>
           <div className="flex flex-col lg:flex-row w-full mobile:py-5 mobile:gap-5 tablet:py-10 tablet:gap-16 laptop:gap-32 desktop:gap-48">
@@ -324,7 +324,7 @@ const Home = () => {
                 personalized and interactive experiences through seamless
                 integration of dynamic chat{" "}
               </p>
-              <Buttom />
+              <button />
             </div>
             <img
               className="mobile:w-44 mobile:h-44  tablet:w-72 tablet:h-72 laptop:w-96"
