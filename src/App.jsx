@@ -46,7 +46,8 @@ function App() {
           <Route path="/pro" element={<Products />} />
           <Route path="/frequ" element={<Frequtly />} />
           <Route path="/slider" element={<SliderComp />} />
-          <Route path="/VideoCart" element={<VideoCart/>} />
+          
+       
         </Routes>
 
         <Footer />

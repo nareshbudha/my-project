@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const sliderss= () => {
+const timeslider= () => {
   const [value, setValue] = useState(0); // Initial value of the slider
 
   // Function to handle slider value change
@@ -28,4 +28,4 @@ const sliderss= () => {
   );
 };
 
-export default sliderss;
+export default timeslider;
